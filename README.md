@@ -1,2 +1,2 @@
-# you-tube-video-manager
-YouTube Video Manager
+# chloe-seed
+Chloe Seed

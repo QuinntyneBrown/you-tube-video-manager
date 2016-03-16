@@ -1,0 +1,42 @@
+{
+  "name": "future",
+  "version": "1.0.0",
+  "description": "Future",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuinntyneBrown/future.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuinntyneBrown/future/issues"
+  },
+  "homepage": "https://github.com/QuinntyneBrown/future#readme",
+  "dependencies": {
+    "rx": "^4.1.0",
+    "angular": "^1.5.0",
+    "angular-animate": "^1.5.0",
+    "angular-route": "^1.5.0",
+    "angular-ui-tinymce": "0.0.14",
+    "css-loader": "^0.23.1",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.34.4",
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^1.8.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.7",
+    "gulp-webpack": "^1.5.0",
+    "html-loader": "^0.4.3",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.0",
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.7.5",
+    "typings": "^0.6.8",
+    "webpack": "^1.12.13"
+  }
+}

@@ -1,0 +1,24 @@
+<div class="youTubeVideoEditor">
+
+    <h1  data-ng-if="!vm.id">Create YouTubeVideo <span data-ng-if="vm.name.length > 0">: {{ vm.name }}</span></h1>
+
+    <h1 data-ng-if="vm.id">Edit YouTubeVideo: {{ vm.name }}</h1>
+
+    <tabs tabs-name="you-tube-video-editor">
+
+        <tab-title>General</tab-title>
+
+        <tab-content>
+            <div>
+                <input class="inputField" type="text" placeholder="YouTubeVideo Name" data-ng-model="vm.entity.name" />
+            </div>
+        </tab-content>
+
+    </tabs>
+
+    <div>
+        <calypso-button on-click="vm.addOrUpdate()" caption="'Save'"></calypso-button>
+
+        <calypso-button on-click="vm.create()" caption="'Create'"></calypso-button>
+    </div>
+</div>

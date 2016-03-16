@@ -1,0 +1,15 @@
+<div class="youTubeVideoList">
+    <div class="youTubeVideoList-header">
+        <h1>YouTubeVideos</h1>
+    </div>
+    
+    <div data-ng-repeat="entity in vm.entities" class="youTubeVideoList-item">
+        <div class="youTubeVideoList-name">
+            {{ entity.name }}
+        </div>
+        <div class="youTubeVideoList-actions">
+            <span data-ng-click="vm.edit(entity)">edit</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span data-ng-click="vm.remove(entity)">remove</span>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</div>
