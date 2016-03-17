@@ -21,19 +21,16 @@ export class TagsPageComponent {
     storeOnChange = state => {        
         this.entities = state.tags;
 
-        if (state.lastTriggeredByAction instanceof actions.SetCurrentTagAction) 
+		if (state.lastTriggeredByAction instanceof actions.SetCurrentTagAction && !state.lastTriggeredByAction.entity) 
+            this.$location.path("/admin/tags");
+
+        if (state.lastTriggeredByAction instanceof actions.SetCurrentTagAction && state.lastTriggeredByAction.entity) 
             this.$location.path("/admin/tag/edit/" + state.lastTriggeredByAction.entity.id);
         
         if (state.lastTriggeredByAction instanceof actions.RemoveTagAction && this.entity && this.entity.id) {
             this.entity = pluck({ value: Number(this.$routeParams["tagId"]), items: this.entities }) as Tag;
             if (Object.keys(this.entity).length === 0) { this.$location.path("/admin/tags"); }
         }
-
-        if (state.lastTriggeredByAction instanceof actions.AddOrUpdateTagAction && !this.entity.id)
-            this.entity = new Tag();       
-
-        if (state.lastTriggeredByAction instanceof actions.AddOrUpdateTagAction && this.entity.id)
-            this.$location.path("/admin/tags");
     }
 
     ngOnInit = () => {
