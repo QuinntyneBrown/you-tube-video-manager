@@ -19,12 +19,10 @@ import { YouTubeVideo } from "./you-tube-video.model";
 export class YouTubeVideosPageComponent { 
     constructor(private $location: angular.ILocationService, private $routeParams: angular.route.IRouteParamsService, private youTubeVideoActionCreator: actions.YouTubeVideoActionCreator) { }
     storeOnChange = state => {        
-
         this.entities = state.youTubeVideos;
 
-        if (state.lastTriggeredByAction instanceof actions.SetCurrentYouTubeVideoAction) {
+        if (state.lastTriggeredByAction instanceof actions.SetCurrentYouTubeVideoAction) 
             this.$location.path("/admin/youtubevideo/edit/" + state.lastTriggeredByAction.entity.id);
-        }
         
         if (state.lastTriggeredByAction instanceof actions.RemoveYouTubeVideoAction && this.entity && this.entity.id) {
             this.entity = pluck({ value: Number(this.$routeParams["youTubeVideoId"]), items: this.entities }) as YouTubeVideo;
@@ -45,6 +43,11 @@ export class YouTubeVideosPageComponent {
             this.entity = new YouTubeVideo();
         }
     }
+
+    cbEdit = entity => this.youTubeVideoActionCreator.edit(entity);
+    cbRemove = entity => this.youTubeVideoActionCreator.remove(entity);
+    cbCreate = entity => this.youTubeVideoActionCreator.create();
+    cbAddOrUpdate = options => this.youTubeVideoActionCreator.addOrUpdate({ data: options.data });
 
     entity;
     entities;

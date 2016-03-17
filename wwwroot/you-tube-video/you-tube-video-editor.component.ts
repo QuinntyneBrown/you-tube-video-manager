@@ -7,13 +7,16 @@ import { YouTubeVideo } from "./you-tube-video.model";
     templateUrl: "wwwroot/you-tube-video/you-tube-video-editor.component.html",
 	styleUrls: ["wwwroot/you-tube-video/you-tube-video-editor.component.css"],
     selector: "you-tube-video-editor",
-    providers: ["$location", "$routeParams", "youTubeVideoActionCreator", "invokeAsync"],
-    inputs: ['entity']
+    inputs: ['entity','cbAddOrUpdate','cbRemove','cbCreate']
 })
 export class YouTubeVideoEditorComponent {
-    constructor(private $location: angular.ILocationService, private $routeParams: angular.route.IRouteParamsService, private youTubeVideoActionCreator: actions.YouTubeVideoActionCreator, private invokeAsync) { }    
-    addOrUpdate = () => this.youTubeVideoActionCreator.addOrUpdate({ data: this.entity });         
-    create = () => { this.youTubeVideoActionCreator.create(); }
-    remove = () => this.youTubeVideoActionCreator.remove({ id: this.entity.id });         
-	entity: YouTubeVideo;
+    constructor() { }    
+    addOrUpdate = () => this.cbAddOrUpdate({ data: this.entity });         
+    create = () => this.cbCreate();
+    remove = () => this.cbRemove({ id: this.entity.id });         
+    entity: YouTubeVideo;
+
+    cbCreate;
+    cbRemove;
+    cbAddOrUpdate;
 }
