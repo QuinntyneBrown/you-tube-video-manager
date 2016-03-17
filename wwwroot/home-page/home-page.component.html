@@ -1,22 +1,6 @@
-<div>
-    <h1>Home Page</h1>
-
-
-    <tabs>
-        <tab-title>
-            Works
-        </tab-title>
-
-        <tab-content>
-            <h1>Maybe</h1>
-        </tab-content>
-
-        <tab-title>
-            Works?
-        </tab-title>
-
-        <tab-content>
-            <h1>Maybe Not</h1>
-        </tab-content>
-    </tabs>
+<div class="home-page">
+    <div data-ng-repeat="video in vm.videos">
+        <h1>{{ video.name }}</h1>
+        <a href="#/youtubevideo/play/{{ video.youTubeVideoId }}">Watch</a>
+    </div>
 </div>

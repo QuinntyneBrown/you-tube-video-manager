@@ -7,6 +7,7 @@ import { HeaderActionCreator } from "./header.actions";
     providers: ["headerActionCreator"]
 })
 export class HeaderComponent {
-    constructor(private headerActionCreator: HeaderActionCreator) { }
-  
+    constructor(private headerActionCreator: HeaderActionCreator) { }  
+    storeOnChange = state => this.currentUser = state.currentUser;
+    currentUser;
 }

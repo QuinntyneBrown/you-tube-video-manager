@@ -7,7 +7,9 @@ import { LoginActionCreator } from "./login.actions";
     providers: ["invokeAsync", "loginActionCreator"]
 })
 export class LoginComponent {
-    constructor(private invokeAsync, private loginActionCreator: LoginActionCreator) { }
+    constructor(private invokeAsync, private loginActionCreator: LoginActionCreator) {
+        loginActionCreator.logOut();
+    }
     
     tryToLogin = () => {
         this.invokeAsync({

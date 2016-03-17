@@ -14,13 +14,18 @@ export class LoginActionCreator extends BaseActionCreator {
                 username: options.username,
                 password: options.password
             }
-        }).then(results => {
-            this.dispatcher.dispatch(new UserLoggedInAction(newId, results));
+        }).then(loginResults => {
+            this.dispatcher.dispatch(new UserLoggedInAction(newId, loginResults));
+            this.service.getCurrentUser().then((currentUserResults) => {
+                this.dispatcher.dispatch(new CurrentUserAction(newId, currentUserResults));
+            });            
         });
         return newId;
     }
 
     loginSuccess = () => this.dispatcher.dispatch(new LoginSuccessAction()); 
+
+    logOut = () => this.dispatcher.dispatch(new UserLoggedOutAction());
 
     service: LoginService;
 }
@@ -28,6 +33,8 @@ export class LoginActionCreator extends BaseActionCreator {
 export class LoginSuccessAction { constructor() { } }
 
 export class UserLoggedInAction { constructor(public id, public data) { } }
+
+export class UserLoggedOutAction { constructor() { } }
 
 export class AddOrUpdateLoginAction { constructor(public id, public entity) { } }
 
@@ -38,3 +45,5 @@ export class RemoveLoginAction { constructor(public id, public entity) { } }
 export class LoginsFilterAction { constructor(public id, public term) { } }
 
 export class SetCurrentLoginAction { constructor(public entity) { } }
+
+export class CurrentUserAction { constructor(public id, public user) { } }

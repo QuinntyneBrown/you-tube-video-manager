@@ -19,6 +19,13 @@ namespace Chloe.Server.Controllers
         {
             return Ok(this.service.Register(request));
         }
+        
+        [HttpGet]
+        [Route("current")]
+        public IHttpActionResult Current()
+        {
+            return Ok(User.Identity.Name);
+        }
 
         protected readonly IUserService service;
     }

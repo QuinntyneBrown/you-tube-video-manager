@@ -9,9 +9,10 @@ namespace Chloe.Server.Models
     {
         public YouTubeVideo()
         {
-
+            this.Tags = new HashSet<YouTubeVideoTag>();
         }
 
         public string YouTubeVideoId { get; set; }
+        public ICollection<YouTubeVideoTag> Tags { get; set; }
     }
 }

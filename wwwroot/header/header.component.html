@@ -1,5 +1,8 @@
 <div class="header">
     <a href="#/">Home</a>
-    <a href="#/login">Login</a>
-    <a href="#/register">Register</a>
+    <a data-ng-if="!vm.currentUser" href="#/login">Login</a>
+    <a data-ng-if="!vm.currentUser" href="#/register">Register</a>
+    <a data-ng-if="vm.currentUser" href="#/admin/tags">Tag Management</a>
+    <a data-ng-if="vm.currentUser" href="#/admin/youtubevideos">Video Management</a>
+    <a href="#/login">log out</a>
 </div>

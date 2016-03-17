@@ -7,17 +7,15 @@ import * as actions from "./registration.actions";
     templateUrl: "wwwroot/registration/registration-page.component.html",
     styleUrls: ["wwwroot/registration/registration-page.component.css"],
     selector: "registration-page",
-    providers: [ "$location", "invokeAsync", "loginActionCreator", "registrationActionCreator" ]
+    providers: [ "$location", "invokeAsync", "loginActionCreator", "loginRedirect", "registrationActionCreator" ]
 })
 export class RegistrationPageComponent {
     constructor(private $location: angular.ILocationService,
         private invokeAsync,
         private loginActionCreator: LoginActionCreator,
+        private loginRedirect,
         private registrationActionCreator: RegistrationActionCreator) { }
 
-    storeOnChange = state => {
-        if (state.lastTriggeredByAction instanceof actions.RegistrationSuccess) { this.onRegistrationSuccess(state.lastTriggeredByAction.entity) }
-    }
 
     onRegistrationSuccess = (options) => {
         this.invokeAsync({
@@ -27,7 +25,18 @@ export class RegistrationPageComponent {
                 password: options.password
             }
         }).then(() => {
-            this.$location.path("/websites");
+            this.loginRedirect.redirectPreLogin();
+        });
+    }
+
+    tryToRegister = options => {
+        this.invokeAsync({
+            action: this.registrationActionCreator.register,
+            params: {
+                data: options.entity
+            }
+        }).then(() => {
+            this.onRegistrationSuccess({ entity: options.entity });
         });
     }
 

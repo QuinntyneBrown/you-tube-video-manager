@@ -1,4 +1,6 @@
 export class YouTubeVideo { 
 	id:number;
-	name:string;
+    name: string;
+    youTubeVideoId: string;
+    tags: Array<any> = [];
 }

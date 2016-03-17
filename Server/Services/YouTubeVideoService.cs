@@ -25,6 +25,15 @@ namespace Chloe.Server.Services
                 .FirstOrDefault();
             if (entity == null) repository.Add(entity = new YouTubeVideo());
             entity.Name = request.Name;
+            entity.YouTubeVideoId = request.YouTubeVideoId;
+
+            entity.Tags = new HashSet<YouTubeVideoTag>();
+
+            foreach(var tag in request.Tags)
+            {
+                uow.YouTubeVideoTags.Add(new YouTubeVideoTag() { YouTubeVideo = entity, Tag = new Tag() { Name = tag.Name } });
+            }
+
             uow.SaveChanges();
             return new YouTubeVideoAddOrUpdateResponseDto(entity);
         }
@@ -40,14 +49,14 @@ namespace Chloe.Server.Services
         public ICollection<YouTubeVideoDto> Get()
         {
             ICollection<YouTubeVideoDto> response = new HashSet<YouTubeVideoDto>();
-            repository.GetAll().Where(x => x.IsDeleted == false)
+            repository.GetAll().Include( x => x.Tags ).Include("Tags.Tag").Where(x => x.IsDeleted == false)
                 .ForEachAsync(x => response.Add(new YouTubeVideoDto(x)));
             return response;
         }
 
         public YouTubeVideoDto GetById(int id)
         {
-            return new YouTubeVideoDto(repository.GetAll().Where(x => x.Id == id && x.IsDeleted == false).FirstOrDefault());
+            return new YouTubeVideoDto(repository.GetAll().Include(x => x.Tags).Include("Tags.Tag").Where(x => x.Id == id && x.IsDeleted == false).FirstOrDefault());
         }
 
         protected readonly IChloeUow uow;

@@ -8,7 +8,6 @@ import * as actions from "./you-tube-video.actions";
     providers: ["$routeParams","youTubeVideoActionCreator"]
 })
 export class YouTubeVideoPlayerPageComponent {
-    constructor(private $routeParams: angular.route.IRouteParamsService, youTubeVideoActionCreator: actions.YouTubeVideoActionCreator) {
-    }
-    youTubeVideoId;
+    constructor(private $routeParams: any, youTubeVideoActionCreator: actions.YouTubeVideoActionCreator) { }
+    youTubeVideoId = this.$routeParams.youTubeVideoId;
 }

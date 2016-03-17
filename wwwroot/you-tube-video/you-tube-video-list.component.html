@@ -7,6 +7,9 @@
         <div class="youTubeVideoList-name">
             {{ entity.name }}
         </div>
+        <div class="youTubeVideoList-videoId">
+            {{ entity.youTubeVideoId }}
+        </div>
         <div class="youTubeVideoList-actions">
             <span data-ng-click="vm.edit({ entity: this.entity })">edit</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span data-ng-click="vm.remove({ entity: this.entity })">remove</span>
         </div>

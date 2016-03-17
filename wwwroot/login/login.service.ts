@@ -14,6 +14,16 @@ export class LoginService {
         return deferred.promise;
     }
 
+    getCurrentUser = () => {
+        var deferred = this.$q.defer();
+        this.fetch.fromService({ method: "GET", url: this.baseUri + "/current" }).then(function (results) {
+            deferred.resolve(results.data);
+        }).catch(function (error) {
+            deferred.resolve(error);
+        });
+        return deferred.promise;
+    }
+
     get baseUri() { return this.apiEndpoint.getBaseUrl() + "/user"; }
 
 }

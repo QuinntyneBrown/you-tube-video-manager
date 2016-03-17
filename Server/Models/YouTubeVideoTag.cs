@@ -1,18 +1,17 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Web;
 
 namespace Chloe.Server.Models
 {
     public class YouTubeVideoTag: BaseEntity
     {
-        public YouTubeVideoTag()
-        {
-
-        }
-
-        [ForeignKey("Tag")]
-        public int TagId { get; set; }
         [ForeignKey("YouTubeVideo")]
-        public int YouTubeVideoId { get; set; }
+        public int? YouTubeVideoId { get; set; }
+        [ForeignKey("Tag")]
+        public int? TagId { get; set; }
         public YouTubeVideo YouTubeVideo { get; set; }
         public Tag Tag { get; set; }
     }

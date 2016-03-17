@@ -31,7 +31,7 @@ namespace Chloe.Server.Data
         public IRepository<Role> Roles { get { return GetStandardRepo<Role>(); } }
         public IRepository<Tag> Tags { get { return GetStandardRepo<Tag>(); } }
         public IRepository<YouTubeVideo> YouTubeVideos { get { return GetStandardRepo<YouTubeVideo>(); } }
-
+        public IRepository<YouTubeVideoTag> YouTubeVideoTags {  get { return GetStandardRepo<YouTubeVideoTag>(); } }
         protected void ConfigureDbContext(IDbContext dbContext)
         {
             dbContext.Configuration.ProxyCreationEnabled = false;

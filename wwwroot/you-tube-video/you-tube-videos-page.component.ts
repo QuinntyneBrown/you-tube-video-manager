@@ -44,11 +44,16 @@ export class YouTubeVideosPageComponent {
         }
     }
 
+    addOrUpdateTag = options => {
+        alert("?");
+    } 
+
     edit = entity => this.youTubeVideoActionCreator.edit(entity);
     remove = entity => this.youTubeVideoActionCreator.remove(entity);
     create = entity => this.youTubeVideoActionCreator.create();
     addOrUpdate = options => this.youTubeVideoActionCreator.addOrUpdate({ data: options.data });
 
-    entity;
+    tagEntity = {};
+    entity: YouTubeVideo;
     entities;
 }

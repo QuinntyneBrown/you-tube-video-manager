@@ -9,6 +9,7 @@ require("./header/header.module");
 require("./modal/modal.module");
 require("./tabs/tabs.module");
 require("./login/login.module");
+require("./registration/registration.module");
 require("./home-page/home-page.module");
 
 require("./you-tube-video/you-tube-video.module");
@@ -26,7 +27,7 @@ var app: any = angular.module("app", [
     "app.login",
     "app.modal",
     "app.homePage",
-
+    "app.registration",
     "app.tag",
     "app.youTubeVideo"
 ]);
@@ -47,7 +48,8 @@ app.config(["$routeProvider", ($routeProvider: angular.route.IRouteProvider) => 
         .when("/", { template: "<home-page></home-page>" })
         .when("/register", { template: "<registration-page></registration>" })
         .when("/login", { template: "<login-page></login-page>" })
-        .when("/youtubevideo/play/:youTubeVideoId", { template: "<you-tube-player-page></you-tube-player-page>" })
+        .when("/register", { template: "<registration-page></registration-page>" })
+        .when("/youtubevideo/play/:youTubeVideoId", { template: "<you-tube-video-player-page></you-tube-video-player-page>" })        
         .when("/admin/tag/edit/:tagId", { template: "<tags-page></tags-page>" })
         .when("/admin/tags", { template: "<tags-page></tags-page>" })
         .when("/admin/youtubevideo/edit/:youTubeVideoId", { template: "<you-tube-videos-page></you-tube-videos-page>" })
