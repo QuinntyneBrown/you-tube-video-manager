@@ -255,6 +255,9 @@
     <Content Include="wwwroot\tabs\tab-title.component.html" />
     <Content Include="wwwroot\tabs\tabs.component.css" />
     <Content Include="wwwroot\tabs\tabs.component.html" />
+    <Content Include="wwwroot\you-tube-video\you-tube-video-player-page.component.css">
+      <DependentUpon>you-tube-video-player-page.component.ts</DependentUpon>
+    </Content>
     <Content Include="wwwroot\you-tube-video\you-tube-video-editor.component.css">
       <DependentUpon>you-tube-video-editor.component.ts</DependentUpon>
     </Content>
@@ -266,6 +269,15 @@
     </Content>
     <Content Include="wwwroot\you-tube-video\you-tube-video-list.component.html">
       <DependentUpon>you-tube-video-list.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\you-tube-video\you-tube-video-player-page.component.html">
+      <DependentUpon>you-tube-video-player-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\you-tube-video\you-tube-video-player.css">
+      <DependentUpon>you-tube-video-player.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\you-tube-video\you-tube-video-player.html">
+      <DependentUpon>you-tube-video-player.ts</DependentUpon>
     </Content>
     <Content Include="wwwroot\you-tube-video\you-tube-video.component.css">
       <DependentUpon>you-tube-video.component.ts</DependentUpon>
@@ -436,8 +448,10 @@
     <TypeScriptCompile Include="wwwroot\tabs\tabs.module.ts" />
     <TypeScriptCompile Include="wwwroot\tabs\tabs.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\tabs\tabs.service.ts" />
+    <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-player-page.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-editor.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-player.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video.actions.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video.model.ts" />

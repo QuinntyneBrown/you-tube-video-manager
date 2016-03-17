@@ -45,6 +45,7 @@ app.config(["$routeProvider", ($routeProvider: angular.route.IRouteProvider) => 
         .when("/", { template: "<home-page></home-page>" })
         .when("/register", { template: "<registration-page></registration>" })
         .when("/login", { template: "<login-page></login-page>" })
+        .when("/youtubevideo/play/:youTubeVideoId", { template: "<you-tube-player-page></you-tube-player-page>" })
         .when("/admin/youtubevideo/edit/:youTubeVideoId", { template: "<you-tube-videos-page></you-tube-videos-page>" })
         .when("/admin/youtubevideos", { template: "<you-tube-videos-page></you-tube-videos-page>" });
 }]);
