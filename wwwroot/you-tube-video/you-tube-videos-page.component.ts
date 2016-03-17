@@ -44,10 +44,10 @@ export class YouTubeVideosPageComponent {
         }
     }
 
-    cbEdit = entity => this.youTubeVideoActionCreator.edit(entity);
-    cbRemove = entity => this.youTubeVideoActionCreator.remove(entity);
-    cbCreate = entity => this.youTubeVideoActionCreator.create();
-    cbAddOrUpdate = options => this.youTubeVideoActionCreator.addOrUpdate({ data: options.data });
+    edit = entity => this.youTubeVideoActionCreator.edit(entity);
+    remove = entity => this.youTubeVideoActionCreator.remove(entity);
+    create = entity => this.youTubeVideoActionCreator.create();
+    addOrUpdate = options => this.youTubeVideoActionCreator.addOrUpdate({ data: options.data });
 
     entity;
     entities;
