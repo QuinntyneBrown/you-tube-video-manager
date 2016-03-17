@@ -5,21 +5,21 @@ using System.Web.Http;
 namespace Chloe.Server.Controllers
 {
     [Authorize]
-    [RoutePrefix("api/youTubeVideo")]
-    public class YouTubeVideoController : ApiController
+    [RoutePrefix("api/tag")]
+    public class TagController : ApiController
     {
-        public YouTubeVideoController(IYouTubeVideoService service)
+        public TagController(ITagService service)
         {
             this.service = service;
         }
 
         [Route("add")]
         [HttpPost]
-        public IHttpActionResult Add(YouTubeVideoAddOrUpdateRequestDto dto) { return Ok(this.service.AddOrUpdate(dto)); }
+        public IHttpActionResult Add(TagAddOrUpdateRequestDto dto) { return Ok(this.service.AddOrUpdate(dto)); }
 
         [Route("update")]
         [HttpPut]
-        public IHttpActionResult Update(YouTubeVideoAddOrUpdateRequestDto dto) { return Ok(this.service.AddOrUpdate(dto)); }
+        public IHttpActionResult Update(TagAddOrUpdateRequestDto dto) { return Ok(this.service.AddOrUpdate(dto)); }
 
         [Route("get")]
         [HttpGet]
@@ -33,6 +33,6 @@ namespace Chloe.Server.Controllers
         [HttpDelete]
         public IHttpActionResult Remove(int id) { return Ok(this.service.Remove(id)); }
 
-        protected readonly IYouTubeVideoService service;
+        protected readonly ITagService service;
     }
 }

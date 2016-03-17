@@ -1,0 +1,15 @@
+<div class="tagList">
+    <div class="tagList-header">
+        <h1>Tags</h1>
+    </div>
+    
+    <div data-ng-repeat="entity in vm.entities" class="tagList-item">
+        <div class="tagList-name">
+            {{ entity.name }}
+        </div>
+        <div class="tagList-actions">
+            <span data-ng-click="vm.edit({ entity: this.entity })">edit</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span data-ng-click="vm.remove({ entity: this.entity })">remove</span>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</div>

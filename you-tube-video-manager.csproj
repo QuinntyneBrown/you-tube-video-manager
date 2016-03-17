@@ -255,6 +255,14 @@
     <Content Include="wwwroot\tabs\tab-title.component.html" />
     <Content Include="wwwroot\tabs\tabs.component.css" />
     <Content Include="wwwroot\tabs\tabs.component.html" />
+    <Content Include="wwwroot\tag\tag-editor.component.css" />
+    <Content Include="wwwroot\tag\tag-editor.component.html" />
+    <Content Include="wwwroot\tag\tag-list.component.css" />
+    <Content Include="wwwroot\tag\tag-list.component.html" />
+    <Content Include="wwwroot\tag\tag.component.css" />
+    <Content Include="wwwroot\tag\tag.component.html" />
+    <Content Include="wwwroot\tag\tags-page.component.css" />
+    <Content Include="wwwroot\tag\tags-page.component.html" />
     <Content Include="wwwroot\you-tube-video\you-tube-video-player-page.component.css">
       <DependentUpon>you-tube-video-player-page.component.ts</DependentUpon>
     </Content>
@@ -318,6 +326,7 @@
     <Compile Include="Server\Config\ConfigurationProvider.cs" />
     <Compile Include="Server\Config\Contracts\IAuthConfiguration.cs" />
     <Compile Include="Server\Config\Contracts\IConfigurationProvider.cs" />
+    <Compile Include="Server\Controllers\TagController.cs" />
     <Compile Include="Server\Controllers\UserController.cs" />
     <Compile Include="Server\Controllers\YouTubeVideoController.cs" />
     <Compile Include="Server\Data\ChloeContext.cs" />
@@ -329,6 +338,9 @@
     <Compile Include="Server\Data\EFRepository.cs" />
     <Compile Include="Server\Data\RepositoryProvider.cs" />
     <Compile Include="Server\Data\RespositoryFactories.cs" />
+    <Compile Include="Server\Dtos\TagAddOrUpdateRequestDto.cs" />
+    <Compile Include="Server\Dtos\TagAddOrUpdateResponseDto.cs" />
+    <Compile Include="Server\Dtos\TagDto.cs" />
     <Compile Include="Server\Dtos\YouTubeVideoAddOrUpdateRequestDto.cs" />
     <Compile Include="Server\Dtos\YouTubeVideoAddOrUpdateResponseDto.cs" />
     <Compile Include="Server\Dtos\RegistrationRequestDto.cs" />
@@ -337,14 +349,17 @@
     <Compile Include="Server\Dtos\YouTubeVideoDto.cs" />
     <Compile Include="Server\Models\BaseEntity.cs" />
     <Compile Include="Server\Models\Role.cs" />
+    <Compile Include="Server\Models\Tag.cs" />
     <Compile Include="Server\Models\User.cs" />
-    <Compile Include="Server\Models\YouTube.cs" />
+    <Compile Include="Server\Models\YouTubeVideo.cs" />
+    <Compile Include="Server\Models\YouTubeVideoTag.cs" />
     <Compile Include="Server\Services\Cache.cs" />
     <Compile Include="Server\Services\CacheProvider.cs" />
     <Compile Include="Server\Services\Contracts\ICache.cs" />
     <Compile Include="Server\Services\Contracts\ICacheProvider.cs" />
     <Compile Include="Server\Services\Contracts\IEncryptionService.cs" />
     <Compile Include="Server\Services\Contracts\IIdentityService.cs" />
+    <Compile Include="Server\Services\Contracts\ITagService.cs" />
     <Compile Include="Server\Services\Contracts\IUserService.cs" />
     <Compile Include="Server\Services\Contracts\IYouTubeVideoService.cs" />
     <Compile Include="Server\Services\MemoryCache.cs" />
@@ -353,6 +368,7 @@
     <Compile Include="Server\Services\InMemoryMultipartFormDataStreamProvider.cs" />
     <Compile Include="Server\Services\PhotoMultipartFormDataStreamProvider.cs" />
     <Compile Include="Server\Services\StreamHelper.cs" />
+    <Compile Include="Server\Services\TagService.cs" />
     <Compile Include="Server\Services\UserService.cs" />
     <Compile Include="Server\Services\YouTubeVideoService.cs" />
     <Compile Include="Server\UnityConfiguration.cs" />
@@ -448,6 +464,15 @@
     <TypeScriptCompile Include="wwwroot\tabs\tabs.module.ts" />
     <TypeScriptCompile Include="wwwroot\tabs\tabs.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\tabs\tabs.service.ts" />
+    <TypeScriptCompile Include="wwwroot\tag\tag-editor.component.ts" />
+    <TypeScriptCompile Include="wwwroot\tag\tag-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\tag\tag.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\tag\tag.component.ts" />
+    <TypeScriptCompile Include="wwwroot\tag\tag.model.ts" />
+    <TypeScriptCompile Include="wwwroot\tag\tag.module.ts" />
+    <TypeScriptCompile Include="wwwroot\tag\tag.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\tag\tag.service.ts" />
+    <TypeScriptCompile Include="wwwroot\tag\tags-page.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-player-page.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-editor.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-list.component.ts" />

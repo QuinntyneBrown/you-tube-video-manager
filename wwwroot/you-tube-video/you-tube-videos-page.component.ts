@@ -26,7 +26,7 @@ export class YouTubeVideosPageComponent {
         
         if (state.lastTriggeredByAction instanceof actions.RemoveYouTubeVideoAction && this.entity && this.entity.id) {
             this.entity = pluck({ value: Number(this.$routeParams["youTubeVideoId"]), items: this.entities }) as YouTubeVideo;
-            if (Object.keys(this.entity).length === 0) { this.youTubeVideoActionCreator.currentYouTubeVideoRemoved(); }
+            if (Object.keys(this.entity).length === 0) { this.$location.path("/admin/youtubevideos"); }
         }
 
         if (state.lastTriggeredByAction instanceof actions.AddOrUpdateYouTubeVideoAction && !this.entity.id)
