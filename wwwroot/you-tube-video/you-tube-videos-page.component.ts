@@ -1,21 +1,51 @@
 import { CanActivate, Component } from "../core/component-decorators";
 import * as actions from "./you-tube-video.actions";
+import { pluck } from "../core/pluck";
+import { YouTubeVideo } from "./you-tube-video.model";
 
 @Component({
-    route:"/youTubeVideos",
+    routes: ["/admin/youtubevideos","/admin/youTubeVideo/edit/:youTubeVideoId"],
     templateUrl: "wwwroot/you-tube-video/you-tube-videos-page.component.html",
+    styleUrls: ["wwwroot/you-tube-video/you-tube-videos-page.component.css"],
     selector: "you-tube-videos-page",
-    providers: ["$location","youTubeVideoActionCreator"]
+    providers: ["$location","$routeParams","youTubeVideoActionCreator"]
 })
-@CanActivate([
-    "youTubeVideoActionCreator", "invokeAsync",
-    (youTubeVideoActionCreator: YouTubeVideoActionCreator, invokeAsync) => invokeAsync(youTubeVideoActionCreator.all)
-])
+@CanActivate(["$q", "$route", "invokeAsync", "youTubeVideoActionCreator", ($q: angular.IQService, $route: angular.route.IRouteService, invokeAsync, youTubeVideoActionCreator: actions.YouTubeVideoActionCreator) => {
+    var youTubeVideoId = $route.current.params.youTubeVideoId;
+    var promises = [invokeAsync(youTubeVideoActionCreator.all)];
+    if (youTubeVideoId) { promises.push(invokeAsync({ action: youTubeVideoActionCreator.getById, params: { id: youTubeVideoId } })) };
+    return $q.all(promises);
+}])
 export class YouTubeVideosPageComponent { 
-    constructor(private $location: angular.ILocationService, youTubeVideoActionCreator: actions.YouTubeVideoActionCreator) { }
+    constructor(private $location: angular.ILocationService, private $routeParams: angular.route.IRouteParamsService, private youTubeVideoActionCreator: actions.YouTubeVideoActionCreator) { }
     storeOnChange = state => {        
+
+        this.entities = state.youTubeVideos;
+
         if (state.lastTriggeredByAction instanceof actions.SetCurrentYouTubeVideoAction) {
-            this.$location.path("/youTubeVideo/edit/" + state.lastTriggeredByAction.entity.id);
+            this.$location.path("/admin/youtubevideo/edit/" + state.lastTriggeredByAction.entity.id);
+        }
+        
+        if (state.lastTriggeredByAction instanceof actions.RemoveYouTubeVideoAction && this.entity && this.entity.id) {
+            this.entity = pluck({ value: Number(this.$routeParams["youTubeVideoId"]), items: this.entities }) as YouTubeVideo;
+            if (Object.keys(this.entity).length === 0) { this.youTubeVideoActionCreator.currentYouTubeVideoRemoved(); }
+        }
+
+        if (state.lastTriggeredByAction instanceof actions.AddOrUpdateYouTubeVideoAction && !this.entity.id)
+            this.entity = new YouTubeVideo();       
+
+        if (state.lastTriggeredByAction instanceof actions.AddOrUpdateYouTubeVideoAction && this.entity.id)
+            this.$location.path("/admin/youtubevideos");
+    }
+
+    ngOnInit = () => {
+        if (this.$routeParams["youTubeVideoId"]) {
+            this.entity = pluck({ value: Number(this.$routeParams["youTubeVideoId"]), items: this.entities }) as YouTubeVideo;
+        } else {
+            this.entity = new YouTubeVideo();
         }
     }
+
+    entity;
+    entities;
 }

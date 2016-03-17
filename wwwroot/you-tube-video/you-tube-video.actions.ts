@@ -6,7 +6,9 @@ export class YouTubeVideoActionCreator extends BaseActionCreator {
         super($location,youTubeVideoService,dispatcher,guid,AddOrUpdateYouTubeVideoAction,AllYouTubeVideosAction,RemoveYouTubeVideoAction,SetCurrentYouTubeVideoAction)
     }    
 
-	addOrUpdateSuccess = options => this.dispatcher.dispatch(new AddOrUpdateYouTubeVideoSuccess(options.entity));
+	addOrUpdateSuccess = options => this.dispatcher.dispatch(new AddOrUpdateYouTubeVideoSuccessAction(options.entity));
+
+	currentYouTubeVideoRemoved = () => this.dispatcher.dispatch(new CurrentYouTubeVideoRemovedAction());
 }
 
 
@@ -18,6 +20,8 @@ export class RemoveYouTubeVideoAction { constructor(public id, public entity) { 
 
 export class YouTubeVideosFilterAction { constructor(public id, public term) { } }
 
-export class SetCurrentYouTubeVideoAction { constructor(public id) { } }
+export class SetCurrentYouTubeVideoAction { constructor(public entity) { } }
 
-export class AddOrUpdateYouTubeVideoSuccess { constructor(public entity) { } }
+export class AddOrUpdateYouTubeVideoSuccessAction { constructor(public entity) { } }
+
+export class CurrentYouTubeVideoRemovedAction { constructor() { } }

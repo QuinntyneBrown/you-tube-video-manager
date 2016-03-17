@@ -11,6 +11,8 @@ require("./tabs/tabs.module");
 require("./login/login.module");
 require("./home-page/home-page.module");
 
+require("./you-tube-video/you-tube-video.module");
+
 var app: any = angular.module("app", [
     "app.core",
     "app.routerOutlet",
@@ -22,7 +24,9 @@ var app: any = angular.module("app", [
     "app.tabs",
     "app.login",
     "app.modal",
-    "app.homePage"
+    "app.homePage",
+
+    "app.youTubeVideo"
 ]);
 
 app.config(["initialStateProvider", "localStorageManagerProvider", (initialStateProvider, localStorageManagerProvider) => {
@@ -40,7 +44,9 @@ app.config(["$routeProvider", ($routeProvider: angular.route.IRouteProvider) => 
     $routeProvider
         .when("/", { template: "<home-page></home-page>" })
         .when("/register", { template: "<registration-page></registration>" })
-        .when("/login", { template: "<login-page></login-page>" });
+        .when("/login", { template: "<login-page></login-page>" })
+        .when("/admin/youtubevideo/edit/:youTubeVideoId", { template: "<you-tube-videos-page></you-tube-videos-page>" })
+        .when("/admin/youtubevideos", { template: "<you-tube-videos-page></you-tube-videos-page>" });
 }]);
 
 app.config(["apiEndpointProvider", (apiEndpointProvider) => {

@@ -16,6 +16,7 @@ namespace Chloe.Server.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
+        public DbSet<YouTubeVideo> YouTubeVideos { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

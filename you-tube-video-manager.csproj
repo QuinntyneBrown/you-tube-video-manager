@@ -255,14 +255,30 @@
     <Content Include="wwwroot\tabs\tab-title.component.html" />
     <Content Include="wwwroot\tabs\tabs.component.css" />
     <Content Include="wwwroot\tabs\tabs.component.html" />
-    <Content Include="wwwroot\you-tube-video\you-tube-video-editor.component.css" />
-    <Content Include="wwwroot\you-tube-video\you-tube-video-editor.component.html" />
-    <Content Include="wwwroot\you-tube-video\you-tube-video-list.component.css" />
-    <Content Include="wwwroot\you-tube-video\you-tube-video-list.component.html" />
-    <Content Include="wwwroot\you-tube-video\you-tube-video.component.css" />
-    <Content Include="wwwroot\you-tube-video\you-tube-video.component.html" />
-    <Content Include="wwwroot\you-tube-video\you-tube-videos-page.component.css" />
-    <Content Include="wwwroot\you-tube-video\you-tube-videos-page.component.html" />
+    <Content Include="wwwroot\you-tube-video\you-tube-video-editor.component.css">
+      <DependentUpon>you-tube-video-editor.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\you-tube-video\you-tube-video-editor.component.html">
+      <DependentUpon>you-tube-video-editor.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\you-tube-video\you-tube-video-list.component.css">
+      <DependentUpon>you-tube-video-list.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\you-tube-video\you-tube-video-list.component.html">
+      <DependentUpon>you-tube-video-list.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\you-tube-video\you-tube-video.component.css">
+      <DependentUpon>you-tube-video.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\you-tube-video\you-tube-video.component.html">
+      <DependentUpon>you-tube-video.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\you-tube-video\you-tube-videos-page.component.css">
+      <DependentUpon>you-tube-videos-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\you-tube-video\you-tube-videos-page.component.html">
+      <DependentUpon>you-tube-videos-page.component.ts</DependentUpon>
+    </Content>
     <Content Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
     <Content Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\msvcr90.dll" />
     <Content Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\README_ENU.txt" />
@@ -291,6 +307,7 @@
     <Compile Include="Server\Config\Contracts\IAuthConfiguration.cs" />
     <Compile Include="Server\Config\Contracts\IConfigurationProvider.cs" />
     <Compile Include="Server\Controllers\UserController.cs" />
+    <Compile Include="Server\Controllers\YouTubeVideoController.cs" />
     <Compile Include="Server\Data\ChloeContext.cs" />
     <Compile Include="Server\Data\ChloeUow.cs" />
     <Compile Include="Server\Data\Contracts\IChloeUow.cs" />
@@ -300,9 +317,12 @@
     <Compile Include="Server\Data\EFRepository.cs" />
     <Compile Include="Server\Data\RepositoryProvider.cs" />
     <Compile Include="Server\Data\RespositoryFactories.cs" />
+    <Compile Include="Server\Dtos\YouTubeVideoAddOrUpdateRequestDto.cs" />
+    <Compile Include="Server\Dtos\YouTubeVideoAddOrUpdateResponseDto.cs" />
     <Compile Include="Server\Dtos\RegistrationRequestDto.cs" />
     <Compile Include="Server\Dtos\RegistrationResponseDto.cs" />
     <Compile Include="Server\Dtos\TokenDto.cs" />
+    <Compile Include="Server\Dtos\YouTubeVideoDto.cs" />
     <Compile Include="Server\Models\BaseEntity.cs" />
     <Compile Include="Server\Models\Role.cs" />
     <Compile Include="Server\Models\User.cs" />
@@ -314,6 +334,7 @@
     <Compile Include="Server\Services\Contracts\IEncryptionService.cs" />
     <Compile Include="Server\Services\Contracts\IIdentityService.cs" />
     <Compile Include="Server\Services\Contracts\IUserService.cs" />
+    <Compile Include="Server\Services\Contracts\IYouTubeVideoService.cs" />
     <Compile Include="Server\Services\MemoryCache.cs" />
     <Compile Include="Server\Services\EncryptionService.cs" />
     <Compile Include="Server\Services\IdentityService.cs" />
@@ -321,6 +342,7 @@
     <Compile Include="Server\Services\PhotoMultipartFormDataStreamProvider.cs" />
     <Compile Include="Server\Services\StreamHelper.cs" />
     <Compile Include="Server\Services\UserService.cs" />
+    <Compile Include="Server\Services\YouTubeVideoService.cs" />
     <Compile Include="Server\UnityConfiguration.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -418,6 +440,7 @@
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-list.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video.actions.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video.component.ts" />
+    <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video.model.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video.module.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video.service.ts" />

@@ -6,7 +6,7 @@ import { YouTubeVideoComponent } from "./you-tube-video.component";
 import { YouTubeVideosPageComponent } from "./you-tube-videos-page.component";
 import { YouTubeVideoActionCreator } from "./you-tube-video.actions";
 import { YouTubeVideoService } from "./you-tube-video.service";
-import *  as reducers from "./you-tube-video.reducers";
+import * as reducers from "./you-tube-video.reducers";
 
 var app = (<any>angular.module("app.youTubeVideo", [
     "app.core"    

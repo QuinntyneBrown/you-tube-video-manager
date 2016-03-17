@@ -21,6 +21,7 @@ namespace Chloe.Server
             container.RegisterType<ICacheProvider, CacheProvider>();
             container.RegisterType<IConfigurationProvider,ConfigurationProvider>();
             container.RegisterType<IUserService, UserService>();
+            container.RegisterType<IYouTubeVideoService, YouTubeVideoService>();
             return container;
         }
     }

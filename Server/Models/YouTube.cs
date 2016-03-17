@@ -5,7 +5,13 @@ using System.Web;
 
 namespace Chloe.Server.Models
 {
-    public class YouTube
+    public class YouTubeVideo: BaseEntity
     {
+        public YouTubeVideo()
+        {
+
+        }
+
+        public string YouTubeVideoId { get; set; }
     }
 }

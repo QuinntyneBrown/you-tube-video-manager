@@ -1,8 +1,8 @@
 <div class="youTubeVideoEditor">
 
-    <h1  data-ng-if="!vm.id">Create YouTubeVideo <span data-ng-if="vm.name.length > 0">: {{ vm.name }}</span></h1>
+    <h1  data-ng-if="!vm.entity.id">Create You Tube Video <span data-ng-if="vm.entity.name.length > 0">: {{ vm.entity.name }}</span></h1>
 
-    <h1 data-ng-if="vm.id">Edit YouTubeVideo: {{ vm.name }}</h1>
+    <h1 data-ng-if="vm.entity.id">Edit You Tube Video: {{ vm.entity.name }}</h1>
 
     <tabs tabs-name="you-tube-video-editor">
 
@@ -10,7 +10,7 @@
 
         <tab-content>
             <div>
-                <input class="inputField" type="text" placeholder="YouTubeVideo Name" data-ng-model="vm.entity.name" />
+                <input class="inputField" type="text" placeholder="You Tube Video Name" data-ng-model="vm.entity.name" />
             </div>
         </tab-content>
 
