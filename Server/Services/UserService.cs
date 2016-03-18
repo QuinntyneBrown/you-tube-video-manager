@@ -33,6 +33,11 @@ namespace Chloe.Server.Services
             return new RegistrationResponseDto();
         }
 
+        public UserDto GetUser(string email)
+        {
+            return new UserDto(this.uow.Users.GetAll().Where(x => x.Email == email).FirstOrDefault());
+        }
+
         protected readonly IChloeUow uow;
         protected readonly IEncryptionService encryptionService;
 

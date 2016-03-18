@@ -1,10 +1,15 @@
 import { IDispatcher } from "../core/store";
 import { BaseActionCreator } from "../core/action-creator";
+import { ModalActionCreator } from "../modal/modal.actions";
 
 export class HeaderActionCreator extends BaseActionCreator {
-    constructor($location: angular.ILocationService, dispatcher: IDispatcher, headerService, guid) {
+    constructor($location: angular.ILocationService, dispatcher: IDispatcher, headerService, guid, private modalActionCreator: ModalActionCreator) {
         super($location,headerService,dispatcher,guid,AddOrUpdateHeaderAction,AllHeadersAction,RemoveHeaderAction,SetCurrentHeaderAction)
     }    
+
+    openFeedbackModal = () => this.modalActionCreator.open({ html: "<feedback-form></feedback-form>" });
+
+    closeFeedbackModal = () => this.modalActionCreator.close();
 }
 
 

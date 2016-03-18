@@ -14,15 +14,18 @@ namespace Chloe.Server
         {
             var container = new UnityContainer();
             container.RegisterType<IChloeUow, ChloeUow>();
+            container.RegisterType<ICollectionService, CollectionService>();
             container.RegisterType<IDbContext, ChloeContext>();
             container.RegisterType<IRepositoryProvider, RepositoryProvider>();
             container.RegisterType<IEncryptionService, EncryptionService>();
             container.RegisterType<IIdentityService, IdentityService>();
             container.RegisterType<ICacheProvider, CacheProvider>();
+            container.RegisterType<IFeedbackService, FeedbackService>();
             container.RegisterType<IConfigurationProvider,ConfigurationProvider>();
             container.RegisterType<ITagService, TagService>();
             container.RegisterType<IUserService, UserService>();
             container.RegisterType<IYouTubeVideoService, YouTubeVideoService>();
+            container.RegisterType<IPlaylistService, PlaylistService>();
             return container;
         }
     }

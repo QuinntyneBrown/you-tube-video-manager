@@ -19,6 +19,8 @@ namespace Chloe.Server.Data
         public DbSet<Tag> Tags { get; set; }
         public DbSet<YouTubeVideo> YouTubeVideos { get; set; }
         public DbSet<YouTubeVideoTag> YouTubeVideoTags { get; set; }
+        public DbSet<Playlist> Playlists { get; set; }
+        public DbSet<Feedback> Feedbacks { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

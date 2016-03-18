@@ -10,5 +10,6 @@ namespace Chloe.Server.Services.Contracts
     public interface IUserService
     {
         RegistrationResponseDto Register(RegistrationRequestDto request);
+        UserDto GetUser(string email);
     }
 }

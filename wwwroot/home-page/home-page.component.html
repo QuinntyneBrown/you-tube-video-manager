@@ -1,6 +1,11 @@
 <div class="home-page">
-    <div data-ng-repeat="video in vm.videos">
-        <h1>{{ video.name }}</h1>
-        <a href="#/youtubevideo/play/{{ video.youTubeVideoId }}">Watch</a>
-    </div>
+    <flip-card data-ng-repeat="video in vm.videos">
+        <flip-card-front style="background-color:#DCC6E0">
+            <h1>{{ video.name }}</h1>
+        </flip-card-front>
+
+        <flip-card-back style="background-color:#C5EFF7">
+            <a href="#/youtubevideo/play/{{ video.youTubeVideoId }}">Watch</a>
+        </flip-card-back>
+    </flip-card>
 </div>

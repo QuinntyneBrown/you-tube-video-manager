@@ -4,5 +4,6 @@
     <a data-ng-if="!vm.currentUser" href="#/register">Register</a>
     <a data-ng-if="vm.currentUser" href="#/admin/tags">Tag Management</a>
     <a data-ng-if="vm.currentUser" href="#/admin/youtubevideos">Video Management</a>
+    <a data-ng-if="vm.currentUser" data-ng-click="vm.openFeedbackModal()">Feedback</a>
     <a href="#/login">log out</a>
 </div>

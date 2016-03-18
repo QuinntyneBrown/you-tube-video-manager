@@ -22,9 +22,10 @@ namespace Chloe.Server.Controllers
         
         [HttpGet]
         [Route("current")]
+        [Authorize]
         public IHttpActionResult Current()
         {
-            return Ok(User.Identity.Name);
+            return Ok(this.service.GetUser(User.Identity.Name));
         }
 
         protected readonly IUserService service;

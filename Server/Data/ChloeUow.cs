@@ -26,12 +26,16 @@ namespace Chloe.Server.Data
             repositoryProvider.dbContext = this.dbContext;
             RepositoryProvider = repositoryProvider;
         }
-        
+
         public IRepository<User> Users { get { return GetStandardRepo<User>(); } }
         public IRepository<Role> Roles { get { return GetStandardRepo<Role>(); } }
         public IRepository<Tag> Tags { get { return GetStandardRepo<Tag>(); } }
         public IRepository<YouTubeVideo> YouTubeVideos { get { return GetStandardRepo<YouTubeVideo>(); } }
-        public IRepository<YouTubeVideoTag> YouTubeVideoTags {  get { return GetStandardRepo<YouTubeVideoTag>(); } }
+        public IRepository<YouTubeVideoTag> YouTubeVideoTags { get { return GetStandardRepo<YouTubeVideoTag>(); } }
+        public IRepository<Playlist> Playlists { get { return GetStandardRepo<Playlist>(); } }
+        public IRepository<Collection> Collections { get { return GetStandardRepo<Collection>(); } }
+        public IRepository<Feedback> Feedbacks { get { return GetStandardRepo<Feedback>(); } }
+
         protected void ConfigureDbContext(IDbContext dbContext)
         {
             dbContext.Configuration.ProxyCreationEnabled = false;

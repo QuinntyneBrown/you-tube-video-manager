@@ -14,6 +14,10 @@ require("./home-page/home-page.module");
 
 require("./you-tube-video/you-tube-video.module");
 require("./tag/tag.module");
+require("./flip-card/flip-card.module");
+require("./playlist/playlist.module");
+require("./collection/collection.module");
+require("./feedback/feedback.module");
 
 var app: any = angular.module("app", [
     "app.core",
@@ -29,7 +33,12 @@ var app: any = angular.module("app", [
     "app.homePage",
     "app.registration",
     "app.tag",
-    "app.youTubeVideo"
+    "app.flipCard",
+    "app.collection",
+    "app.playlist",
+    "app.youTubeVideo",
+
+    "app.feedback"
 ]);
 
 app.config(["initialStateProvider", "localStorageManagerProvider", (initialStateProvider, localStorageManagerProvider) => {
@@ -49,7 +58,16 @@ app.config(["$routeProvider", ($routeProvider: angular.route.IRouteProvider) => 
         .when("/register", { template: "<registration-page></registration>" })
         .when("/login", { template: "<login-page></login-page>" })
         .when("/register", { template: "<registration-page></registration-page>" })
-        .when("/youtubevideo/play/:youTubeVideoId", { template: "<you-tube-video-player-page></you-tube-video-player-page>" })        
+        .when("/feedback", { template: "<feedback-page></feedback-page>" })
+        .when("/youtubevideo/play/:youTubeVideoId", { template: "<you-tube-video-player-page></you-tube-video-player-page>" });       
+
+    $routeProvider
+        .when("/admin/collection/edit/:collectionId", { template: "<collections-page></collections-page>" })
+        .when("/admin/collections", { template: "<collections-page></collections-page>" })
+        .when("/admin/feedback/edit/:feedbackId", { template: "<feedbacks-page></feedbacks-page>" })
+        .when("/admin/feedbacks", { template: "<feedbacks-page></feedbacks-page>" })   
+        .when("/admin/playlist/edit/:playlistId", { template: "<playlists-page></playlists-page>" })
+        .when("/admin/playlists", { template: "<playlists-page></playlists-page>" })        
         .when("/admin/tag/edit/:tagId", { template: "<tags-page></tags-page>" })
         .when("/admin/tags", { template: "<tags-page></tags-page>" })
         .when("/admin/youtubevideo/edit/:youTubeVideoId", { template: "<you-tube-videos-page></you-tube-videos-page>" })

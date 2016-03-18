@@ -22,6 +22,7 @@ namespace Chloe.Server.Controllers
         public IHttpActionResult Update(YouTubeVideoAddOrUpdateRequestDto dto) { return Ok(this.service.AddOrUpdate(dto)); }
 
         [Route("get")]
+        [AllowAnonymous]
         [HttpGet]
         public IHttpActionResult Get() { return Ok(this.service.Get()); }
 

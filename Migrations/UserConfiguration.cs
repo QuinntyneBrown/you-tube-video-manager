@@ -14,6 +14,7 @@ namespace Chloe.Migrations
                 var user = new User()
                 {
                     Username = "quinntyne@hotmail.com",
+                    Email = "quinntyne@hotmail.com",
                     Firstname = "Quinntyne",
                     Lastname = "Brown",
                     Password = "XohImNooBHFR0OVvjcYpJ3NgPQ1qq73WKhHvch0VQtg=",

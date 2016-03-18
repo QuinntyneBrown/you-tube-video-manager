@@ -46,6 +46,7 @@ angular.module = function () {
             bindToController: options.bindToController || {},
             transclude: options.transclude,
             controllerAs: "vm",
+            require: options.require,
             controller: componentNameCamelCase + "Component"
         }
 
@@ -110,7 +111,12 @@ angular.module = function () {
                         scope.$on("$destroy", () => subscription.dispose());
                     }
                 },
-                post: function (scope: any) {
+                post: function (scope: any, element, attributes, controller) {
+
+                    if (options.require) {
+                        var componentName = options.require.replace("^", "");
+                        scope.vm[componentName] = controller;
+                    }
 
                     if (options.transclude && scope.vm.$transclude)
                         scope.vm.$transclude(scope, (clone: ng.IAugmentedJQuery) => {
