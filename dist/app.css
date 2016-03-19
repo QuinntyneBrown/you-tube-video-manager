@@ -29,6 +29,7 @@ body {
 
 
 
+
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
@@ -73,7 +74,6 @@ body {
     float:left; 
     margin-right:30px;
 }
-
 .header {
     height:50px;
     margin-top:15px;
