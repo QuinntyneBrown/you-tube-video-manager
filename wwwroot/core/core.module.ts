@@ -1,5 +1,6 @@
 ﻿/// <reference path="../../typings/tsd.d.ts" />
 
+require("./core.css");
 require("../../lib/rx.all.compat.min")
 
 require("./local-storage-manager-provider");

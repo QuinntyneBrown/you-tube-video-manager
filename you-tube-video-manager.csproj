@@ -218,6 +218,7 @@
     <Content Include="wwwroot\collection\collection.component.html" />
     <Content Include="wwwroot\collection\collections-page.component.css" />
     <Content Include="wwwroot\collection\collections-page.component.html" />
+    <Content Include="wwwroot\core\core.css" />
     <Content Include="wwwroot\feedback\feedback-editor.component.css" />
     <Content Include="wwwroot\feedback\feedback-editor.component.html" />
     <Content Include="wwwroot\feedback\feedback-form.component.html" />

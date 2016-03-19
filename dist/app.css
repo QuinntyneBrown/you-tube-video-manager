@@ -11,10 +11,6 @@ body {
     padding-left:30px;
 }
 
-
-
-
-
 .button {
     margin-top:15px;
     margin-bottom:30px;
@@ -28,7 +24,14 @@ body {
 
 
 
-
+.input-field {
+    padding-right:15px;
+    padding-left:15px;
+    line-height:2em;
+    height:30px;
+    min-width:200px;
+    margin-bottom:15px;
+}
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
@@ -73,6 +76,11 @@ body {
     float:left; 
     margin-right:30px;
 }
+
+
+
+
+
 
 .header {
     height:50px;
