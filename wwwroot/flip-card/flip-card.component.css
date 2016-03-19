@@ -8,11 +8,6 @@
 	transform: rotateY(180deg);
 }
 
-.flip-container, .flip-container .front, .flip-container .back {
-	width: 320px;
-	height: 480px;
-}
-
 /* flip speed goes here */
 .flip-container .flipper {
 	transition: 0.6s;

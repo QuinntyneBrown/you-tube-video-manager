@@ -17,5 +17,7 @@ export class HomePageComponent {
   
     storeOnChange = state => this.videos = state.youTubeVideos;
 
+    //colors = [{ front: '#DCC6E0', back: '#C5EFF7' }];
+    colors = 1;
     videos;
 }
