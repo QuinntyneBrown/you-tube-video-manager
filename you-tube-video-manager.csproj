@@ -223,6 +223,8 @@
     <Content Include="wwwroot\feedback\feedback-form.component.html" />
     <Content Include="wwwroot\feedback\feedback-list.component.css" />
     <Content Include="wwwroot\feedback\feedback-list.component.html" />
+    <Content Include="wwwroot\feedback\feedback-modal.component.css" />
+    <Content Include="wwwroot\feedback\feedback-modal.component.html" />
     <Content Include="wwwroot\feedback\feedback.component.css" />
     <Content Include="wwwroot\feedback\feedback.component.html" />
     <Content Include="wwwroot\feedback\feedbacks-page.component.css" />
@@ -438,6 +440,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="wwwroot\search\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="node_modules\rx\ts\rx.all.d.ts" />
@@ -497,6 +500,7 @@
     <TypeScriptCompile Include="wwwroot\feedback\feedback-editor.component.ts" />
     <TypeScriptCompile Include="wwwroot\feedback\feedback-form.component.ts" />
     <TypeScriptCompile Include="wwwroot\feedback\feedback-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\feedback\feedback-modal.component.ts" />
     <TypeScriptCompile Include="wwwroot\feedback\feedback.actions.ts" />
     <TypeScriptCompile Include="wwwroot\feedback\feedback.component.ts" />
     <TypeScriptCompile Include="wwwroot\feedback\feedback.model.ts" />

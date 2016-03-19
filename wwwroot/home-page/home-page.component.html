@@ -1,9 +1,8 @@
 <div class="home-page">    
-    <flip-card data-ng-repeat="video in vm.videos" height="240px" width="160px">
+    <flip-card data-ng-repeat="video in vm.videos" height="480px" width="320px">
         <flip-card-front>
             <h1>{{ video.name }}</h1>
         </flip-card-front>
-
         <flip-card-back>
             <a href="#/youtubevideo/play/{{ video.youTubeVideoId }}">Watch</a>
         </flip-card-back>

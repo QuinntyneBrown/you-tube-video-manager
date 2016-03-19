@@ -14,25 +14,20 @@ export class Modal {
         store.subscribe(this.storeOnChange);
     }
 
-    storeOnChange = state => [ this.html, this.isOpen ] = [ state.modelHtml, state.isModalOpen ];
+    storeOnChange = state => {
+        this.html = state.modalHtml;
+        this.isOpen = state.isModalOpen;
+    };
     
-    _html: string;
-
-    get html() { return this._html; }
-
-    set html(value: string) { this._html = value; }
+    html: string;
 
     _isOpen:boolean = false;
-
     get isOpen() { return this._isOpen; }
-
     set isOpen(value: boolean) {
         if (value && !this._isOpen)
             this.openAsync();
-
         if (!value && this._isOpen)
             this.closeAsync();
-
         this._isOpen = value;
     }
 

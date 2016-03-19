@@ -5,6 +5,7 @@ import { FeedbackEditorComponent } from "./feedback-editor.component";
 import { FeedbackListComponent } from "./feedback-list.component";
 import { FeedbackComponent } from "./feedback.component";
 import { FeedbacksPageComponent } from "./feedbacks-page.component";
+import { FeedbackModalComponent } from "./feedback-modal.component";
 import { FeedbackActionCreator } from "./feedback.actions";
 import { FeedbackService } from "./feedback.service";
 import *  as reducers from "./feedback.reducers";
@@ -20,6 +21,7 @@ app.component(FeedbackEditorComponent);
 app.component(FeedbackListComponent);
 app.component(FeedbackComponent);
 app.component(FeedbacksPageComponent);
+app.component(FeedbackModalComponent);
 
 app.config(["reducersProvider", reducersProvider => {	
     for (var reducer in reducers) { reducersProvider.configure(reducers[reducer]); }

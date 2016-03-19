@@ -5,7 +5,7 @@ import { addOrUpdate, pluckOut } from "../core";
 export const openModalReducer = (state, action) => {
     if (action instanceof actions.OpenModalAction) {
         state.modalHtml = action.html;
-        state.modalOpen = true;
+        state.isModalOpen = true;
     }
     return state;
 }
@@ -13,7 +13,7 @@ export const openModalReducer = (state, action) => {
 export const closeModalReducer = (state, action) => {
     if (action instanceof actions.CloseModalAction) {
         state.modalHtml = '';
-        state.modalOpen = false;
+        state.isModalOpen = false;
     }
     return state;
 }
