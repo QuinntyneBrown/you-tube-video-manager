@@ -7,11 +7,11 @@ import { FlipCardComponent } from "./flip-card.component";
     selector: "flip-card-back",
     transclude: true,
     require: '^flipCard',
-    providers: ["$element","flipCardActionCreator"]
+    providers: ["$element"]
 })
 export class FlipCardBackComponent {
-    constructor(private $element: angular.IAugmentedJQuery, private flipCardActionCreator: FlipCardActionCreator) { }
+    constructor(private $element: angular.IAugmentedJQuery) { }
     storeOnChange = state => { }
-    ngOnInit = () => { this.flipCard.ngOnChildInit({ nativeElement: this.$element[0] }); }
+    ngOnInit = () => { this.flipCard.ngOnChildInit({ component: this }); }
     flipCard: FlipCardComponent;
 }

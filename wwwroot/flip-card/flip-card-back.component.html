@@ -1,3 +1,5 @@
 ﻿<div class="back">
     <ng-transclude></ng-transclude>
+    <h1 data-ng-if="!vm.added" data-ng-click="vm.toggleAdded()">+</h1>
+    <h1 data-ng-if="vm.added" data-ng-click="vm.toggleAdded()">-</h1>
 </div>

@@ -37,12 +37,13 @@ angular.module = function () {
             ]);
         }
 
+        
         var directiveDefinitionObject: any = {
             restrict: options.restrict || "E",
             template: angular.isArray(options.template) ? options.template.join(" \n ") : options.template,
             templateUrl: options.templateUrl,
             replace: options.replace || true,
-            scope: options.scope || {},
+            scope: angular.isUndefined(options.scope) ? {} : options.scope,
             bindToController: options.bindToController || {},
             transclude: options.transclude,
             controllerAs: "vm",

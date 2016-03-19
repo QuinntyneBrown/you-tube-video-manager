@@ -12,7 +12,7 @@ import { FlipCardActionCreator } from "./flip-card.actions";
     },
     selector: "flip-card",
     providers: ["$attrs", "$element"],
-    inputs: ['height?','width?']
+    inputs: ['height?','width?','toggleAdded?','added?']
 })
 export class FlipCardComponent {
     constructor(private $attrs: angular.IAttributes, private $element: angular.IAugmentedJQuery) { }
@@ -26,9 +26,13 @@ export class FlipCardComponent {
     }
 
     ngOnChildInit = (options) => {
-        this.viewChildren.push(options.nativeElement);
-        options.nativeElement.style.height = this.height;
-        options.nativeElement.style.width = this.width;
+        var nativeElement = options.component.$element[0];
+        nativeElement.style.height = this.height;
+        nativeElement.style.width = this.width;
+        this.viewChildren.push(nativeElement);
+        options.component.added = this.added;
+        options.component.toggleAdded = this.toggleAdded;
+        this.components.push(options.component);
 
         if (this.viewChildren.length == 2) {
             this.viewChildren[0].style.backgroundColor = "#DCC6E0";
@@ -40,5 +44,11 @@ export class FlipCardComponent {
     get width() { return (this.$attrs as any).width || "320px"; }
     set height(value) { }
     set width(value) { }
+    toggleAdded = (options) => {           
+        this.added = !this.added;
+        this.components[1].added = this.added;
+    }
+    added: boolean = false;
     viewChildren: Array<HTMLElement> = [];
+    components = [];
 }
