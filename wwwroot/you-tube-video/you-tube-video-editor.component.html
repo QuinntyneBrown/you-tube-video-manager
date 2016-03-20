@@ -20,7 +20,8 @@
         <tab-title>Tags [{{ vm.entity.tags.length }}]</tab-title>
 
         <tab-content>
-            <tag-editor add-or-update="vm.addOrUpdateTag" entity="vm.tagEntity"></tag-editor>    
+            <a data-ng-click="vm.createTag()">Create Tag</a>
+            <tag-list entities="vm.entity.tags"></tag-list>    
         </tab-content>
 
     </tabs>

@@ -4,7 +4,8 @@ import { addOrUpdate, pluckOut } from "../core";
 
 export const openModalReducer = (state, action) => {
     if (action instanceof actions.OpenModalAction) {
-        state.modalHtml = action.html;
+        state.modalHtml = action.options.html;
+        state.modalEntity = action.options.entity;
         state.isModalOpen = true;
     }
     return state;
@@ -12,7 +13,8 @@ export const openModalReducer = (state, action) => {
 
 export const closeModalReducer = (state, action) => {
     if (action instanceof actions.CloseModalAction) {
-        state.modalHtml = '';
+        delete state.modalHtml;
+        delete state.modalEntity;
         state.isModalOpen = false;
     }
     return state;

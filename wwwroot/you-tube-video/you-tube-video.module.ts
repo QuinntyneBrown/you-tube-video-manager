@@ -6,6 +6,7 @@ import { YouTubeVideoComponent } from "./you-tube-video.component";
 import { YouTubeVideosPageComponent } from "./you-tube-videos-page.component";
 import { YouTubeVideoPlayerComponent  } from "./you-tube-video-player";
 import { YouTubeVideoPlayerPageComponent } from "./you-tube-video-player-page.component";
+import { YouTubeVideoTagModalComponent } from "./you-tube-video-tag-modal.component";
 
 import { YouTubeVideoActionCreator } from "./you-tube-video.actions";
 import { YouTubeVideoService } from "./you-tube-video.service";
@@ -23,6 +24,7 @@ app.component(YouTubeVideoComponent);
 app.component(YouTubeVideosPageComponent);
 app.component(YouTubeVideoPlayerComponent);
 app.component(YouTubeVideoPlayerPageComponent);
+app.component(YouTubeVideoTagModalComponent);
 
 app.config(["reducersProvider", reducersProvider => {	
     for (var reducer in reducers) { reducersProvider.configure(reducers[reducer]); }

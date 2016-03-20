@@ -18,6 +18,7 @@ export const currentUserReducer = (state, action) => {
 export const loggedOutReducer = (state, action) => {
     if (action instanceof actions.UserLoggedOutAction) {
         state.currentUser = null;
+        state.access_token = null;
     }
     return state;
 }

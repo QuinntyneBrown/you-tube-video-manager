@@ -1,11 +1,23 @@
 .header {
-    height:50px;
-    margin-top:15px;
-    margin-left:30px;
+    height:73px;    
 }
 
 .header a:link, 
 .header a {
     text-decoration:none;
     color:#333;
+    padding-right:15px;
+    text-transform:uppercase;
+    line-height:73px;
 }
+
+.header .logo, .header .links  {
+    position:relative;
+    float:left;
+    height:73px;
+}
+
+.header .links {
+    margin-left:30px;
+}
+ 

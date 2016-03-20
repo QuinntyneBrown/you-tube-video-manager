@@ -1,9 +1,11 @@
-<div class="header">
-    <a href="#/">Home</a>
-    <a data-ng-if="!vm.currentUser" href="#/login">Login</a>
-    <a data-ng-if="!vm.currentUser" href="#/register">Register</a>
-    <a data-ng-if="vm.currentUser" href="#/admin/tags">Tag Management</a>
-    <a data-ng-if="vm.currentUser" href="#/admin/youtubevideos">Video Management</a>
-    <a data-ng-if="vm.currentUser" data-ng-click="vm.openFeedbackModal()">Feedback</a>
-    <a href="#/login">log out</a>
+<div class="header">    
+    <logo href="#/" src="images/logo.jpg"></logo>
+    <div class="links">
+        <a data-ng-if="!vm.currentUser" href="#/login">Login</a>
+        <a data-ng-if="!vm.currentUser" href="#/register">Register</a>
+        <a data-ng-if="vm.currentUser" href="#/admin/youtubevideos">Videos</a>
+        <a data-ng-if="vm.currentUser" data-ng-click="vm.openFeedbackModal()">Feedback</a>
+        <a data-ng-if="vm.currentUser" href="#/login">log out</a>
+    </div>
+    <div style="clear:both"></div>
 </div>

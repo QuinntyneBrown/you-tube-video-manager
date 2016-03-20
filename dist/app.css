@@ -11,15 +11,11 @@ body {
     padding-left:30px;
 }
 
-.button {
-    margin-top:15px;
-    margin-bottom:30px;
-    line-height:30px;
-    width:75px;
-    background-color:#FFF;
-    border: solid 1px;
-    cursor:pointer;
-}
+
+
+
+
+
 
 
 
@@ -31,6 +27,16 @@ body {
     height:30px;
     min-width:200px;
     margin-bottom:15px;
+}
+
+.button {
+    margin-top:15px;
+    margin-bottom:30px;
+    line-height:30px;
+    width:75px;
+    background-color:#FFF;
+    border: solid 1px;
+    cursor:pointer;
 }
 /* entire container, keeps perspective */
 .flip-container {
@@ -76,22 +82,31 @@ body {
     float:left; 
     margin-right:30px;
 }
-
-
-
-
-
-
 .header {
-    height:50px;
-    margin-top:15px;
-    margin-left:30px;
+    height:73px;    
 }
 
 .header a:link, 
 .header a {
     text-decoration:none;
     color:#333;
+    padding-right:15px;
+    text-transform:uppercase;
+    line-height:73px;
+}
+
+.header .logo, .header .links  {
+    position:relative;
+    float:left;
+    height:73px;
+}
+
+.header .links {
+    margin-left:30px;
+}
+ 
+
+body {
 }
 
 
@@ -125,6 +140,14 @@ body {
 
 
 
+.youTubeVideoList-item div {
+    position:relative;
+    float:left;
+}
+
+.youTubeVideoList-name, .youTubeVideoList-videoId, .youTubeVideoList-actions {
+    width:200px;
+}
 
 
 

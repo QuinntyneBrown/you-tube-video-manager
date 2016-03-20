@@ -1,0 +1,8 @@
+.youTubeVideoList-item div {
+    position:relative;
+    float:left;
+}
+
+.youTubeVideoList-name, .youTubeVideoList-videoId, .youTubeVideoList-actions {
+    width:200px;
+}

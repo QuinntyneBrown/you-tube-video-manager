@@ -189,6 +189,7 @@
     <Content Include="dist\app.js" />
     <Content Include="dist\app.templates.js" />
     <Content Include="gulpfile.js" />
+    <Content Include="images\logo.jpg" />
     <Content Include="index.html" />
     <Content Include="lib\angular-route.js" />
     <Content Include="lib\angular.js" />
@@ -243,6 +244,8 @@
     <Content Include="wwwroot\login\login-page.component.html" />
     <Content Include="wwwroot\login\login.component.css" />
     <Content Include="wwwroot\login\login.component.html" />
+    <Content Include="wwwroot\logo\logo.component.css" />
+    <Content Include="wwwroot\logo\logo.component.html" />
     <Content Include="wwwroot\playlist\playlist-editor.component.css" />
     <Content Include="wwwroot\playlist\playlist-editor.component.html" />
     <Content Include="wwwroot\playlist\playlist-list.component.css" />
@@ -318,6 +321,12 @@
     </Content>
     <Content Include="wwwroot\you-tube-video\you-tube-video-player.html">
       <DependentUpon>you-tube-video-player.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\you-tube-video\you-tube-video-tag-modal.component.css">
+      <DependentUpon>you-tube-video-tag-modal.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\you-tube-video\you-tube-video-tag-modal.component.html">
+      <DependentUpon>you-tube-video-tag-modal.component.ts</DependentUpon>
     </Content>
     <Content Include="wwwroot\you-tube-video\you-tube-video.component.css">
       <DependentUpon>you-tube-video.component.ts</DependentUpon>
@@ -536,6 +545,8 @@
     <TypeScriptCompile Include="wwwroot\login\login.module.ts" />
     <TypeScriptCompile Include="wwwroot\login\login.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\login\login.service.ts" />
+    <TypeScriptCompile Include="wwwroot\logo\logo.component.ts" />
+    <TypeScriptCompile Include="wwwroot\logo\logo.module.ts" />
     <TypeScriptCompile Include="wwwroot\main.ts" />
     <TypeScriptCompile Include="wwwroot\modal\modal.actions.ts" />
     <TypeScriptCompile Include="wwwroot\modal\modal.module.ts" />
@@ -578,6 +589,7 @@
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-editor.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-list.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-player.ts" />
+    <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-tag-modal.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video.actions.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video.model.ts" />

@@ -10,7 +10,7 @@ export class ModalActionCreator  {
     close = () => this.dispatcher.dispatch(new CloseModalAction());
 }
 
-export class OpenModalAction { constructor(public html) { } }
+export class OpenModalAction { constructor(public options) { } }
 
 export class CloseModalAction { constructor() { } }
 

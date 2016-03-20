@@ -1,4 +1,6 @@
 import { CanActivate, Component } from "../core/component-decorators";
+import * as actions from "../modal/modal.actions";
+import * as store from "../core/store";
 
 @Component({
     templateUrl: "wwwroot/you-tube-video/you-tube-video-editor.component.html",
@@ -7,12 +9,21 @@ import { CanActivate, Component } from "../core/component-decorators";
     inputs: ['entity', 'addOrUpdate','remove','create']
 })
 export class YouTubeVideoEditorComponent {
+
+    constructor(private dispatcher: store.IDispatcher) {
+
+    }
+        
     tagEntity = {};
 
     addOrUpdateTag = options => {
         this.entity.tags.push(options.data);
         console.log(JSON.stringify(this.entity.tags));
         this.tagEntity = {};
+    }
+
+    createTag = () => {
+        this.dispatcher.dispatch(new actions.OpenModalAction("<you-tube-video-tag-modal></you-tube-video-tag-modal>"));
     }
     entity;
 }
