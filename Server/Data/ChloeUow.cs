@@ -35,6 +35,9 @@ namespace Chloe.Server.Data
         public IRepository<Playlist> Playlists { get { return GetStandardRepo<Playlist>(); } }
         public IRepository<Collection> Collections { get { return GetStandardRepo<Collection>(); } }
         public IRepository<Feedback> Feedbacks { get { return GetStandardRepo<Feedback>(); } }
+        public IRepository<Speaker> Speakers { get { return GetStandardRepo<Speaker>(); } }
+        public IRepository<Talk> Talks { get { return GetStandardRepo<Talk>(); } }
+        public IRepository<Technology> Technologies { get { return GetStandardRepo<Technology>(); } }
 
         protected void ConfigureDbContext(IDbContext dbContext)
         {

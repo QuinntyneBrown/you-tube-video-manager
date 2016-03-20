@@ -26,6 +26,9 @@ namespace Chloe.Server
             container.RegisterType<IUserService, UserService>();
             container.RegisterType<IYouTubeVideoService, YouTubeVideoService>();
             container.RegisterType<IPlaylistService, PlaylistService>();
+            container.RegisterType<ISpeakerService, SpeakerService>();
+            container.RegisterType<ITalkService, TalkService>();
+            container.RegisterType<ITechnologyService, TechnologyService>();
             return container;
         }
     }

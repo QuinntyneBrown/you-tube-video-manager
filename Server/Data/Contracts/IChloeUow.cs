@@ -11,6 +11,9 @@ namespace Chloe.Server.Data.Contracts
         IRepository<Playlist> Playlists { get; }
         IRepository<Collection> Collections { get; }
         IRepository<Feedback> Feedbacks { get; }
+        IRepository<Speaker> Speakers { get; }
+        IRepository<Talk> Talks { get; }
+        IRepository<Technology> Technologies { get; }
         void SaveChanges();
     }
 }

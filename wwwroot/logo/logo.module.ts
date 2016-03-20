@@ -8,4 +8,3 @@ var app = (<any>angular.module("app.logo", [
 
 app.component(LogoComponent);
 
-app.run(["modal", "modalActionCreator", (modal, modalActionCreator) => { }]);

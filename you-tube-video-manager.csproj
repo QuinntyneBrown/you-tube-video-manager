@@ -285,6 +285,16 @@
     <None Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
     <Content Include="wwwroot\router-outlet\router-outlet.component.js" />
     <Content Include="wwwroot\router-outlet\router-outlet.module.js" />
+    <Content Include="wwwroot\search\search.component.css" />
+    <Content Include="wwwroot\search\search.component.html" />
+    <Content Include="wwwroot\speaker\speaker-editor.component.css" />
+    <Content Include="wwwroot\speaker\speaker-editor.component.html" />
+    <Content Include="wwwroot\speaker\speaker-list.component.css" />
+    <Content Include="wwwroot\speaker\speaker-list.component.html" />
+    <Content Include="wwwroot\speaker\speaker.component.css" />
+    <Content Include="wwwroot\speaker\speaker.component.html" />
+    <Content Include="wwwroot\speaker\speakers-page.component.css" />
+    <Content Include="wwwroot\speaker\speakers-page.component.html" />
     <Content Include="wwwroot\tabs\tab-content.component.html" />
     <Content Include="wwwroot\tabs\tab-title.component.css" />
     <Content Include="wwwroot\tabs\tab-title.component.html" />
@@ -298,6 +308,22 @@
     <Content Include="wwwroot\tag\tag.component.html" />
     <Content Include="wwwroot\tag\tags-page.component.css" />
     <Content Include="wwwroot\tag\tags-page.component.html" />
+    <Content Include="wwwroot\talk\talk-editor.component.css" />
+    <Content Include="wwwroot\talk\talk-editor.component.html" />
+    <Content Include="wwwroot\talk\talk-list.component.css" />
+    <Content Include="wwwroot\talk\talk-list.component.html" />
+    <Content Include="wwwroot\talk\talk.component.css" />
+    <Content Include="wwwroot\talk\talk.component.html" />
+    <Content Include="wwwroot\talk\talks-page.component.css" />
+    <Content Include="wwwroot\talk\talks-page.component.html" />
+    <Content Include="wwwroot\technology\technology-editor.component.css" />
+    <Content Include="wwwroot\technology\technology-editor.component.html" />
+    <Content Include="wwwroot\technology\technology-list.component.css" />
+    <Content Include="wwwroot\technology\technology-list.component.html" />
+    <Content Include="wwwroot\technology\technology.component.css" />
+    <Content Include="wwwroot\technology\technology.component.html" />
+    <Content Include="wwwroot\technology\technologys-page.component.css" />
+    <Content Include="wwwroot\technology\technologys-page.component.html" />
     <Content Include="wwwroot\you-tube-video\you-tube-video-player-page.component.css">
       <DependentUpon>you-tube-video-player-page.component.ts</DependentUpon>
     </Content>
@@ -370,7 +396,10 @@
     <Compile Include="Server\Controllers\CollectionController.cs" />
     <Compile Include="Server\Controllers\FeedbackController.cs" />
     <Compile Include="Server\Controllers\PlaylistController.cs" />
+    <Compile Include="Server\Controllers\SpeakerController.cs" />
     <Compile Include="Server\Controllers\TagController.cs" />
+    <Compile Include="Server\Controllers\TalkController.cs" />
+    <Compile Include="Server\Controllers\TechnologyController.cs" />
     <Compile Include="Server\Controllers\UserController.cs" />
     <Compile Include="Server\Controllers\YouTubeVideoController.cs" />
     <Compile Include="Server\Data\ChloeContext.cs" />
@@ -399,9 +428,18 @@
     <Compile Include="Server\Dtos\PlaylistYouTubeVideoAddRequestDto.cs" />
     <Compile Include="Server\Dtos\PlaylistDto.cs" />
     <Compile Include="Server\Dtos\PlaylistYouTubeVideoAddResponseDto.cs" />
+    <Compile Include="Server\Dtos\SpeakerAddOrUpdateRequestDto.cs" />
+    <Compile Include="Server\Dtos\SpeakerAddOrUpdateResponseDto.cs" />
+    <Compile Include="Server\Dtos\SpeakerDto.cs" />
     <Compile Include="Server\Dtos\TagAddOrUpdateRequestDto.cs" />
     <Compile Include="Server\Dtos\TagAddOrUpdateResponseDto.cs" />
     <Compile Include="Server\Dtos\TagDto.cs" />
+    <Compile Include="Server\Dtos\TalkAddOrUpdateRequestDto.cs" />
+    <Compile Include="Server\Dtos\TalkAddOrUpdateResponseDto.cs" />
+    <Compile Include="Server\Dtos\TalkDto.cs" />
+    <Compile Include="Server\Dtos\TechnologyAddOrUpdateRequestDto.cs" />
+    <Compile Include="Server\Dtos\TechnologyAddOrUpdateResponseDto.cs" />
+    <Compile Include="Server\Dtos\TechnologyDto.cs" />
     <Compile Include="Server\Dtos\UserDto.cs" />
     <Compile Include="Server\Dtos\YouTubeVideoAddOrUpdateRequestDto.cs" />
     <Compile Include="Server\Dtos\YouTubeVideoAddOrUpdateResponseDto.cs" />
@@ -417,7 +455,10 @@
     <Compile Include="Server\Models\PlaylistItem.cs" />
     <Compile Include="Server\Models\PlaylistYouTubeVideo.cs" />
     <Compile Include="Server\Models\Role.cs" />
+    <Compile Include="Server\Models\Speaker.cs" />
     <Compile Include="Server\Models\Tag.cs" />
+    <Compile Include="Server\Models\Talk.cs" />
+    <Compile Include="Server\Models\Technology.cs" />
     <Compile Include="Server\Models\User.cs" />
     <Compile Include="Server\Models\YouTubeVideo.cs" />
     <Compile Include="Server\Models\YouTubeVideoTag.cs" />
@@ -431,7 +472,10 @@
     <Compile Include="Server\Services\Contracts\IFeedbackService.cs" />
     <Compile Include="Server\Services\Contracts\IIdentityService.cs" />
     <Compile Include="Server\Services\Contracts\IPlaylistService.cs" />
+    <Compile Include="Server\Services\Contracts\ISpeakerService.cs" />
     <Compile Include="Server\Services\Contracts\ITagService.cs" />
+    <Compile Include="Server\Services\Contracts\ITalkService.cs" />
+    <Compile Include="Server\Services\Contracts\ITechnologyService.cs" />
     <Compile Include="Server\Services\Contracts\IUserService.cs" />
     <Compile Include="Server\Services\Contracts\IYouTubeVideoService.cs" />
     <Compile Include="Server\Services\FeedbackService.cs" />
@@ -441,8 +485,11 @@
     <Compile Include="Server\Services\InMemoryMultipartFormDataStreamProvider.cs" />
     <Compile Include="Server\Services\PhotoMultipartFormDataStreamProvider.cs" />
     <Compile Include="Server\Services\PlaylistService.cs" />
+    <Compile Include="Server\Services\SpeakerService.cs" />
     <Compile Include="Server\Services\StreamHelper.cs" />
     <Compile Include="Server\Services\TagService.cs" />
+    <Compile Include="Server\Services\TalkService.cs" />
+    <Compile Include="Server\Services\TechnologyService.cs" />
     <Compile Include="Server\Services\UserService.cs" />
     <Compile Include="Server\Services\YouTubeVideoService.cs" />
     <Compile Include="Server\UnityConfiguration.cs" />
@@ -450,7 +497,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="wwwroot\search\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="node_modules\rx\ts\rx.all.d.ts" />
@@ -569,6 +615,21 @@
     <TypeScriptCompile Include="wwwroot\registration\registration.service.ts" />
     <TypeScriptCompile Include="wwwroot\router-outlet\router-outlet.component.ts" />
     <TypeScriptCompile Include="wwwroot\router-outlet\router-outlet.module.ts" />
+    <TypeScriptCompile Include="wwwroot\search\search.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\search\search.component.ts" />
+    <TypeScriptCompile Include="wwwroot\search\search.model.ts" />
+    <TypeScriptCompile Include="wwwroot\search\search.module.ts" />
+    <TypeScriptCompile Include="wwwroot\search\search.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\search\search.service.ts" />
+    <TypeScriptCompile Include="wwwroot\speaker\speaker-editor.component.ts" />
+    <TypeScriptCompile Include="wwwroot\speaker\speaker-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\speaker\speaker.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\speaker\speaker.component.ts" />
+    <TypeScriptCompile Include="wwwroot\speaker\speaker.model.ts" />
+    <TypeScriptCompile Include="wwwroot\speaker\speaker.module.ts" />
+    <TypeScriptCompile Include="wwwroot\speaker\speaker.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\speaker\speaker.service.ts" />
+    <TypeScriptCompile Include="wwwroot\speaker\speakers-page.component.ts" />
     <TypeScriptCompile Include="wwwroot\tabs\tab-content.component.ts" />
     <TypeScriptCompile Include="wwwroot\tabs\tab-title.component.ts" />
     <TypeScriptCompile Include="wwwroot\tabs\tabs.actions.ts" />
@@ -585,6 +646,24 @@
     <TypeScriptCompile Include="wwwroot\tag\tag.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\tag\tag.service.ts" />
     <TypeScriptCompile Include="wwwroot\tag\tags-page.component.ts" />
+    <TypeScriptCompile Include="wwwroot\talk\talk-editor.component.ts" />
+    <TypeScriptCompile Include="wwwroot\talk\talk-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\talk\talk.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\talk\talk.component.ts" />
+    <TypeScriptCompile Include="wwwroot\talk\talk.model.ts" />
+    <TypeScriptCompile Include="wwwroot\talk\talk.module.ts" />
+    <TypeScriptCompile Include="wwwroot\talk\talk.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\talk\talk.service.ts" />
+    <TypeScriptCompile Include="wwwroot\talk\talks-page.component.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technology-editor.component.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technology-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technology.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technology.component.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technology.model.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technology.module.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technology.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technology.service.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technologys-page.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-player-page.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-editor.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-list.component.ts" />
