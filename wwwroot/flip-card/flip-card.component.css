@@ -12,6 +12,7 @@
 .flip-container .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
+    
 
 	position: relative;
 }
@@ -40,5 +41,4 @@
 .flip-container {
     position:relative; 
     float:left; 
-    margin-right:30px;
 }

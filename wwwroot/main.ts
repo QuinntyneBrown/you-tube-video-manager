@@ -18,6 +18,7 @@ require("./flip-card/flip-card.module");
 require("./playlist/playlist.module");
 require("./collection/collection.module");
 require("./feedback/feedback.module");
+require("./speaker/speaker.module");
 
 var app: any = angular.module("app", [
     "app.core",
@@ -37,6 +38,7 @@ var app: any = angular.module("app", [
     "app.collection",
     "app.playlist",
     "app.youTubeVideo",
+    "app.speaker",
 
     "app.feedback"
 ]);
@@ -62,12 +64,15 @@ app.config(["$routeProvider", ($routeProvider: angular.route.IRouteProvider) => 
         .when("/youtubevideo/play/:youTubeVideoId", { template: "<you-tube-video-player-page></you-tube-video-player-page>" });       
 
     $routeProvider
+        .when("/admin", { template: "<div></div>" })
         .when("/admin/collection/edit/:collectionId", { template: "<collections-page></collections-page>" })
         .when("/admin/collections", { template: "<collections-page></collections-page>" })
         .when("/admin/feedback/edit/:feedbackId", { template: "<feedbacks-page></feedbacks-page>" })
         .when("/admin/feedbacks", { template: "<feedbacks-page></feedbacks-page>" })   
         .when("/admin/playlist/edit/:playlistId", { template: "<playlists-page></playlists-page>" })
-        .when("/admin/playlists", { template: "<playlists-page></playlists-page>" })        
+        .when("/admin/playlists", { template: "<playlists-page></playlists-page>" })     
+        .when("/admin/speaker/edit/:speakerId", { template: "<speakers-page></speakers-page>" })
+        .when("/admin/speakers", { template: "<speakers-page></speakers-page>" })            
         .when("/admin/tag/edit/:tagId", { template: "<tags-page></tags-page>" })
         .when("/admin/tags", { template: "<tags-page></tags-page>" })
         .when("/admin/youtubevideo/edit/:youTubeVideoId", { template: "<you-tube-videos-page></you-tube-videos-page>" })

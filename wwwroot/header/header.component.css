@@ -1,5 +1,7 @@
 .header {
-    height:73px;    
+    height:73px;  
+    padding-right:30px;
+    margin-bottom:1px;
 }
 
 .header a:link, 
@@ -19,5 +21,10 @@
 
 .header .links {
     margin-left:30px;
+}
+
+.header .search {
+    position:relative;
+    float:right;
 }
  

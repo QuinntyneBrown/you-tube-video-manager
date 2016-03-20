@@ -190,6 +190,7 @@
     <Content Include="dist\app.templates.js" />
     <Content Include="gulpfile.js" />
     <Content Include="images\logo.jpg" />
+    <Content Include="images\search.png" />
     <Content Include="index.html" />
     <Content Include="lib\angular-route.js" />
     <Content Include="lib\angular.js" />
@@ -244,6 +245,8 @@
     <Content Include="wwwroot\login\login-page.component.html" />
     <Content Include="wwwroot\login\login.component.css" />
     <Content Include="wwwroot\login\login.component.html" />
+    <Content Include="wwwroot\link-image\link-image.component.css" />
+    <Content Include="wwwroot\link-image\link-image.component.html" />
     <Content Include="wwwroot\logo\logo.component.css" />
     <Content Include="wwwroot\logo\logo.component.html" />
     <Content Include="wwwroot\playlist\playlist-editor.component.css" />
@@ -254,6 +257,8 @@
     <Content Include="wwwroot\playlist\playlist.component.html" />
     <Content Include="wwwroot\playlist\playlists-page.component.css" />
     <Content Include="wwwroot\playlist\playlists-page.component.html" />
+    <Content Include="wwwroot\popover\popover.component.css" />
+    <Content Include="wwwroot\popover\popover.component.html" />
     <Content Include="wwwroot\registration\registration-page.component.html" />
     <Content Include="wwwroot\registration\registration.component.css" />
     <Content Include="wwwroot\registration\registration.component.html" />
@@ -285,6 +290,8 @@
     <None Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
     <Content Include="wwwroot\router-outlet\router-outlet.component.js" />
     <Content Include="wwwroot\router-outlet\router-outlet.module.js" />
+    <Content Include="wwwroot\search\search-popover.component.css" />
+    <Content Include="wwwroot\search\search-popover.component.html" />
     <Content Include="wwwroot\search\search.component.css" />
     <Content Include="wwwroot\search\search.component.html" />
     <Content Include="wwwroot\speaker\speaker-editor.component.css" />
@@ -591,6 +598,8 @@
     <TypeScriptCompile Include="wwwroot\login\login.module.ts" />
     <TypeScriptCompile Include="wwwroot\login\login.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\login\login.service.ts" />
+    <TypeScriptCompile Include="wwwroot\link-image\link-image.component.ts" />
+    <TypeScriptCompile Include="wwwroot\link-image\link-image.module.ts" />
     <TypeScriptCompile Include="wwwroot\logo\logo.component.ts" />
     <TypeScriptCompile Include="wwwroot\logo\logo.module.ts" />
     <TypeScriptCompile Include="wwwroot\main.ts" />
@@ -607,6 +616,12 @@
     <TypeScriptCompile Include="wwwroot\playlist\playlist.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\playlist\playlist.service.ts" />
     <TypeScriptCompile Include="wwwroot\playlist\playlists-page.component.ts" />
+    <TypeScriptCompile Include="wwwroot\popover\popover.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\popover\popover.component.ts" />
+    <TypeScriptCompile Include="wwwroot\popover\popover.model.ts" />
+    <TypeScriptCompile Include="wwwroot\popover\popover.module.ts" />
+    <TypeScriptCompile Include="wwwroot\popover\popover.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\popover\popover.service.ts" />
     <TypeScriptCompile Include="wwwroot\registration\registration-page.component.ts" />
     <TypeScriptCompile Include="wwwroot\registration\registration.actions.ts" />
     <TypeScriptCompile Include="wwwroot\registration\registration.component.ts" />
@@ -615,6 +630,7 @@
     <TypeScriptCompile Include="wwwroot\registration\registration.service.ts" />
     <TypeScriptCompile Include="wwwroot\router-outlet\router-outlet.component.ts" />
     <TypeScriptCompile Include="wwwroot\router-outlet\router-outlet.module.ts" />
+    <TypeScriptCompile Include="wwwroot\search\search-popover.component.ts" />
     <TypeScriptCompile Include="wwwroot\search\search.actions.ts" />
     <TypeScriptCompile Include="wwwroot\search\search.component.ts" />
     <TypeScriptCompile Include="wwwroot\search\search.model.ts" />
@@ -630,6 +646,10 @@
     <TypeScriptCompile Include="wwwroot\speaker\speaker.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\speaker\speaker.service.ts" />
     <TypeScriptCompile Include="wwwroot\speaker\speakers-page.component.ts" />
+    <TypeScriptCompile Include="wwwroot\sticky-header\sticky-header.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\sticky-header\sticky-header.module.ts" />
+    <TypeScriptCompile Include="wwwroot\sticky-header\sticky-header.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\sticky-header\sticky-header.service.ts" />
     <TypeScriptCompile Include="wwwroot\tabs\tab-content.component.ts" />
     <TypeScriptCompile Include="wwwroot\tabs\tab-title.component.ts" />
     <TypeScriptCompile Include="wwwroot\tabs\tabs.actions.ts" />
