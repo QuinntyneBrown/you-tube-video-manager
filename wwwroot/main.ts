@@ -19,6 +19,7 @@ require("./playlist/playlist.module");
 require("./collection/collection.module");
 require("./feedback/feedback.module");
 require("./speaker/speaker.module");
+require("./footer/footer.module");
 
 var app: any = angular.module("app", [
     "app.core",
@@ -28,6 +29,7 @@ var app: any = angular.module("app", [
     "app.backdrop",
     "app.button",
     "app.header",
+    "app.footer",
     "app.tabs",
     "app.login",
     "app.modal",

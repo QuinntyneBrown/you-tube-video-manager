@@ -24,6 +24,11 @@ body {
 
 
 
+
+
+
+
+
 .input-field {
     padding-right:15px;
     padding-left:15px;
@@ -76,12 +81,14 @@ body {
     position:relative; 
     float:left; 
 }
-
-
-
-
-
-
+.footer {
+    background-color:#333;
+    height:150px;
+}
+.flip-card { 
+    margin-right:30px; 
+    margin-bottom:30px;
+}
 .header {
     height:73px;  
     padding-right:30px;
@@ -112,10 +119,19 @@ body {
     float:right;
 }
  
-.flip-card { 
-    margin-right:30px; 
-    margin-bottom:30px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -151,18 +167,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .youTubeVideoList-item div {
     position:relative;
     float:left;
@@ -171,7 +175,6 @@ body {
 .youTubeVideoList-name, .youTubeVideoList-videoId, .youTubeVideoList-actions {
     width:200px;
 }
-
 
 
 
