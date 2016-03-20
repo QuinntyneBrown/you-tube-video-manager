@@ -3,10 +3,18 @@ body {
     color: #333;
     margin:0;
     padding:0;
+    background-color:#CCC;
 }
 
 .mainContent {
     min-height:600px;
     padding-right:30px;
     padding-left:30px;
+    max-width:1280px;
+    margin:0 auto;
+    background-color:#FFF;
+}
+
+.app {
+    background-color:#CCC;
 }
