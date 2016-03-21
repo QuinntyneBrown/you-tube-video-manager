@@ -1,3 +1,7 @@
+
+
+
+
 body {
     font-family: 'Lato', sans-serif;
     color: #333;
@@ -38,6 +42,10 @@ h1 {
 
 
 
+
+
+
+
 .input-field {
     padding-right:15px;
     padding-left:15px;
@@ -51,10 +59,6 @@ h1 {
 
 
 
-.footer {
-    background-color:#333;
-    height:150px;
-}
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
@@ -99,6 +103,11 @@ h1 {
     position:relative; 
     float:left; 
 }
+
+.footer {
+    background-color:#333;
+    height:150px;
+}
 .header {
     height:73px;  
     padding-right:30px;
@@ -140,6 +149,14 @@ h1 {
     padding:0;
     background-color:#FFF;
 }
+
+
+
+
+
+
+
+
 
 
 

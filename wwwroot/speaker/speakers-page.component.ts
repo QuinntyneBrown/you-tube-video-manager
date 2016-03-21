@@ -1,4 +1,4 @@
-require("./speakers-page.component.css");
+require("./speakers-container.component.css");
 
 import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import * as actions from "./speaker.actions";
@@ -8,7 +8,7 @@ import { Speaker } from "./speaker.model";
 @Component({
     routes: ["/admin/speakers","/admin/speaker/edit/:speakerId"],
     templateUrl: "wwwroot/speaker/speakers-page.component.html",
-    styleUrls: ["wwwroot/speaker/speakers-page.component.css"],
+    styleUrls: ["wwwroot/speaker/speakers-container.component.css"],
     selector: "speakers-page",
     providers: ["$location","$routeParams","speakerActionCreator"]
 })

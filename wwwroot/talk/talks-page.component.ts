@@ -1,4 +1,4 @@
-require("./talks-page.component.css");
+require("./talks-container.component.css");
 
 import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import * as actions from "./talk.actions";

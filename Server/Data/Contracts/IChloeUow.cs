@@ -14,6 +14,10 @@ namespace Chloe.Server.Data.Contracts
         IRepository<Speaker> Speakers { get; }
         IRepository<Talk> Talks { get; }
         IRepository<Technology> Technologies { get; }
+        IRepository<Profile> Profiles { get; }
+        IRepository<Account> Accounts { get; }
+        IRepository<ProfileSetting> ProfileSettings { get; }
+        IRepository<ContactInfo> ContactInfos { get; }
         void SaveChanges();
     }
 }

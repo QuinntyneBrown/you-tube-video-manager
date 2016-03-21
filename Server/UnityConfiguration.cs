@@ -29,6 +29,10 @@ namespace Chloe.Server
             container.RegisterType<ISpeakerService, SpeakerService>();
             container.RegisterType<ITalkService, TalkService>();
             container.RegisterType<ITechnologyService, TechnologyService>();
+            container.RegisterType<IProfileService, ProfileService>();
+            container.RegisterType<IProfileSettingService, IProfileSettingService>();
+            container.RegisterType<IContactInfoService, ContactInfoService>();
+            container.RegisterType<IAccountService, AccountService>();
             return container;
         }
     }

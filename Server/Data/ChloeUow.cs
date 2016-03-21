@@ -38,6 +38,10 @@ namespace Chloe.Server.Data
         public IRepository<Speaker> Speakers { get { return GetStandardRepo<Speaker>(); } }
         public IRepository<Talk> Talks { get { return GetStandardRepo<Talk>(); } }
         public IRepository<Technology> Technologies { get { return GetStandardRepo<Technology>(); } }
+        public IRepository<ProfileSetting> ProfileSettings { get { return GetStandardRepo<ProfileSetting>(); } }
+        public IRepository<Account> Accounts { get { return GetStandardRepo<Account>(); } }
+        public IRepository<ContactInfo> ContactInfos { get { return GetStandardRepo<ContactInfo>(); } }
+        public IRepository<Profile> Profiles { get { return GetStandardRepo<Profile>(); } }
 
         protected void ConfigureDbContext(IDbContext dbContext)
         {

@@ -1,4 +1,4 @@
-require("./technologys-page.component.css");
+require("./technologys-container.component.css");
 
 import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import * as actions from "./technology.actions";

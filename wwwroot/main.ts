@@ -19,7 +19,12 @@ require("./playlist/playlist.module");
 require("./collection/collection.module");
 require("./feedback/feedback.module");
 require("./speaker/speaker.module");
+require("./account/account.module");
+require("./contact-info/contact-info.module");
+require("./profile/profile.module");
+require("./profile-setting/profile-setting.module");
 require("./footer/footer.module");
+require("./fly-out/fly-out.module");
 
 var app: any = angular.module("app", [
     "app.core",
