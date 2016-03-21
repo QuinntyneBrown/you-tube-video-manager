@@ -5,7 +5,8 @@ import { ButtonActionCreator } from "./button.actions";
     templateUrl: "wwwroot/button/button.component.html",
     selector: "calypso-button",
     componentName: "calypsoButtonComponent",
-    inputs: ['caption', 'onClick']
+    inputs: ['caption', 'onClick'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ButtonComponent {
     constructor() { }

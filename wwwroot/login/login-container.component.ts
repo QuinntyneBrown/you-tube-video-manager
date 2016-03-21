@@ -8,7 +8,7 @@ require("./login-container.component.css");
     styleUrls: ["wwwroot/login/login-container.component.html"],
     selector: "login-container",
     providers: ["loginRedirect"],
-    changeDectection: ChangeDetectionStrategy.OnPush
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LoginContainerComponent {
     constructor(private loginRedirect) { }

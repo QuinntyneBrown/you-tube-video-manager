@@ -38,11 +38,6 @@ h1 {
 
 
 
-
-
-
-
-
 .input-field {
     padding-right:15px;
     padding-left:15px;
@@ -50,6 +45,15 @@ h1 {
     height:30px;
     min-width:200px;
     margin-bottom:15px;
+}
+
+
+
+
+
+.footer {
+    background-color:#333;
+    height:150px;
 }
 /* entire container, keeps perspective */
 .flip-container {
@@ -126,10 +130,6 @@ h1 {
     float:right;
 }
  
-.footer {
-    background-color:#333;
-    height:150px;
-}
 .flip-card { 
     margin-right:30px; 
     margin-bottom:30px;
