@@ -60,7 +60,7 @@ app.config(["$routeProvider", ($routeProvider: angular.route.IRouteProvider) => 
     $routeProvider
         .when("/", { template: "<home-page></home-page>" })
         .when("/register", { template: "<registration-page></registration>" })
-        .when("/login", { template: "<login-page></login-page>" })
+        .when("/login", { template: "<login-container></login-container>" })
         .when("/register", { template: "<registration-page></registration-page>" })
         .when("/feedback", { template: "<feedback-page></feedback-page>" })
         .when("/youtubevideo/play/:youTubeVideoId", { template: "<you-tube-video-player-page></you-tube-video-player-page>" });       

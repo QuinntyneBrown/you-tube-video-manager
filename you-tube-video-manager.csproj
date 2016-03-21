@@ -242,7 +242,8 @@
     <Content Include="wwwroot\header\header.component.html" />
     <Content Include="wwwroot\home-page\home-page.component.css" />
     <Content Include="wwwroot\home-page\home-page.component.html" />
-    <Content Include="wwwroot\login\login-page.component.html" />
+    <Content Include="wwwroot\login\login-container.component.css" />
+    <Content Include="wwwroot\login\login-container.component.html" />
     <Content Include="wwwroot\login\login.component.css" />
     <Content Include="wwwroot\login\login.component.html" />
     <Content Include="wwwroot\link-image\link-image.component.css" />
@@ -541,6 +542,7 @@
     <TypeScriptCompile Include="wwwroot\core\api-endpoint-provider.ts" />
     <TypeScriptCompile Include="wwwroot\core\append-to-body-async.ts" />
     <TypeScriptCompile Include="wwwroot\core\auth-interceptor.ts" />
+    <TypeScriptCompile Include="wwwroot\core\change-detection-strategy.ts" />
     <TypeScriptCompile Include="wwwroot\core\component-decorators.ts" />
     <TypeScriptCompile Include="wwwroot\core\component-extension.ts" />
     <TypeScriptCompile Include="wwwroot\core\core.module.ts" />
@@ -592,7 +594,7 @@
     <TypeScriptCompile Include="wwwroot\home-page\home-page.module.ts" />
     <TypeScriptCompile Include="wwwroot\home-page\home-page.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\home-page\home-page.service.ts" />
-    <TypeScriptCompile Include="wwwroot\login\login-page.component.ts" />
+    <TypeScriptCompile Include="wwwroot\login\login-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\login\login.actions.ts" />
     <TypeScriptCompile Include="wwwroot\login\login.component.ts" />
     <TypeScriptCompile Include="wwwroot\login\login.module.ts" />
