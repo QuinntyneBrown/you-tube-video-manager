@@ -42,6 +42,7 @@ namespace Chloe.Server.Data
         public IRepository<Account> Accounts { get { return GetStandardRepo<Account>(); } }
         public IRepository<ContactInfo> ContactInfos { get { return GetStandardRepo<ContactInfo>(); } }
         public IRepository<Profile> Profiles { get { return GetStandardRepo<Profile>(); } }
+        public IRepository<WatchHistory> WatchHistories { get { return GetStandardRepo<WatchHistory>(); } }
 
         protected void ConfigureDbContext(IDbContext dbContext)
         {

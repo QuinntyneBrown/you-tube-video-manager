@@ -11,6 +11,7 @@ require("./tabs/tabs.module");
 require("./login/login.module");
 require("./registration/registration.module");
 require("./home-page/home-page.module");
+require("./watch-history/watch-history.module");
 
 require("./you-tube-video/you-tube-video.module");
 require("./tag/tag.module");
@@ -46,6 +47,7 @@ var app: any = angular.module("app", [
     "app.playlist",
     "app.youTubeVideo",
     "app.speaker",
+    "app.watchHistory",
 
     "app.feedback"
 ]);

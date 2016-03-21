@@ -366,6 +366,14 @@
     <Content Include="wwwroot\technology\technology.component.html" />
     <Content Include="wwwroot\technology\technologys-page.component.css" />
     <Content Include="wwwroot\technology\technologys-page.component.html" />
+    <Content Include="wwwroot\watch-history\watch-history-editor.component.css" />
+    <Content Include="wwwroot\watch-history\watch-history-editor.component.html" />
+    <Content Include="wwwroot\watch-history\watch-history-list.component.css" />
+    <Content Include="wwwroot\watch-history\watch-history-list.component.html" />
+    <Content Include="wwwroot\watch-history\watch-history.component.css" />
+    <Content Include="wwwroot\watch-history\watch-history.component.html" />
+    <Content Include="wwwroot\watch-history\watch-historys-container.component.css" />
+    <Content Include="wwwroot\watch-history\watch-historys-container.component.html" />
     <Content Include="wwwroot\you-tube-video\you-tube-video-player-page.component.css">
       <DependentUpon>you-tube-video-player-page.component.ts</DependentUpon>
     </Content>
@@ -447,6 +455,7 @@
     <Compile Include="Server\Controllers\TalkController.cs" />
     <Compile Include="Server\Controllers\TechnologyController.cs" />
     <Compile Include="Server\Controllers\UserController.cs" />
+    <Compile Include="Server\Controllers\WatchHistoryController.cs" />
     <Compile Include="Server\Controllers\YouTubeVideoController.cs" />
     <Compile Include="Server\Data\ChloeContext.cs" />
     <Compile Include="Server\Data\ChloeUow.cs" />
@@ -499,6 +508,9 @@
     <Compile Include="Server\Dtos\TechnologyAddOrUpdateResponseDto.cs" />
     <Compile Include="Server\Dtos\TechnologyDto.cs" />
     <Compile Include="Server\Dtos\UserDto.cs" />
+    <Compile Include="Server\Dtos\WatchHistoryAddOrUpdateRequestDto.cs" />
+    <Compile Include="Server\Dtos\WatchHistoryAddOrUpdateResponseDto.cs" />
+    <Compile Include="Server\Dtos\WatchHistoryDto.cs" />
     <Compile Include="Server\Dtos\YouTubeVideoAddOrUpdateRequestDto.cs" />
     <Compile Include="Server\Dtos\YouTubeVideoAddOrUpdateResponseDto.cs" />
     <Compile Include="Server\Dtos\RegistrationRequestDto.cs" />
@@ -522,6 +534,7 @@
     <Compile Include="Server\Models\Talk.cs" />
     <Compile Include="Server\Models\Technology.cs" />
     <Compile Include="Server\Models\User.cs" />
+    <Compile Include="Server\Models\WatchHistory.cs" />
     <Compile Include="Server\Models\YouTubeVideo.cs" />
     <Compile Include="Server\Models\YouTubeVideoTag.cs" />
     <Compile Include="Server\Services\AccountService.cs" />
@@ -545,6 +558,7 @@
     <Compile Include="Server\Services\Contracts\ITalkService.cs" />
     <Compile Include="Server\Services\Contracts\ITechnologyService.cs" />
     <Compile Include="Server\Services\Contracts\IUserService.cs" />
+    <Compile Include="Server\Services\Contracts\IWatchHistoryService.cs" />
     <Compile Include="Server\Services\Contracts\IYouTubeVideoService.cs" />
     <Compile Include="Server\Services\FeedbackService.cs" />
     <Compile Include="Server\Services\MemoryCache.cs" />
@@ -561,6 +575,7 @@
     <Compile Include="Server\Services\TalkService.cs" />
     <Compile Include="Server\Services\TechnologyService.cs" />
     <Compile Include="Server\Services\UserService.cs" />
+    <Compile Include="Server\Services\WatchHistoryService.cs" />
     <Compile Include="Server\Services\YouTubeVideoService.cs" />
     <Compile Include="Server\UnityConfiguration.cs" />
     <Compile Include="Startup.cs" />
@@ -790,6 +805,15 @@
     <TypeScriptCompile Include="wwwroot\technology\technology.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\technology\technology.service.ts" />
     <TypeScriptCompile Include="wwwroot\technology\technologys-page.component.ts" />
+    <TypeScriptCompile Include="wwwroot\watch-history\watch-history-editor.component.ts" />
+    <TypeScriptCompile Include="wwwroot\watch-history\watch-history-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\watch-history\watch-history.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\watch-history\watch-history.component.ts" />
+    <TypeScriptCompile Include="wwwroot\watch-history\watch-history.model.ts" />
+    <TypeScriptCompile Include="wwwroot\watch-history\watch-history.module.ts" />
+    <TypeScriptCompile Include="wwwroot\watch-history\watch-history.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\watch-history\watch-history.service.ts" />
+    <TypeScriptCompile Include="wwwroot\watch-history\watch-historys-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-player-page.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-editor.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-list.component.ts" />

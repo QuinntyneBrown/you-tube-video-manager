@@ -1,0 +1,15 @@
+<div class="watchHistoryList">
+    <div class="watchHistoryList-header">
+        <h1>WatchHistorys</h1>
+    </div>
+    
+    <div data-ng-repeat="entity in vm.entities" class="watchHistoryList-item">
+        <div class="watchHistoryList-name">
+            {{ entity.name }}
+        </div>
+        <div class="watchHistoryList-actions">
+            <span data-ng-click="vm.edit({ entity: this.entity })">edit</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span data-ng-click="vm.remove({ entity: this.entity })">remove</span>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</div>

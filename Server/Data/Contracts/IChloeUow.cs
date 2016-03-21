@@ -18,6 +18,7 @@ namespace Chloe.Server.Data.Contracts
         IRepository<Account> Accounts { get; }
         IRepository<ProfileSetting> ProfileSettings { get; }
         IRepository<ContactInfo> ContactInfos { get; }
+        IRepository<WatchHistory> WatchHistories { get; }
         void SaveChanges();
     }
 }

@@ -33,6 +33,7 @@ namespace Chloe.Server
             container.RegisterType<IProfileSettingService, IProfileSettingService>();
             container.RegisterType<IContactInfoService, ContactInfoService>();
             container.RegisterType<IAccountService, AccountService>();
+            container.RegisterType<IWatchHistoryService, WatchHistoryService>();
             return container;
         }
     }
