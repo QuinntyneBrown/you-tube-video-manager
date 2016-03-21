@@ -1,4 +1,4 @@
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import * as actions from "./tag.actions";
 import { pluck } from "../core/pluck";
 import { Tag } from "./tag.model";

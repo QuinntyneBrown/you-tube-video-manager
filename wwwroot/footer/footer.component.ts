@@ -1,4 +1,4 @@
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import { FooterActionCreator } from "./footer.actions";
 
 require("./footer.component.css");

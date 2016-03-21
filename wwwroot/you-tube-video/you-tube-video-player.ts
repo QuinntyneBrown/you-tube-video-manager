@@ -1,4 +1,4 @@
-﻿import { CanActivate, Component } from "../core/component-decorators";
+﻿import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import * as actions from "./you-tube-video.actions";
 
 var YT: any;

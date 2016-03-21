@@ -1,6 +1,6 @@
 require("./speaker-list.component.css");
 
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 
 @Component({
     templateUrl: "wwwroot/speaker/speaker-list.component.html",

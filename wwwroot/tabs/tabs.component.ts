@@ -1,4 +1,4 @@
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import { TabsActionCreator } from "./tabs.actions";
 import * as actions from "./tabs.actions";
 

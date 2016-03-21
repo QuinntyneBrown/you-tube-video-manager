@@ -1,6 +1,6 @@
 require("./technologys-page.component.css");
 
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import * as actions from "./technology.actions";
 import { pluck } from "../core/pluck";
 import { Technology } from "./technology.model";

@@ -38,6 +38,11 @@ h1 {
 
 
 
+
+
+
+
+
 .input-field {
     padding-right:15px;
     padding-left:15px;
@@ -46,11 +51,6 @@ h1 {
     min-width:200px;
     margin-bottom:15px;
 }
-
-
-
-
-
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
@@ -95,10 +95,6 @@ h1 {
     position:relative; 
     float:left; 
 }
-.footer {
-    background-color:#333;
-    height:150px;
-}
 .header {
     height:73px;  
     padding-right:30px;
@@ -130,6 +126,14 @@ h1 {
     float:right;
 }
  
+.footer {
+    background-color:#333;
+    height:150px;
+}
+.flip-card { 
+    margin-right:30px; 
+    margin-bottom:30px;
+}
 
 .login-container {
     margin:0;
@@ -150,10 +154,6 @@ h1 {
 
 
 
-.flip-card { 
-    margin-right:30px; 
-    margin-bottom:30px;
-}
 .tab-title {
     display:inline-block;
     font-weight:100;
@@ -179,6 +179,14 @@ h1 {
 
 
 
+
+
+
+
+
+
+
+
 .youTubeVideoList-item div {
     position:relative;
     float:left;
@@ -187,14 +195,6 @@ h1 {
 .youTubeVideoList-name, .youTubeVideoList-videoId, .youTubeVideoList-actions {
     width:200px;
 }
-
-
-
-
-
-
-
-
 
 
 

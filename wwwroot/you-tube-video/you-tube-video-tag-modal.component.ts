@@ -1,4 +1,4 @@
-﻿import { CanActivate, Component } from "../core/component-decorators";
+﻿import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import { YouTubeVideoActionCreator } from "./you-tube-video.actions";
 
 require("./you-tube-video-tag-modal.component.css");

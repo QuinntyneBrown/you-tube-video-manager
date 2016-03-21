@@ -1,6 +1,6 @@
 require("./technology-list.component.css");
 
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 
 @Component({
     templateUrl: "wwwroot/technology/technology-list.component.html",

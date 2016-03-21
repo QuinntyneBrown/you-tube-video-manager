@@ -1,6 +1,6 @@
 require("./talks-page.component.css");
 
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import * as actions from "./talk.actions";
 import { pluck } from "../core/pluck";
 import { Talk } from "./talk.model";

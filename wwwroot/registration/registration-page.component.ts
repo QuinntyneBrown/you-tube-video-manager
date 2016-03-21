@@ -1,4 +1,4 @@
-﻿import { CanActivate, Component } from "../core/component-decorators";
+﻿import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import { RegistrationActionCreator } from "./registration.actions";
 import { LoginActionCreator } from "../login/login.actions";
 import * as actions from "./registration.actions";

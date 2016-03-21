@@ -1,4 +1,4 @@
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import { IDispatcher } from "../core/store";
 import * as actions from "../modal/modal.actions";
 

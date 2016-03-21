@@ -1,6 +1,6 @@
 require("./talk.component.css");
 
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import { TalkActionCreator } from "./talk.actions";
 
 @Component({

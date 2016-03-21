@@ -1,6 +1,6 @@
 require("./speakers-page.component.css");
 
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import * as actions from "./speaker.actions";
 import { pluck } from "../core/pluck";
 import { Speaker } from "./speaker.model";

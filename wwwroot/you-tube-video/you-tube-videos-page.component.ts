@@ -1,4 +1,4 @@
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import * as actions from "./you-tube-video.actions";
 import { pluck } from "../core/pluck";
 import { YouTubeVideo } from "./you-tube-video.model";

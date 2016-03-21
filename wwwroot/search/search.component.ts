@@ -1,6 +1,6 @@
 require("./search.component.css");
 
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import { SearchActionCreator } from "./search.actions";
 
 @Component({

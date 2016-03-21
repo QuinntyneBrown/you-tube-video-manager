@@ -1,4 +1,4 @@
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 
 @Component({
     templateUrl: "wwwroot/tag/tag-editor.component.html",

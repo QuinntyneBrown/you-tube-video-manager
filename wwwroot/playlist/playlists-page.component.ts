@@ -1,4 +1,4 @@
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import * as actions from "./playlist.actions";
 import { pluck } from "../core/pluck";
 import { Playlist } from "./playlist.model";

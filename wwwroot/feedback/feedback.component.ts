@@ -1,4 +1,4 @@
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import { FeedbackActionCreator } from "./feedback.actions";
 
 require("./feedback.component.css");

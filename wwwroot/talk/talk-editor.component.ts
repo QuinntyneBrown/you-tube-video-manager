@@ -1,6 +1,6 @@
 require("./talk-editor.component.css");
 
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 
 @Component({
     templateUrl: "wwwroot/talk/talk-editor.component.html",

@@ -1,6 +1,6 @@
 require("./talk-list.component.css");
 
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 
 @Component({
     templateUrl: "wwwroot/talk/talk-list.component.html",

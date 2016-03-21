@@ -1,6 +1,6 @@
 require('./flip-card.component.css');
 
-import { CanActivate, Component } from "../core/component-decorators";
+import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import { FlipCardActionCreator } from "./flip-card.actions";
 
 @Component({
