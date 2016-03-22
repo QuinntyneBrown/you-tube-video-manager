@@ -3,6 +3,7 @@ require("../core/core.module");
 import { PhotoEditorComponent } from "./photo-editor.component";
 import { PhotoListComponent } from "./photo-list.component";
 import { PhotoComponent } from "./photo.component";
+import { PhotoUploadComponent } from "./photo-upload.component";
 import { PhotosContainerComponent } from "./photos-container.component";
 import { PhotoActionCreator } from "./photo.actions";
 import { PhotoService } from "./photo.service";
@@ -18,6 +19,7 @@ app.component(PhotoEditorComponent);
 app.component(PhotoListComponent);
 app.component(PhotoComponent);
 app.component(PhotosContainerComponent);
+app.component(PhotoUploadComponent);
 
 app.config(["reducersProvider", reducersProvider => {	
     for (var reducer in reducers) { reducersProvider.configure(reducers[reducer]); }

@@ -272,6 +272,8 @@
     <Content Include="wwwroot\photo\photo-editor.component.html" />
     <Content Include="wwwroot\photo\photo-list.component.css" />
     <Content Include="wwwroot\photo\photo-list.component.html" />
+    <Content Include="wwwroot\photo\photo-upload.component.css" />
+    <Content Include="wwwroot\photo\photo-upload.component.html" />
     <Content Include="wwwroot\photo\photo.component.css" />
     <Content Include="wwwroot\photo\photo.component.html" />
     <Content Include="wwwroot\photo\photos-container.component.css" />
@@ -727,6 +729,7 @@
     <TypeScriptCompile Include="wwwroot\modal\modal.service.ts" />
     <TypeScriptCompile Include="wwwroot\photo\photo-editor.component.ts" />
     <TypeScriptCompile Include="wwwroot\photo\photo-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\photo\photo-upload.component.ts" />
     <TypeScriptCompile Include="wwwroot\photo\photo.actions.ts" />
     <TypeScriptCompile Include="wwwroot\photo\photo.component.ts" />
     <TypeScriptCompile Include="wwwroot\photo\photo.model.ts" />

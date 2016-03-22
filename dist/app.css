@@ -42,6 +42,10 @@ h1 {
 
 
 
+
+
+
+
 .input-field {
     padding-right:15px;
     padding-left:15px;
@@ -50,6 +54,11 @@ h1 {
     min-width:200px;
     margin-bottom:15px;
 }
+
+
+
+
+
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
@@ -95,11 +104,6 @@ h1 {
     float:left; 
 }
 
-
-
-
-
-
 .footer {
     background-color:#333;
     height:150px;
@@ -140,7 +144,6 @@ h1 {
     margin-bottom:30px;
 }
 
-
 .login-container {
     margin:0;
     padding:0;
@@ -149,6 +152,13 @@ h1 {
 
 
 
+
+.drop-zone {
+    background-color:azure;
+    height:500px;
+    width:500px;
+
+}
 
 
 
@@ -216,10 +226,6 @@ h1 {
 .youTubeVideoList-name, .youTubeVideoList-videoId, .youTubeVideoList-actions {
     width:200px;
 }
-
-
-
-
 
 
 
