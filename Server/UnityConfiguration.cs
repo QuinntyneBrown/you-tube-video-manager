@@ -34,6 +34,7 @@ namespace Chloe.Server
             container.RegisterType<IContactInfoService, ContactInfoService>();
             container.RegisterType<IAccountService, AccountService>();
             container.RegisterType<IWatchHistoryService, WatchHistoryService>();
+            container.RegisterType<IPhotoService, PhotoService>();
             return container;
         }
     }

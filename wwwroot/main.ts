@@ -12,6 +12,8 @@ require("./login/login.module");
 require("./registration/registration.module");
 require("./home-page/home-page.module");
 require("./watch-history/watch-history.module");
+require("./footer/footer.module");
+require("./fly-out/fly-out.module");
 
 require("./you-tube-video/you-tube-video.module");
 require("./tag/tag.module");
@@ -24,8 +26,7 @@ require("./account/account.module");
 require("./contact-info/contact-info.module");
 require("./profile/profile.module");
 require("./profile-setting/profile-setting.module");
-require("./footer/footer.module");
-require("./fly-out/fly-out.module");
+require("./photo/photo.module");
 
 var app: any = angular.module("app", [
     "app.core",
@@ -48,7 +49,7 @@ var app: any = angular.module("app", [
     "app.youTubeVideo",
     "app.speaker",
     "app.watchHistory",
-
+    "app.photo",
     "app.feedback"
 ]);
 

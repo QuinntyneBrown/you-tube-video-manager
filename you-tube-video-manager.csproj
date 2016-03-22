@@ -268,6 +268,14 @@
     <Content Include="wwwroot\link-image\link-image.component.html" />
     <Content Include="wwwroot\logo\logo.component.css" />
     <Content Include="wwwroot\logo\logo.component.html" />
+    <Content Include="wwwroot\photo\photo-editor.component.css" />
+    <Content Include="wwwroot\photo\photo-editor.component.html" />
+    <Content Include="wwwroot\photo\photo-list.component.css" />
+    <Content Include="wwwroot\photo\photo-list.component.html" />
+    <Content Include="wwwroot\photo\photo.component.css" />
+    <Content Include="wwwroot\photo\photo.component.html" />
+    <Content Include="wwwroot\photo\photos-container.component.css" />
+    <Content Include="wwwroot\photo\photos-container.component.html" />
     <Content Include="wwwroot\playlist\playlist-editor.component.css" />
     <Content Include="wwwroot\playlist\playlist-editor.component.html" />
     <Content Include="wwwroot\playlist\playlist-list.component.css" />
@@ -447,6 +455,7 @@
     <Compile Include="Server\Controllers\CollectionController.cs" />
     <Compile Include="Server\Controllers\ContactInfoController.cs" />
     <Compile Include="Server\Controllers\FeedbackController.cs" />
+    <Compile Include="Server\Controllers\PhotoController.cs" />
     <Compile Include="Server\Controllers\PlaylistController.cs" />
     <Compile Include="Server\Controllers\ProfileController.cs" />
     <Compile Include="Server\Controllers\ProfileSettingController.cs" />
@@ -481,6 +490,9 @@
     <Compile Include="Server\Dtos\FeedbackAddOrUpdateRequestDto.cs" />
     <Compile Include="Server\Dtos\FeedbackAddOrUpdateResponseDto.cs" />
     <Compile Include="Server\Dtos\FeedbackDto.cs" />
+    <Compile Include="Server\Dtos\PhotoAddOrUpdateRequestDto.cs" />
+    <Compile Include="Server\Dtos\PhotoAddOrUpdateResponseDto.cs" />
+    <Compile Include="Server\Dtos\PhotoDto.cs" />
     <Compile Include="Server\Dtos\PlaylistAddOrUpdateRequestDto.cs" />
     <Compile Include="Server\Dtos\PlaylistAddOrUpdateResponseDto.cs" />
     <Compile Include="Server\Dtos\PlaylistItemAddOrUpdateRequestDto.cs" />
@@ -523,6 +535,7 @@
     <Compile Include="Server\Models\CollectionItem.cs" />
     <Compile Include="Server\Models\ContactInfo.cs" />
     <Compile Include="Server\Models\Feedback.cs" />
+    <Compile Include="Server\Models\Photo.cs" />
     <Compile Include="Server\Models\Playlist.cs" />
     <Compile Include="Server\Models\PlaylistItem.cs" />
     <Compile Include="Server\Models\PlaylistYouTubeVideo.cs" />
@@ -550,6 +563,7 @@
     <Compile Include="Server\Services\Contracts\IEncryptionService.cs" />
     <Compile Include="Server\Services\Contracts\IFeedbackService.cs" />
     <Compile Include="Server\Services\Contracts\IIdentityService.cs" />
+    <Compile Include="Server\Services\Contracts\IPhotoService.cs" />
     <Compile Include="Server\Services\Contracts\IPlaylistService.cs" />
     <Compile Include="Server\Services\Contracts\IProfileService.cs" />
     <Compile Include="Server\Services\Contracts\IProfileSettingService.cs" />
@@ -566,6 +580,7 @@
     <Compile Include="Server\Services\IdentityService.cs" />
     <Compile Include="Server\Services\InMemoryMultipartFormDataStreamProvider.cs" />
     <Compile Include="Server\Services\PhotoMultipartFormDataStreamProvider.cs" />
+    <Compile Include="Server\Services\PhotoService.cs" />
     <Compile Include="Server\Services\PlaylistService.cs" />
     <Compile Include="Server\Services\ProfileService.cs" />
     <Compile Include="Server\Services\ProfileSettingService.cs" />
@@ -710,6 +725,15 @@
     <TypeScriptCompile Include="wwwroot\modal\modal.module.ts" />
     <TypeScriptCompile Include="wwwroot\modal\modal.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\modal\modal.service.ts" />
+    <TypeScriptCompile Include="wwwroot\photo\photo-editor.component.ts" />
+    <TypeScriptCompile Include="wwwroot\photo\photo-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\photo\photo.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\photo\photo.component.ts" />
+    <TypeScriptCompile Include="wwwroot\photo\photo.model.ts" />
+    <TypeScriptCompile Include="wwwroot\photo\photo.module.ts" />
+    <TypeScriptCompile Include="wwwroot\photo\photo.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\photo\photo.service.ts" />
+    <TypeScriptCompile Include="wwwroot\photo\photos-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\playlist\playlist-editor.component.ts" />
     <TypeScriptCompile Include="wwwroot\playlist\playlist-list.component.ts" />
     <TypeScriptCompile Include="wwwroot\playlist\playlist.actions.ts" />

@@ -24,6 +24,7 @@ namespace Chloe.Server.Data
         public DbSet<Speaker> Speakers { get; set; }
         public DbSet<Talk> Talks { get; set; }
         public DbSet<Technology> Technologies { get; set; }
+        public DbSet<Photo> Photos { get; set; }
         public DbSet<Profile> Profiles { get; set; }
         public DbSet<Account> Accounts { get; set; }
         public DbSet<ProfileSetting> ProfileSettings { get; set; }

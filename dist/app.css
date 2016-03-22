@@ -1,3 +1,7 @@
+
+
+
+
 body {
     font-family: 'Lato', sans-serif;
     color: #333;
@@ -25,10 +29,6 @@ h1 {
     font-size:1.5em;
     line-height:2em;
 }
-
-
-
-
 .button {
     margin-top:15px;
     margin-bottom:30px;
@@ -42,10 +42,6 @@ h1 {
 
 
 
-
-
-
-
 .input-field {
     padding-right:15px;
     padding-left:15px;
@@ -54,11 +50,6 @@ h1 {
     min-width:200px;
     margin-bottom:15px;
 }
-
-
-
-
-
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
@@ -104,6 +95,11 @@ h1 {
     float:left; 
 }
 
+
+
+
+
+
 .footer {
     background-color:#333;
     height:150px;
@@ -144,11 +140,15 @@ h1 {
     margin-bottom:30px;
 }
 
+
 .login-container {
     margin:0;
     padding:0;
     background-color:#FFF;
 }
+
+
+
 
 
 
@@ -216,6 +216,10 @@ h1 {
 .youTubeVideoList-name, .youTubeVideoList-videoId, .youTubeVideoList-actions {
     width:200px;
 }
+
+
+
+
 
 
 
