@@ -4,6 +4,8 @@ using Chloe.Server.Data;
 using Chloe.Server.Data.Contracts;
 using Chloe.Server.Services;
 using Chloe.Server.Services.Contracts;
+using Chloe.Server.Utils;
+using Chloe.Server.Utils.Contracts;
 using Microsoft.Practices.Unity;
 
 namespace Chloe.Server
@@ -35,6 +37,7 @@ namespace Chloe.Server
             container.RegisterType<IAccountService, AccountService>();
             container.RegisterType<IWatchHistoryService, WatchHistoryService>();
             container.RegisterType<IPhotoService, PhotoService>();
+            container.RegisterType<ILogger, Logger>();
             return container;
         }
     }

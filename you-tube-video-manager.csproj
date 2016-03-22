@@ -440,11 +440,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\UnityConfig.cs" />
+    <Compile Include="App_Start\WebApiUnityActionFilterProvider.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\UserConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Server\ApiConfiguration.cs" />
+    <Compile Include="Server\Attributes\ChloeHandleErrorAttribute.cs" />
     <Compile Include="Server\Auth\JwtOptions.cs" />
     <Compile Include="Server\Auth\JwtWriterFormat.cs" />
     <Compile Include="Server\Auth\OAuthOptions.cs" />
@@ -492,6 +493,7 @@
     <Compile Include="Server\Dtos\FeedbackAddOrUpdateRequestDto.cs" />
     <Compile Include="Server\Dtos\FeedbackAddOrUpdateResponseDto.cs" />
     <Compile Include="Server\Dtos\FeedbackDto.cs" />
+    <Compile Include="Server\Dtos\FileUploadDto.cs" />
     <Compile Include="Server\Dtos\PhotoAddOrUpdateRequestDto.cs" />
     <Compile Include="Server\Dtos\PhotoAddOrUpdateResponseDto.cs" />
     <Compile Include="Server\Dtos\PhotoDto.cs" />
@@ -595,6 +597,8 @@
     <Compile Include="Server\Services\WatchHistoryService.cs" />
     <Compile Include="Server\Services\YouTubeVideoService.cs" />
     <Compile Include="Server\UnityConfiguration.cs" />
+    <Compile Include="Server\Utils\Contracts\ILogger.cs" />
+    <Compile Include="Server\Utils\Logger.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>

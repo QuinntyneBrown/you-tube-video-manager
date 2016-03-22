@@ -29,19 +29,6 @@ h1 {
     font-size:1.5em;
     line-height:2em;
 }
-.button {
-    margin-top:15px;
-    margin-bottom:30px;
-    line-height:30px;
-    width:75px;
-    background-color:#FFF;
-    border: solid 1px;
-    cursor:pointer;
-}
-
-
-
-
 
 
 
@@ -53,6 +40,19 @@ h1 {
     height:30px;
     min-width:200px;
     margin-bottom:15px;
+}
+
+
+
+
+.button {
+    margin-top:15px;
+    margin-bottom:30px;
+    line-height:30px;
+    width:75px;
+    background-color:#FFF;
+    border: solid 1px;
+    cursor:pointer;
 }
 
 
@@ -104,6 +104,10 @@ h1 {
     float:left; 
 }
 
+.flip-card { 
+    margin-right:30px; 
+    margin-bottom:30px;
+}
 .footer {
     background-color:#333;
     height:150px;
@@ -139,10 +143,7 @@ h1 {
     float:right;
 }
  
-.flip-card { 
-    margin-right:30px; 
-    margin-bottom:30px;
-}
+
 
 .login-container {
     margin:0;
@@ -152,17 +153,12 @@ h1 {
 
 
 
-
 .drop-zone {
     background-color:azure;
     height:500px;
     width:500px;
 
 }
-
-
-
-
 
 
 
@@ -214,10 +210,6 @@ h1 {
 
 
 
-
-
-
-
 .youTubeVideoList-item div {
     position:relative;
     float:left;
@@ -226,6 +218,14 @@ h1 {
 .youTubeVideoList-name, .youTubeVideoList-videoId, .youTubeVideoList-actions {
     width:200px;
 }
+
+
+
+
+
+
+
+
 
 
 
