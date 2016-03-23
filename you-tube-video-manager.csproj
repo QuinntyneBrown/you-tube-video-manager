@@ -422,6 +422,7 @@
     <Content Include="wwwroot\you-tube-video\you-tube-video-tag-modal.component.html">
       <DependentUpon>you-tube-video-tag-modal.component.ts</DependentUpon>
     </Content>
+    <Content Include="wwwroot\you-tube-video\you-tube-video-thumbnail.component.html" />
     <Content Include="wwwroot\you-tube-video\you-tube-video.component.css">
       <DependentUpon>you-tube-video.component.ts</DependentUpon>
     </Content>
@@ -861,6 +862,7 @@
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-list.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-player.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-tag-modal.component.ts" />
+    <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video-thumbnail.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video.actions.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video.component.ts" />
     <TypeScriptCompile Include="wwwroot\you-tube-video\you-tube-video.model.ts" />

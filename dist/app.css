@@ -46,6 +46,19 @@ h1 {
 
 
 
+
+
+
+
+
+.input-field {
+    padding-right:15px;
+    padding-left:15px;
+    line-height:2em;
+    height:30px;
+    min-width:200px;
+    margin-bottom:15px;
+}
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
@@ -89,19 +102,6 @@ h1 {
 .flip-container {
     position:relative; 
     float:left; 
-}
-
-
-
-
-
-.input-field {
-    padding-right:15px;
-    padding-left:15px;
-    line-height:2em;
-    height:30px;
-    min-width:200px;
-    margin-bottom:15px;
 }
 
 .footer {
@@ -153,17 +153,17 @@ h1 {
 
 
 
-
-
-
-
-
 .drop-zone {
     background-color:azure;
     height:500px;
     width:500px;
 
 }
+
+
+
+
+
 
 
 
