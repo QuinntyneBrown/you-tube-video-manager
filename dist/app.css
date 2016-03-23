@@ -2,15 +2,6 @@
 
 
 
-.button {
-    margin-top:15px;
-    margin-bottom:30px;
-    line-height:30px;
-    width:75px;
-    background-color:#FFF;
-    border: solid 1px;
-    cursor:pointer;
-}
 body {
     font-family: 'Lato', sans-serif;
     color: #333;
@@ -38,6 +29,19 @@ h1 {
     font-size:1.5em;
     line-height:2em;
 }
+.button {
+    margin-top:15px;
+    margin-bottom:30px;
+    line-height:30px;
+    width:75px;
+    background-color:#FFF;
+    border: solid 1px;
+    cursor:pointer;
+}
+
+
+
+
 
 
 
@@ -50,6 +54,11 @@ h1 {
     min-width:200px;
     margin-bottom:15px;
 }
+
+
+
+
+
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
@@ -95,10 +104,10 @@ h1 {
     float:left; 
 }
 
-
-
-
-
+.footer {
+    background-color:#333;
+    height:150px;
+}
 .header {
     height:73px;  
     padding-right:30px;
@@ -134,10 +143,6 @@ h1 {
     margin-right:30px; 
     margin-bottom:30px;
 }
-.footer {
-    background-color:#333;
-    height:150px;
-}
 
 .login-container {
     margin:0;
@@ -148,21 +153,21 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-
 .drop-zone {
     background-color:azure;
     height:500px;
     width:500px;
 
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -198,11 +203,6 @@ h1 {
     padding:5px;
     height:20px;
 }
-
-
-
-
-
 
 
 .tab-title {

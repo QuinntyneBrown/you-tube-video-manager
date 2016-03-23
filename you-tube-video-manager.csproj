@@ -196,6 +196,7 @@
     <Content Include="dist\app.css" />
     <Content Include="dist\app.js" />
     <Content Include="dist\app.templates.js" />
+    <Content Include="favicon.ico" />
     <Content Include="gulpfile.js" />
     <Content Include="images\logo.jpg" />
     <Content Include="images\search.png" />
@@ -204,6 +205,7 @@
     <Content Include="lib\angular.js" />
     <Content Include="lib\jquery.js" />
     <Content Include="lib\pnp-ww.js" />
+    <Content Include="lib\prefix-free.js" />
     <Content Include="lib\rx.all.compat.min.js" />
     <Content Include="packages.config" />
     <Content Include="tsconfig.json" />
