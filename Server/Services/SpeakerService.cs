@@ -25,6 +25,7 @@ namespace Chloe.Server.Services
                 .FirstOrDefault();
             if (entity == null) repository.Add(entity = new Speaker());
             entity.Name = request.Name;
+            entity.GitHubUsername = request.GitHubUsername;
             uow.SaveChanges();
             return new SpeakerAddOrUpdateResponseDto(entity);
         }

@@ -49,6 +49,7 @@ namespace Chloe.Server.Services
 
         public ICollection<FeedbackDto> Get()
         {
+            throw new NotImplementedException();
             ICollection<FeedbackDto> response = new HashSet<FeedbackDto>();
             repository.GetAll().Where(x => x.IsDeleted == false)
                 .ForEachAsync(x => response.Add(new FeedbackDto(x)));

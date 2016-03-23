@@ -1,4 +1,5 @@
 export class Speaker { 
 	id:number;
-	name:string;
+    name: string;
+    gitHubUsername: string;
 }

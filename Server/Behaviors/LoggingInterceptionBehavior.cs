@@ -4,9 +4,9 @@ using Chloe.Server.Utils.Contracts;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.InterceptionExtension;
 
-namespace Chloe.Server.Behaviours
+namespace Chloe.Server.Behaviors
 {
-    public class ProfilingInterceptionBehavior: IInterceptionBehavior
+    public class LoggingInterceptionBehavior: IInterceptionBehavior
     {
         [Dependency]
         public ILogger Logger { get; set; }
@@ -27,7 +27,6 @@ namespace Chloe.Server.Behaviours
         public IMethodReturn Invoke(IMethodInvocation input, GetNextInterceptionBehaviorDelegate getNext)
         {
             var result = getNext()(input, getNext);
-
             if (result.Exception != null)
             {
                 WriteLog(String.Format(

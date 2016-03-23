@@ -455,12 +455,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Server\ApiConfiguration.cs" />
     <Compile Include="Server\Attributes\ChloeHandleErrorAttribute.cs" />
-    <Compile Include="Server\Attributes\LogExecutionTimeAttribute.cs" />
     <Compile Include="Server\Auth\JwtOptions.cs" />
     <Compile Include="Server\Auth\JwtWriterFormat.cs" />
     <Compile Include="Server\Auth\OAuthOptions.cs" />
     <Compile Include="Server\Auth\OAuthProvider.cs" />
-    <Compile Include="Server\Behaviours\ProfilingInterceptionBehavior.cs" />
+    <Compile Include="Server\Behaviors\LoggingInterceptionBehavior.cs" />
     <Compile Include="Server\Config\AuthConfiguration.cs" />
     <Compile Include="Server\Config\ConfigurationProvider.cs" />
     <Compile Include="Server\Config\Contracts\IAuthConfiguration.cs" />

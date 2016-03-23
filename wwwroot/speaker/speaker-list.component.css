@@ -1,0 +1,25 @@
+.speakerList-item div {
+    position:relative;
+    float:left;
+    
+}
+
+.speakerList-name, .speakerList-speakerId, .speakerList-actions {
+    width:200px;
+}
+
+.speakerList-name {
+    width:400px;
+    height:20px;
+}
+
+.speakerList-actions {
+    cursor:pointer;
+}
+
+.speakerList-item {
+    position:relative;
+    display:block;
+    padding:5px;
+    height:20px;
+}

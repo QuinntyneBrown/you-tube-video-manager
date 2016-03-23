@@ -1,10 +1,16 @@
 <div class="header">    
     <logo href="#/" src="images/logo.jpg"></logo>
 
-    <div class="links">
+    <div class="links" data-ng-if="!vm.isAdmin()">
         <a href="#/">Speakers</a>
         <a href="#/">Talks</a>
         <a href="#/">Technologies</a>
+    </div>
+
+    <div class="links" data-ng-if="vm.isAdmin()">
+        <a href="#/admin/youtubevideos">Videos</a>
+        <a href="#/admin/speakers">Speakers</a>
+        <a href="#/login">log out</a>
     </div>
 
     <link-image class="search" src="images/search.png"></link-image>

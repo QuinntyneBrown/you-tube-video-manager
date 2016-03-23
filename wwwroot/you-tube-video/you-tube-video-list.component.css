@@ -1,8 +1,24 @@
 .youTubeVideoList-item div {
     position:relative;
     float:left;
+    
 }
 
 .youTubeVideoList-name, .youTubeVideoList-videoId, .youTubeVideoList-actions {
     width:200px;
+}
+
+.youTubeVideoList-name {
+    width:400px;
+    height:20px;
+}
+
+.youTubeVideoList-actions {
+    cursor:pointer;
+}
+
+.youTubeVideoList-item {
+    position: relative;
+    display:inline-block;
+    padding:5px;
 }

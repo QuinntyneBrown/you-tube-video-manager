@@ -3,32 +3,22 @@
     <h1  data-ng-if="!vm.entity.id">Create You Tube Video <span data-ng-if="vm.entity.name.length > 0">: {{ vm.entity.name }}</span></h1>
 
     <h1 data-ng-if="vm.entity.id">Edit You Tube Video: {{ vm.entity.name }}</h1>
+    
+    <div style="margin-top:15px;">
+        <div>
+            <input class="input-field" type="text" placeholder="You Tube Video Name" data-ng-model="vm.entity.name" />
+        </div>
+        <div>
+            <input class="input-field" type="text" placeholder="You Tube Video Id" data-ng-model="vm.entity.youTubeVideoId" />
+        </div>
 
-    <tabs tabs-name="you-tube-video-editor">
+        <div>
+            <calypso-button on-click="vm.addOrUpdate({ data: vm.entity })" caption="'Save'"></calypso-button>
 
-        <tab-title>General</tab-title>
+            <calypso-button on-click="vm.create()" caption="'Create'"></calypso-button>
 
-        <tab-content>
-            <div>
-                <input class="input-field" type="text" placeholder="You Tube Video Name" data-ng-model="vm.entity.name" />
-            </div>
-            <div>
-                <input class="input-field" type="text" placeholder="You Tube Video Id" data-ng-model="vm.entity.youTubeVideoId" />
-            </div>
-        </tab-content>
-
-        <tab-title>Tags [{{ vm.entity.tags.length }}]</tab-title>
-
-        <tab-content>
-            <a data-ng-click="vm.createTag()">Create Tag</a>
-            <tag-list entities="vm.entity.tags"></tag-list>    
-        </tab-content>
-
-    </tabs>
-
-    <div>
-        <calypso-button on-click="vm.addOrUpdate({ data: vm.entity })" caption="'Save'"></calypso-button>
-
-        <calypso-button on-click="vm.create()" caption="'Create'"></calypso-button>       
+            <calypso-button on-click="vm.addTag()" caption="'Add Tag'"></calypso-button>
+        </div>
     </div>
+
 </div>

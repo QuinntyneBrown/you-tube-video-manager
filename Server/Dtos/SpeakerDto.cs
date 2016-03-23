@@ -8,6 +8,7 @@ namespace Chloe.Server.Dtos
         {
             this.Id = entity.Id;
             this.Name = entity.Name;
+            this.GitHubUsername = entity.GitHubUsername;
         }
 
         public SpeakerDto()
@@ -17,5 +18,6 @@ namespace Chloe.Server.Dtos
 
         public int Id { get; set; }
         public string Name { get; set; }
+        public string GitHubUsername { get; set; }
     }
 }

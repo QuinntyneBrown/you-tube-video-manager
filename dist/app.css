@@ -2,6 +2,15 @@
 
 
 
+.button {
+    margin-top:15px;
+    margin-bottom:30px;
+    line-height:30px;
+    width:75px;
+    background-color:#FFF;
+    border: solid 1px;
+    cursor:pointer;
+}
 body {
     font-family: 'Lato', sans-serif;
     color: #333;
@@ -29,24 +38,6 @@ h1 {
     font-size:1.5em;
     line-height:2em;
 }
-.button {
-    margin-top:15px;
-    margin-bottom:30px;
-    line-height:30px;
-    width:75px;
-    background-color:#FFF;
-    border: solid 1px;
-    cursor:pointer;
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -104,10 +95,10 @@ h1 {
     float:left; 
 }
 
-.footer {
-    background-color:#333;
-    height:150px;
-}
+
+
+
+
 .header {
     height:73px;  
     padding-right:30px;
@@ -143,12 +134,25 @@ h1 {
     margin-right:30px; 
     margin-bottom:30px;
 }
+.footer {
+    background-color:#333;
+    height:150px;
+}
 
 .login-container {
     margin:0;
     padding:0;
     background-color:#FFF;
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -169,11 +173,31 @@ h1 {
 
 
 
+.speakerList-item div {
+    position:relative;
+    float:left;
+    
+}
 
+.speakerList-name, .speakerList-speakerId, .speakerList-actions {
+    width:200px;
+}
 
+.speakerList-name {
+    width:400px;
+    height:20px;
+}
 
+.speakerList-actions {
+    cursor:pointer;
+}
 
-
+.speakerList-item {
+    position:relative;
+    display:block;
+    padding:5px;
+    height:20px;
+}
 
 
 
@@ -221,10 +245,26 @@ h1 {
 .youTubeVideoList-item div {
     position:relative;
     float:left;
+    
 }
 
 .youTubeVideoList-name, .youTubeVideoList-videoId, .youTubeVideoList-actions {
     width:200px;
+}
+
+.youTubeVideoList-name {
+    width:400px;
+    height:20px;
+}
+
+.youTubeVideoList-actions {
+    cursor:pointer;
+}
+
+.youTubeVideoList-item {
+    position: relative;
+    display:inline-block;
+    padding:5px;
 }
 
 

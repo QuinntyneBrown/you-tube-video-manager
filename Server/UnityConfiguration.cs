@@ -1,4 +1,4 @@
-﻿using Chloe.Server.Behaviours;
+﻿using Chloe.Server.Behaviors;
 using Chloe.Server.Config;
 using Chloe.Server.Config.Contracts;
 using Chloe.Server.Data;
@@ -44,7 +44,7 @@ namespace Chloe.Server
 
             container.RegisterType<IFeedbackService, FeedbackService>(new HierarchicalLifetimeManager(),
                 new Interceptor<InterfaceInterceptor>(),
-                new InterceptionBehavior<ProfilingInterceptionBehavior>());
+                new InterceptionBehavior<LoggingInterceptionBehavior>());
 
             return container;
         }

@@ -18,9 +18,10 @@ export class YouTubeVideoEditorComponent {
 
     addOrUpdateTag = options => {
         this.entity.tags.push(options.data);
-        console.log(JSON.stringify(this.entity.tags));
         this.tagEntity = {};
     }
+
+    addTag = () => alert("add tag?");
 
     createTag = () => {
         this.dispatcher.dispatch(new actions.OpenModalAction("<you-tube-video-tag-modal></you-tube-video-tag-modal>"));
