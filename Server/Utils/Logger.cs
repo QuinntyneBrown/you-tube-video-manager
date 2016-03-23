@@ -5,6 +5,11 @@ namespace Chloe.Server.Utils
 {
     public class Logger : ILogger
     {
+        public void Log(string message)
+        {
+
+        }
+
         public void Log(Exception exception)
         {
 
