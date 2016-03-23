@@ -7,7 +7,7 @@ namespace Chloe.Server.Utils
     {
         public void Log(Exception exception)
         {
-            throw new NotImplementedException();
+
         }
     }
 }

@@ -6,6 +6,9 @@ using Chloe.Server.Auth;
 using Microsoft.Practices.Unity;
 using Chloe.Server.Config.Contracts;
 using Microsoft.Owin.Security.OAuth;
+using Chloe.App_Start;
+using Chloe.Server.Attributes;
+using Chloe.Server.Utils.Contracts;
 
 namespace Chloe.Server
 {
@@ -13,6 +16,10 @@ namespace Chloe.Server
     {
         public static void Install(HttpConfiguration config, IAppBuilder app)
         {
+            WebApiUnityActionFilterProvider.RegisterFilterProviders(config);
+
+            GlobalConfiguration.Configuration.Filters.Add(new ChloeHandleErrorAttribute(UnityConfiguration.GetContainer().Resolve<ILogger>()));
+
             config.SuppressHostPrincipal();
 
             Chloe.Server.Services.Contracts.IIdentityService identityService = UnityConfiguration.GetContainer().Resolve<Chloe.Server.Services.Contracts.IIdentityService>();

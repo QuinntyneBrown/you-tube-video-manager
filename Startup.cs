@@ -14,7 +14,7 @@ namespace Chloe
         {
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(UnityConfiguration.GetContainer());
 
-            GlobalConfiguration.Configure(config => ApiConfiguration.Install(config, app));
+            GlobalConfiguration.Configure(config => ApiConfiguration.Install(config, app));            
         }
     }
 }
