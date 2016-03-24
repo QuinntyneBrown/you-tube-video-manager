@@ -25,6 +25,8 @@ require("./auth-interceptor");
 
 
 var app = (<any>angular.module("app.core", [
+    "ngSanitize",
+
     "addOrUpdate",
     "appendToBodyAsync",
     "apiEndpoint",

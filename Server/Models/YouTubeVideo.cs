@@ -13,6 +13,8 @@ namespace Chloe.Server.Models
         }
 
         public string YouTubeVideoId { get; set; }
+        public string Description { get; set; }
         public ICollection<YouTubeVideoTag> Tags { get; set; }
+
     }
 }

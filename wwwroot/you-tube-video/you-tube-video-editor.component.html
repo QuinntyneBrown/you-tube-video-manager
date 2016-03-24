@@ -11,7 +11,9 @@
         <div>
             <input class="input-field" type="text" placeholder="You Tube Video Id" data-ng-model="vm.entity.youTubeVideoId" />
         </div>
-
+        <div>
+            <textarea ui-tinymce ng-model="vm.entity.description"></textarea>
+        </div>
         <div>
             <calypso-button on-click="vm.addOrUpdate({ data: vm.entity })" caption="'Save'"></calypso-button>
 

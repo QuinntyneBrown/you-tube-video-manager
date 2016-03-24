@@ -15,9 +15,12 @@ import { PlaylistActionCreator } from "../playlist/playlist.actions";
 export class HomePageComponent {
     constructor(private homePageActionCreator: HomePageActionCreator, playlistActionCreator: PlaylistActionCreator) { }
   
-    storeOnChange = state => this.videos = state.youTubeVideos;
+    storeOnChange = state => {
+        this.videos = state.youTubeVideos;
+        console.log(JSON.stringify(this.videos));
+    };
 
-    //colors = [{ front: '#DCC6E0', back: '#C5EFF7' }];
+
     colors = 1;
     videos;
 }

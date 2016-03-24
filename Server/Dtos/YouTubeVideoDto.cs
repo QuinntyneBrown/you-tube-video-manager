@@ -11,6 +11,7 @@ namespace Chloe.Server.Dtos
             this.Id = entity.Id;
             this.Name = entity.Name;
             this.YouTubeVideoId = entity.YouTubeVideoId;
+            this.Description = entity.Description;
             this.Tags = new HashSet<TagDto>();
 
             foreach(var tag in entity.Tags)
@@ -26,6 +27,7 @@ namespace Chloe.Server.Dtos
 
         public int Id { get; set; }
         public string Name { get; set; }
+        public string Description { get; set; }
         public string YouTubeVideoId { get; set; }
         public ICollection<TagDto> Tags { get; set; }
     }

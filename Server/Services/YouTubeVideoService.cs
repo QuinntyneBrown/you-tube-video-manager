@@ -26,7 +26,7 @@ namespace Chloe.Server.Services
             if (entity == null) repository.Add(entity = new YouTubeVideo());
             entity.Name = request.Name;
             entity.YouTubeVideoId = request.YouTubeVideoId;
-
+            entity.Description = request.Description;
             entity.Tags = new HashSet<YouTubeVideoTag>();
 
             foreach(var tag in request.Tags)

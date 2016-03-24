@@ -193,6 +193,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="bower_components\angular-ui-tinymce\dist\tinymce.min.js" />
+    <Content Include="bower_components\tinymce-dist\tinymce.js" />
     <Content Include="dist\app.css" />
     <Content Include="dist\app.js" />
     <Content Include="dist\app.templates.js" />
@@ -202,6 +204,7 @@
     <Content Include="images\search.png" />
     <Content Include="index.html" />
     <Content Include="lib\angular-route.js" />
+    <Content Include="lib\angular-sanitize.js" />
     <Content Include="lib\angular.js" />
     <Content Include="lib\jquery.js" />
     <Content Include="lib\pnp-ww.js" />
@@ -328,6 +331,7 @@
     <Content Include="wwwroot\button\button.service.js.map" />
     <Content Include="wwwroot\router-outlet\router-outlet.component.js.map" />
     <Content Include="wwwroot\router-outlet\router-outlet.module.js.map" />
+    <Content Include="package.json" />
     <None Include="_bin_deployableAssemblies\amd64\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\amd64\sqlceqp40.dll" />
     <None Include="_bin_deployableAssemblies\amd64\sqlceme40.dll" />

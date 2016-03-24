@@ -50,7 +50,9 @@ var app: any = angular.module("app", [
     "app.speaker",
     "app.watchHistory",
     "app.photo",
-    "app.feedback"
+    "app.feedback",
+
+    "ui.tinymce"
 ]);
 
 app.config(["initialStateProvider", "localStorageManagerProvider", (initialStateProvider, localStorageManagerProvider) => {
