@@ -15,6 +15,8 @@ require("./watch-history/watch-history.module");
 require("./footer/footer.module");
 require("./fly-out/fly-out.module");
 
+require("./about/about.module");
+require("./search/search.module");
 require("./you-tube-video/you-tube-video.module");
 require("./tag/tag.module");
 require("./flip-card/flip-card.module");
@@ -33,6 +35,7 @@ var app: any = angular.module("app", [
     "app.core",
     "app.routerOutlet",
 
+    "app.about",
     "app.app",
     "app.backdrop",
     "app.button",
@@ -53,6 +56,7 @@ var app: any = angular.module("app", [
     "app.photo",
     "app.feedback",
     "app.logEntry",
+    "app.search",
 
     "ui.tinymce"
 ]);
@@ -75,6 +79,7 @@ app.config(["$routeProvider", ($routeProvider: angular.route.IRouteProvider) => 
         .when("/login", { template: "<login-container></login-container>" })
         .when("/register", { template: "<registration-page></registration-page>" })
         .when("/feedback", { template: "<feedback-page></feedback-page>" })
+        .when("/about", { template: "<about-container></about-container>" })
         .when("/youtubevideo/play/:youTubeVideoId", { template: "<you-tube-video-player-page></you-tube-video-player-page>" });       
 
     $routeProvider
@@ -91,10 +96,12 @@ app.config(["$routeProvider", ($routeProvider: angular.route.IRouteProvider) => 
         .when("/admin/tags", { template: "<tags-page></tags-page>" })
         .when("/admin/youtubevideo/edit/:youTubeVideoId", { template: "<you-tube-videos-page></you-tube-videos-page>" })
         .when("/admin/youtubevideos", { template: "<you-tube-videos-page></you-tube-videos-page>" });
+    
+        $routeProvider.otherwise("/");
 }]);
 
 app.config(["apiEndpointProvider", (apiEndpointProvider) => {
-    apiEndpointProvider.configure("/api");
+    apiEndpointProvider.configure("http://www.angular.video/api");
 }]);
 
 app.config(["loginRedirectProvider", (loginRedirectProvider) => {

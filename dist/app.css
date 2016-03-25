@@ -1,10 +1,7 @@
 
-
-
-
 body {
     font-family: 'Lato', sans-serif;
-    color: #333;
+    color: #444;
     margin:0;
     padding:0;
     background-color:#CCC;
@@ -27,8 +24,12 @@ h1 {
     padding:0;
     margin:0;
     font-size:1.5em;
-    line-height:2em;
+    line-height:1.65em;
 }
+
+
+
+
 .button {
     margin-top:15px;
     margin-bottom:30px;
@@ -46,14 +47,6 @@ h1 {
 
 
 
-.input-field {
-    padding-right:15px;
-    padding-left:15px;
-    line-height:2em;
-    height:30px;
-    min-width:200px;
-    margin-bottom:15px;
-}
 
 
 
@@ -103,16 +96,21 @@ h1 {
     position:relative; 
     float:left; 
 }
-
-.footer {
-    background-color:#333;
-    height:150px;
+.input-field {
+    padding-right:15px;
+    padding-left:15px;
+    line-height:2em;
+    height:30px;
+    min-width:200px;
+    margin-bottom:15px;
 }
+
 .header {
     height:73px;  
     padding-right:30px;
     margin-bottom:1px;
     background-color:#FFF;
+    overflow:hidden;
 }
 
 .header a:link, 
@@ -134,16 +132,54 @@ h1 {
     margin-left:30px;
 }
 
-.header .search {
+.header .search, .header .user-links {
     position:relative;
     float:right;
 }
- 
-.flip-card { 
-    margin-right:30px; 
-    margin-bottom:30px;
+
+.header .search {
+    margin-right:15px;
 }
 
+.header a.link-image-link:link, 
+.header a.link-image-link {
+    text-decoration:none;
+    color:#333;
+    padding:0;
+    margin:0;
+    line-height:0px;
+}
+
+.header img {
+    border-width:0;
+    border:none;
+}
+ 
+.footer {
+    background-color:#333;
+    height:150px;
+}
+.flip-card { 
+    margin:15px;
+}
+
+.home-container-flip-card-link-container, .flip-card-back-added-container {
+    padding:15px;
+}
+
+
+.home-container-flip-card-link, .flip-card-back-added {
+    color:#FFF;
+    text-decoration:none;
+    font-size:1.25em;
+}
+.link-image a {
+    line-height:none;
+}
+
+.link-image-link {
+    line-height:0;
+}
 
 
 
@@ -179,6 +215,9 @@ h1 {
 
 
 
+.search-modal-container {
+
+}
 
 
 

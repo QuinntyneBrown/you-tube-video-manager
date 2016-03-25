@@ -1,10 +1,8 @@
-<div class="header">    
+<div class="header">
     <logo href="#/" src="images/logo.png"></logo>
 
     <div class="links" data-ng-if="!vm.isAdmin()">
-        <a href="#/">Speakers</a>
-        <a href="#/">Talks</a>
-        <a href="#/">Technologies</a>
+        <a data-ng-if="vm.currentUser" >{{ ::vm.currentUser.firstname }}</a>
     </div>
 
     <div class="links" data-ng-if="vm.isAdmin()">
@@ -13,14 +11,12 @@
         <a href="#/login">log out</a>
     </div>
 
-    <link-image class="search" src="images/search.png"></link-image>
+    <link-image class="search" src="images/search.png" data-ng-click="vm.openSearchModal()"></link-image>
 
-    <div class="links" style="display:none;">
-        <a data-ng-if="!vm.currentUser" href="#/login">Login</a>
-        <a data-ng-if="!vm.currentUser" href="#/register">Register</a>
-        <a data-ng-if="vm.currentUser" href="#/admin/youtubevideos">Videos</a>
-        <a data-ng-if="vm.currentUser" data-ng-click="vm.openFeedbackModal()">Feedback</a>
-        <a data-ng-if="vm.currentUser" href="#/login">log out</a>
+    <div class="user-links">
+        <a href="#/">Videos</a>
+        <a href="#/">Collections</a>
+        <a href="#/about">About</a>
     </div>
 
     <div style="clear:both"></div>

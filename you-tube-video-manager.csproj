@@ -224,6 +224,8 @@
     <Content Include="lib\rx.all.compat.min.js" />
     <Content Include="packages.config" />
     <Content Include="tsconfig.json" />
+    <Content Include="wwwroot\about\about-container.component.css" />
+    <Content Include="wwwroot\about\about-container.component.html" />
     <Content Include="wwwroot\account\account-editor.component.css" />
     <Content Include="wwwroot\account\account-editor.component.html" />
     <Content Include="wwwroot\account\account-list.component.css" />
@@ -377,6 +379,8 @@
     <None Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
     <Content Include="wwwroot\router-outlet\router-outlet.component.js" />
     <Content Include="wwwroot\router-outlet\router-outlet.module.js" />
+    <Content Include="wwwroot\search\search-modal-container.component.css" />
+    <Content Include="wwwroot\search\search-modal-container.component.html" />
     <Content Include="wwwroot\search\search-popover.component.css" />
     <Content Include="wwwroot\search\search-popover.component.html" />
     <Content Include="wwwroot\search\search.component.css" />
@@ -657,6 +661,8 @@
     <TypeScriptCompile Include="typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="typings\requirejs\require.d.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
+    <TypeScriptCompile Include="wwwroot\about\about-container.component.ts" />
+    <TypeScriptCompile Include="wwwroot\about\about.module.ts" />
     <TypeScriptCompile Include="wwwroot\account\account-editor.component.ts" />
     <TypeScriptCompile Include="wwwroot\account\account-list.component.ts" />
     <TypeScriptCompile Include="wwwroot\account\account.actions.ts" />
@@ -837,6 +843,7 @@
     <TypeScriptCompile Include="wwwroot\registration\registration.service.ts" />
     <TypeScriptCompile Include="wwwroot\router-outlet\router-outlet.component.ts" />
     <TypeScriptCompile Include="wwwroot\router-outlet\router-outlet.module.ts" />
+    <TypeScriptCompile Include="wwwroot\search\search-modal-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\search\search-popover.component.ts" />
     <TypeScriptCompile Include="wwwroot\search\search.actions.ts" />
     <TypeScriptCompile Include="wwwroot\search\search.component.ts" />

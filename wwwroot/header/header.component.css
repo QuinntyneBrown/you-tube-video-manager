@@ -3,6 +3,7 @@
     padding-right:30px;
     margin-bottom:1px;
     background-color:#FFF;
+    overflow:hidden;
 }
 
 .header a:link, 
@@ -24,8 +25,26 @@
     margin-left:30px;
 }
 
-.header .search {
+.header .search, .header .user-links {
     position:relative;
     float:right;
+}
+
+.header .search {
+    margin-right:15px;
+}
+
+.header a.link-image-link:link, 
+.header a.link-image-link {
+    text-decoration:none;
+    color:#333;
+    padding:0;
+    margin:0;
+    line-height:0px;
+}
+
+.header img {
+    border-width:0;
+    border:none;
 }
  

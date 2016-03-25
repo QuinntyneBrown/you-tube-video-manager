@@ -1,1 +1,7 @@
-﻿
+﻿.link-image a {
+    line-height:none;
+}
+
+.link-image-link {
+    line-height:0;
+}

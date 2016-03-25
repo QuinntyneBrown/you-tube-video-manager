@@ -14,11 +14,19 @@ require('./header.component.css');
 export class HeaderComponent {
     constructor(private $location: angular.ILocationService, private $rootScope: angular.IRootScopeService, private dispatcher: IDispatcher, private headerActionCreator: HeaderActionCreator) {
         $rootScope.$on("$routeChangeSuccess", this.onRouteChangeSuccess);
+        
     }  
     storeOnChange = state => this.currentUser = state.currentUser;
+
     openFeedbackModal = () => {        
         this.dispatcher.dispatch(new actions.OpenModalAction({
             html: "<feedback-modal></feedback-modal>"
+        }));
+    }
+
+    openSearchModal = () => {
+        this.dispatcher.dispatch(new actions.OpenModalAction({
+            html: "<search-modal-container></search-modal-container>"
         }));
     }
 

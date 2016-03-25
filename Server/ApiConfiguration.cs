@@ -9,6 +9,8 @@ using Microsoft.Owin.Security.OAuth;
 using Chloe.App_Start;
 using Chloe.Server.Attributes;
 using Chloe.Server.Utils.Contracts;
+using Microsoft.Owin.Cors;
+using System.Web.Http.Cors;
 
 namespace Chloe.Server
 {
@@ -24,6 +26,8 @@ namespace Chloe.Server
 
             config.SuppressHostPrincipal();
 
+            app.UseCors(CorsOptions.AllowAll);
+           
             Chloe.Server.Services.Contracts.IIdentityService identityService = UnityConfiguration.GetContainer().Resolve<Chloe.Server.Services.Contracts.IIdentityService>();
 
             Chloe.Server.Config.Contracts.IConfigurationProvider configurationProvider = UnityConfiguration.GetContainer().Resolve<IConfigurationProvider>();

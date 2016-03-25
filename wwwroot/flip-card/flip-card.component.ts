@@ -35,7 +35,7 @@ export class FlipCardComponent {
         this.components.push(options.component);
 
         if (this.viewChildren.length == 2) {
-            this.viewChildren[0].style.backgroundColor = "#999";
+            this.viewChildren[0].style.backgroundColor = "#ECECEC";
             this.viewChildren[1].style.backgroundColor = "#B32E31";
         }
     }
