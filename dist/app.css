@@ -30,15 +30,11 @@ h1 {
     font-size:1.5em;
     line-height:1.65em;
 }
-.button {
-    margin-top:15px;
-    margin-bottom:30px;
-    line-height:30px;
-    width:75px;
-    background-color:#FFF;
-    border: solid 1px;
-    cursor:pointer;
-}
+
+
+
+
+
 
 
 
@@ -56,11 +52,6 @@ h1 {
     min-width:200px;
     margin-bottom:15px;
 }
-
-
-
-
-
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
@@ -186,16 +177,16 @@ h1 {
 .link-image-link {
     line-height:0;
 }
+
+
+
+
+
 .login-container {
     margin:0;
     padding:0;
     background-color:#FFF;
 }
-
-
-
-
-
 
 
 
@@ -320,3 +311,13 @@ h1 {
 
 
 
+
+.button {
+    margin-top:15px;
+    margin-bottom:30px;
+    line-height:30px;
+    width:75px;
+    background-color:#FFF;
+    border: solid 1px;
+    cursor:pointer;
+}

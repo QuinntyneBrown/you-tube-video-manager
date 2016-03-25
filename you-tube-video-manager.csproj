@@ -718,6 +718,7 @@
     <TypeScriptCompile Include="wwwroot\core\change-detection-strategy.ts" />
     <TypeScriptCompile Include="wwwroot\core\component-decorators.ts" />
     <TypeScriptCompile Include="wwwroot\core\component-extension.ts" />
+    <TypeScriptCompile Include="wwwroot\core\context-document.ts" />
     <TypeScriptCompile Include="wwwroot\core\core.module.ts" />
     <TypeScriptCompile Include="wwwroot\core\extend-css-async.ts" />
     <TypeScriptCompile Include="wwwroot\core\fetch.ts" />
@@ -729,6 +730,7 @@
     <TypeScriptCompile Include="wwwroot\core\pluck-out.ts" />
     <TypeScriptCompile Include="wwwroot\core\pluck.ts" />
     <TypeScriptCompile Include="wwwroot\core\remove-element.ts" />
+    <TypeScriptCompile Include="wwwroot\core\renderer.ts" />
     <TypeScriptCompile Include="wwwroot\core\route-resolver.ts" />
     <TypeScriptCompile Include="wwwroot\core\route-when-extension.ts" />
     <TypeScriptCompile Include="wwwroot\core\safe-digest.ts" />

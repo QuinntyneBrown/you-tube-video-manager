@@ -21,8 +21,8 @@ require("./route-resolver");
 require("./route-when-extension");
 require("./set-opacity-async");
 require("./auth-interceptor");
-
-
+require("./context-document");
+require("./renderer");
 
 var app = (<any>angular.module("app.core", [
     "ngSanitize",
@@ -31,6 +31,7 @@ var app = (<any>angular.module("app.core", [
     "appendToBodyAsync",
     "apiEndpoint",
     "authInterceptor",
+    "contextDocument",
     "extendCssAsync",
     "fetch",
     "formEncode",
@@ -38,9 +39,10 @@ var app = (<any>angular.module("app.core", [
     "localStorageManager",
     "loginRedirect",
     "removeElement",
+    "renderer",
     "routeResolver",
     "routeWhenExtension",
     "safeDigest",
     "setOpacityAsync",
-    "store",   
+    "store",
 ]));
