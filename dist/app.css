@@ -47,6 +47,7 @@ h1 {
 
 
 
+
 .input-field {
     padding-right:15px;
     padding-left:15px;
@@ -185,15 +186,15 @@ h1 {
 .link-image-link {
     line-height:0;
 }
-
-
-
-
 .login-container {
     margin:0;
     padding:0;
     background-color:#FFF;
 }
+
+
+
+
 
 
 
@@ -223,6 +224,7 @@ h1 {
 .search-modal-container-close {
     cursor:pointer;
 }
+
 
 
 

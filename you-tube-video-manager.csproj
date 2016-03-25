@@ -253,6 +253,8 @@
     <Content Include="wwwroot\collection\collection-list.component.html" />
     <Content Include="wwwroot\collection\collection.component.css" />
     <Content Include="wwwroot\collection\collection.component.html" />
+    <Content Include="wwwroot\collection\collections-feature-container.component.css" />
+    <Content Include="wwwroot\collection\collections-feature-container.component.html" />
     <Content Include="wwwroot\collection\collections-page.component.css" />
     <Content Include="wwwroot\collection\collections-page.component.html" />
     <Content Include="wwwroot\contact-info\contact-info-editor.component.css" />
@@ -385,6 +387,8 @@
     <Content Include="wwwroot\search\search-popover.component.html" />
     <Content Include="wwwroot\search\search.component.css" />
     <Content Include="wwwroot\search\search.component.html" />
+    <Content Include="wwwroot\slide\slide.component.css" />
+    <Content Include="wwwroot\slide\slide.component.html" />
     <Content Include="wwwroot\speaker\speaker-editor.component.css" />
     <Content Include="wwwroot\speaker\speaker-editor.component.html" />
     <Content Include="wwwroot\speaker\speaker-list.component.css" />
@@ -694,6 +698,7 @@
     <TypeScriptCompile Include="wwwroot\collection\collection.module.ts" />
     <TypeScriptCompile Include="wwwroot\collection\collection.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\collection\collection.service.ts" />
+    <TypeScriptCompile Include="wwwroot\collection\collections-feature-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\collection\collections-page.component.ts" />
     <TypeScriptCompile Include="wwwroot\contact-info\contact-info-editor.component.ts" />
     <TypeScriptCompile Include="wwwroot\contact-info\contact-info-list.component.ts" />
@@ -851,6 +856,12 @@
     <TypeScriptCompile Include="wwwroot\search\search.module.ts" />
     <TypeScriptCompile Include="wwwroot\search\search.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\search\search.service.ts" />
+    <TypeScriptCompile Include="wwwroot\slide\slide.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\slide\slide.component.ts" />
+    <TypeScriptCompile Include="wwwroot\slide\slide.model.ts" />
+    <TypeScriptCompile Include="wwwroot\slide\slide.module.ts" />
+    <TypeScriptCompile Include="wwwroot\slide\slide.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\slide\slide.service.ts" />
     <TypeScriptCompile Include="wwwroot\speaker\speaker-editor.component.ts" />
     <TypeScriptCompile Include="wwwroot\speaker\speaker-list.component.ts" />
     <TypeScriptCompile Include="wwwroot\speaker\speaker.actions.ts" />

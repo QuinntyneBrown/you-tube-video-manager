@@ -30,6 +30,7 @@ require("./profile/profile.module");
 require("./profile-setting/profile-setting.module");
 require("./photo/photo.module");
 require("./log-entry/log-entry.module");
+require("./slide/slide.module");
 
 var app: any = angular.module("app", [
     "app.core",
@@ -57,6 +58,7 @@ var app: any = angular.module("app", [
     "app.feedback",
     "app.logEntry",
     "app.search",
+    "app.slide",
 
     "ui.tinymce"
 ]);
@@ -80,6 +82,7 @@ app.config(["$routeProvider", ($routeProvider: angular.route.IRouteProvider) => 
         .when("/register", { template: "<registration-page></registration-page>" })
         .when("/feedback", { template: "<feedback-page></feedback-page>" })
         .when("/about", { template: "<about-container></about-container>" })
+        .when("/collections", { template: "<collections-feature-container></collections-feature-container>" }) 
         .when("/youtubevideo/play/:youTubeVideoId", { template: "<you-tube-video-player-page></you-tube-video-player-page>" });       
 
     $routeProvider
