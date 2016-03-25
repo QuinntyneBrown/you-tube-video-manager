@@ -1,4 +1,8 @@
 
+
+
+
+
 body {
     font-family: 'Lato', sans-serif;
     color: #444;
@@ -26,10 +30,6 @@ h1 {
     font-size:1.5em;
     line-height:1.65em;
 }
-
-
-
-
 .button {
     margin-top:15px;
     margin-bottom:30px;
@@ -39,6 +39,10 @@ h1 {
     border: solid 1px;
     cursor:pointer;
 }
+
+
+
+
 
 
 
@@ -56,32 +60,6 @@ h1 {
 
 
 
-
-
-
-
-
-.link-image a {
-    line-height:none;
-}
-
-.link-image-link {
-    line-height:0;
-}
-.flip-card { 
-    margin:15px;
-}
-
-.home-container-flip-card-link-container, .flip-card-back-added-container {
-    padding:15px;
-}
-
-
-.home-container-flip-card-link, .flip-card-back-added {
-    color:#FFF;
-    text-decoration:none;
-    font-size:1.25em;
-}
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
@@ -126,29 +104,11 @@ h1 {
     position:relative; 
     float:left; 
 }
+
 .footer {
     background-color:#333;
     height:150px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .header {
     height:73px;  
     padding-right:30px;
@@ -200,6 +160,35 @@ h1 {
     border:none;
 }
  
+.flip-card { 
+    margin:15px;
+}
+
+.home-container-flip-card-link-container, .flip-card-back-added-container {
+    padding:15px;
+}
+
+
+.home-container-flip-card-link, .flip-card-back-added {
+    color:#FFF;
+    text-decoration:none;
+    font-size:1.25em;
+}
+
+.flip-card p {
+    line-height:1.5em;
+}
+.link-image a {
+    line-height:none;
+}
+
+.link-image-link {
+    line-height:0;
+}
+
+
+
+
 .login-container {
     margin:0;
     padding:0;
@@ -208,11 +197,31 @@ h1 {
 
 
 
+
 .drop-zone {
     background-color:azure;
     height:500px;
     width:500px;
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.search-modal-container-close {
+    cursor:pointer;
 }
 
 
@@ -244,19 +253,6 @@ h1 {
 }
 
 
-.search-modal-container-close {
-    cursor:pointer;
-}
-
-
-
-
-
-
-
-
-
-
 .tab-title {
     display:inline-block;
     font-weight:100;
@@ -274,6 +270,14 @@ h1 {
 .tabs-contentInActive {
     display:none;
 }
+
+
+
+
+
+
+
+
 
 
 
