@@ -8,7 +8,7 @@ var YT: any;
     styleUrls: ["wwwroot/you-tube-video/you-tube-video-player.component.css"],
     selector: "you-tube-video-player",
     providers: ["$element", "$scope", "$window", "guid"],
-    inputs: ["height", "width", "videoId"]
+    inputs: ["height?", "width?", "videoId"]
 })
 export class YouTubeVideoPlayerComponent {
     constructor(private $element: ng.IAugmentedJQuery,
@@ -42,7 +42,7 @@ export class YouTubeVideoPlayerComponent {
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     }
 
-    public onYouTubeIFrameApiReady = () => {
+    public onYouTubeIFrameApiReady = () => {        
         this.player = new (<any>this.$window).YT.Player((<any>this.$element[0]), {
             playerVars: {
                 autoplay: 0,
@@ -64,7 +64,7 @@ export class YouTubeVideoPlayerComponent {
 
     public get height() { return this._height; }
 
-    public set height(value: string) {
+    public set height(value: string) {        
         if (value && this._height && value != this._height)
             this.player.setSize(this.width, this.height);
 
@@ -76,6 +76,7 @@ export class YouTubeVideoPlayerComponent {
     public get width() { return this._width; }
 
     public set width(value: string) {
+        alert(this.width);
         if (value && this._width && value != this._width)
             this.player.setSize(this.width, this.height);
 

@@ -1,0 +1,12 @@
+<div class="search">
+
+    <h1>Search</h1>
+
+    <input id="search-input-field" class="input-field" />
+
+    <div class="results">
+        <div data-ng-repeat="result in vm.searchResults" data-ng-if="vm.searchInputElement.value && vm.searchInputElement.value.length > 1">
+            <h1>{{ result.name }}</h1>
+        </div>
+    </div>
+</div>

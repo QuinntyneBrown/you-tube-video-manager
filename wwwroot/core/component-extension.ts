@@ -111,6 +111,18 @@ angular.module = function () {
 
                         scope.$on("$destroy", () => subscription.dispose());
                     }
+
+                    //https://developer.mozilla.org/en-US/docs/Web/Events/resize
+
+                    if (scope.vm && scope.vm.onResize) {
+                        window.addEventListener("resize", scope.vm.onResize, false);
+                        window.addEventListener("orientationchange", scope.vm.onResize, false);
+
+                        scope.$on("$destroy", () => {
+                            window.removeEventListener("resize", scope.vm.onResize, false);
+                            window.removeEventListener("orientationchange", scope.vm.onResize, false)
+                        });
+                    }
                 },
                 post: function (scope: any, element, attributes, controller) {
 

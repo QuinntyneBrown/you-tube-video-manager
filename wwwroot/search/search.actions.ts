@@ -1,27 +1,14 @@
 import { IDispatcher } from "../core/store";
-import { BaseActionCreator } from "../core/action-creator";
 
-export class SearchActionCreator extends BaseActionCreator {
-    constructor($location: angular.ILocationService, dispatcher: IDispatcher, searchService, guid) {
-        super($location,searchService,dispatcher,guid,AddOrUpdateSearchAction,AllSearchsAction,RemoveSearchAction,SetCurrentSearchAction)
-    }    
+export class SearchActionCreator  {
+    constructor(private dispatcher: IDispatcher, private searchService, private guid) { }    
 
-	addOrUpdateSuccess = options => this.dispatcher.dispatch(new AddOrUpdateSearchSuccessAction(options.entity));
-
-	currentSearchRemoved = () => this.dispatcher.dispatch(new CurrentSearchRemovedAction());
+    public query = options => {
+        var newId = this.guid();
+        this.searchService.query({ term: options.term })
+            .then(results => this.dispatcher.dispatch(new SearchQueryAction(newId, options.term, results)));
+        return newId;
+    }
 }
 
-
-export class AddOrUpdateSearchAction { constructor(public id, public entity) { } }
-
-export class AllSearchsAction { constructor(public id, public entities) { } }
-
-export class RemoveSearchAction { constructor(public id, public entity) { } }
-
-export class SearchsFilterAction { constructor(public id, public term) { } }
-
-export class SetCurrentSearchAction { constructor(public entity) { } }
-
-export class AddOrUpdateSearchSuccessAction { constructor(public entity) { } }
-
-export class CurrentSearchRemovedAction { constructor() { } }
+export class SearchQueryAction { constructor(public id, public term, public results) { } }

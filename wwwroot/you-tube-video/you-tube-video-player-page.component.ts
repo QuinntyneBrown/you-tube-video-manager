@@ -10,4 +10,7 @@ import * as actions from "./you-tube-video.actions";
 export class YouTubeVideoPlayerPageComponent {
     constructor(private $routeParams: any, youTubeVideoActionCreator: actions.YouTubeVideoActionCreator) { }
     youTubeVideoId = this.$routeParams.youTubeVideoId;
+    ngOnit = () => { }    
+    playerHeight:number = 400;
+    playerWidth: number = 600;
 }
