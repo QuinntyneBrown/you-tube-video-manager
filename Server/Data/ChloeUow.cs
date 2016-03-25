@@ -44,6 +44,7 @@ namespace Chloe.Server.Data
         public IRepository<Profile> Profiles { get { return GetStandardRepo<Profile>(); } }
         public IRepository<WatchHistory> WatchHistories { get { return GetStandardRepo<WatchHistory>(); } }
         public IRepository<Photo> Photos { get { return GetStandardRepo<Photo>(); } }
+        public IRepository<LogEntry> LogEntries { get { return GetStandardRepo<LogEntry>(); } }
 
         protected void ConfigureDbContext(IDbContext dbContext)
         {

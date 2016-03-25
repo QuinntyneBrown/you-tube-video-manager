@@ -30,6 +30,7 @@ namespace Chloe.Server.Data
         public DbSet<ProfileSetting> ProfileSettings { get; set; }
         public DbSet<ContactInfo> ContactInfos { get; set; }
         public DbSet<WatchHistory> WatchHistories { get; set; }
+        public DbSet<LogEntry> LogEntries { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

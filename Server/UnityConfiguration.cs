@@ -41,6 +41,7 @@ namespace Chloe.Server
             container.RegisterType<IWatchHistoryService, WatchHistoryService>();
             container.RegisterType<IPhotoService, PhotoService>();
             container.RegisterType<ILogger, Logger>();
+            container.RegisterType<ILogEntryService, LogEntryService>();
 
             container.RegisterType<IFeedbackService, FeedbackService>(new HierarchicalLifetimeManager(),
                 new Interceptor<InterfaceInterceptor>(),

@@ -6,6 +6,8 @@ using Chloe.Server.Services.Contracts;
 using System.Data.Entity;
 using System.Linq;
 using Chloe.Server.Models;
+using System.Threading;
+using System.Security.Claims;
 
 namespace Chloe.Server.Services
 {
@@ -49,8 +51,8 @@ namespace Chloe.Server.Services
         public ICollection<YouTubeVideoDto> Get()
         {
             ICollection<YouTubeVideoDto> response = new HashSet<YouTubeVideoDto>();
-            repository.GetAll().Include( x => x.Tags ).Include("Tags.Tag").Where(x => x.IsDeleted == false)
-                .ForEachAsync(x => response.Add(new YouTubeVideoDto(x)));
+            var entities = repository.GetAll().Include(x => x.Tags).Include("Tags.Tag").Where(x => x.IsDeleted == false).ToList();
+            foreach(var entity in entities) { response.Add(new YouTubeVideoDto(entity)); }    
             return response;
         }
 

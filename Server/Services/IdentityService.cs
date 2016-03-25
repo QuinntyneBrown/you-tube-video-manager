@@ -38,6 +38,7 @@ namespace Chloe.Server.Services
         {
             return this.uow.Users.GetAll().Where(x => x.Username == usermame && x.Password == password).Count() > 0;
         }
+
         public ICollection<System.Security.Claims.Claim> GetClaimsForUser(string username)
         {
             var claims = new List<System.Security.Claims.Claim>();

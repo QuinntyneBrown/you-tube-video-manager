@@ -194,6 +194,17 @@
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="bower_components\angular-ui-tinymce\dist\tinymce.min.js" />
+    <Content Include="bower_components\tinymce-dist\skins\lightgray\content.inline.min.css" />
+    <Content Include="bower_components\tinymce-dist\skins\lightgray\content.min.css" />
+    <Content Include="bower_components\tinymce-dist\skins\lightgray\fonts\tinymce-small.svg" />
+    <Content Include="bower_components\tinymce-dist\skins\lightgray\fonts\tinymce.svg" />
+    <Content Include="bower_components\tinymce-dist\skins\lightgray\img\anchor.gif" />
+    <Content Include="bower_components\tinymce-dist\skins\lightgray\img\loader.gif" />
+    <Content Include="bower_components\tinymce-dist\skins\lightgray\img\object.gif" />
+    <Content Include="bower_components\tinymce-dist\skins\lightgray\img\trans.gif" />
+    <Content Include="bower_components\tinymce-dist\skins\lightgray\skin.ie7.min.css" />
+    <Content Include="bower_components\tinymce-dist\skins\lightgray\skin.min.css" />
+    <Content Include="bower_components\tinymce-dist\themes\modern\theme.js" />
     <Content Include="bower_components\tinymce-dist\tinymce.js" />
     <Content Include="dist\app.css" />
     <Content Include="dist\app.js" />
@@ -201,6 +212,7 @@
     <Content Include="favicon.ico" />
     <Content Include="gulpfile.js" />
     <Content Include="images\logo.jpg" />
+    <Content Include="images\logo.png" />
     <Content Include="images\search.png" />
     <Content Include="index.html" />
     <Content Include="lib\angular-route.js" />
@@ -273,6 +285,14 @@
     <Content Include="wwwroot\header\header.component.html" />
     <Content Include="wwwroot\home-page\home-page.component.css" />
     <Content Include="wwwroot\home-page\home-page.component.html" />
+    <Content Include="wwwroot\log-entry\log-entry-editor.component.css" />
+    <Content Include="wwwroot\log-entry\log-entry-editor.component.html" />
+    <Content Include="wwwroot\log-entry\log-entry-list.component.css" />
+    <Content Include="wwwroot\log-entry\log-entry-list.component.html" />
+    <Content Include="wwwroot\log-entry\log-entry.component.css" />
+    <Content Include="wwwroot\log-entry\log-entry.component.html" />
+    <Content Include="wwwroot\log-entry\log-entrys-container.component.css" />
+    <Content Include="wwwroot\log-entry\log-entrys-container.component.html" />
     <Content Include="wwwroot\login\login-container.component.css" />
     <Content Include="wwwroot\login\login-container.component.html" />
     <Content Include="wwwroot\login\login.component.css" />
@@ -332,6 +352,14 @@
     <Content Include="wwwroot\router-outlet\router-outlet.component.js.map" />
     <Content Include="wwwroot\router-outlet\router-outlet.module.js.map" />
     <Content Include="package.json" />
+    <Content Include="bower_components\tinymce-dist\skins\lightgray\fonts\tinymce-small.eot" />
+    <Content Include="bower_components\tinymce-dist\skins\lightgray\fonts\tinymce-small.ttf" />
+    <Content Include="bower_components\tinymce-dist\skins\lightgray\fonts\tinymce-small.woff" />
+    <Content Include="bower_components\tinymce-dist\skins\lightgray\fonts\tinymce.eot" />
+    <Content Include="bower_components\tinymce-dist\skins\lightgray\fonts\tinymce.ttf" />
+    <Content Include="bower_components\tinymce-dist\skins\lightgray\fonts\tinymce.woff" />
+    <None Include="Properties\PublishProfiles\angularvideo - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\angularvideo - Web Deploy.pubxml" />
     <None Include="_bin_deployableAssemblies\amd64\sqlcese40.dll" />
     <None Include="_bin_deployableAssemblies\amd64\sqlceqp40.dll" />
     <None Include="_bin_deployableAssemblies\amd64\sqlceme40.dll" />
@@ -441,15 +469,6 @@
     <Content Include="wwwroot\you-tube-video\you-tube-videos-page.component.html">
       <DependentUpon>you-tube-videos-page.component.ts</DependentUpon>
     </Content>
-    <Content Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
-    <Content Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\msvcr90.dll" />
-    <Content Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\README_ENU.txt" />
-    <Content Include="_bin_deployableAssemblies\x86\sqlceca40.dll" />
-    <Content Include="_bin_deployableAssemblies\x86\sqlcecompact40.dll" />
-    <Content Include="_bin_deployableAssemblies\x86\sqlceer40EN.dll" />
-    <Content Include="_bin_deployableAssemblies\x86\sqlceme40.dll" />
-    <Content Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
-    <Content Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
@@ -460,6 +479,7 @@
     <Compile Include="Migrations\UserConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Server\ApiConfiguration.cs" />
+    <Compile Include="Server\Attributes\ChloeExecutionTimeFilterAttribute.cs" />
     <Compile Include="Server\Attributes\ChloeHandleErrorAttribute.cs" />
     <Compile Include="Server\Auth\JwtOptions.cs" />
     <Compile Include="Server\Auth\JwtWriterFormat.cs" />
@@ -474,6 +494,7 @@
     <Compile Include="Server\Controllers\CollectionController.cs" />
     <Compile Include="Server\Controllers\ContactInfoController.cs" />
     <Compile Include="Server\Controllers\FeedbackController.cs" />
+    <Compile Include="Server\Controllers\LogEntryController.cs" />
     <Compile Include="Server\Controllers\PhotoController.cs" />
     <Compile Include="Server\Controllers\PlaylistController.cs" />
     <Compile Include="Server\Controllers\ProfileController.cs" />
@@ -510,6 +531,9 @@
     <Compile Include="Server\Dtos\FeedbackAddOrUpdateResponseDto.cs" />
     <Compile Include="Server\Dtos\FeedbackDto.cs" />
     <Compile Include="Server\Dtos\FileUploadDto.cs" />
+    <Compile Include="Server\Dtos\LogEntryAddOrUpdateRequestDto.cs" />
+    <Compile Include="Server\Dtos\LogEntryAddOrUpdateResponseDto.cs" />
+    <Compile Include="Server\Dtos\LogEntryDto.cs" />
     <Compile Include="Server\Dtos\PhotoAddOrUpdateRequestDto.cs" />
     <Compile Include="Server\Dtos\PhotoAddOrUpdateResponseDto.cs" />
     <Compile Include="Server\Dtos\PhotoDto.cs" />
@@ -555,6 +579,8 @@
     <Compile Include="Server\Models\CollectionItem.cs" />
     <Compile Include="Server\Models\ContactInfo.cs" />
     <Compile Include="Server\Models\Feedback.cs" />
+    <Compile Include="Server\Models\LogEntry.cs" />
+    <Compile Include="Server\Models\LogEntryCategory.cs" />
     <Compile Include="Server\Models\Photo.cs" />
     <Compile Include="Server\Models\Playlist.cs" />
     <Compile Include="Server\Models\PlaylistItem.cs" />
@@ -583,6 +609,7 @@
     <Compile Include="Server\Services\Contracts\IEncryptionService.cs" />
     <Compile Include="Server\Services\Contracts\IFeedbackService.cs" />
     <Compile Include="Server\Services\Contracts\IIdentityService.cs" />
+    <Compile Include="Server\Services\Contracts\ILogEntryService.cs" />
     <Compile Include="Server\Services\Contracts\IPhotoService.cs" />
     <Compile Include="Server\Services\Contracts\IPlaylistService.cs" />
     <Compile Include="Server\Services\Contracts\IProfileService.cs" />
@@ -595,6 +622,7 @@
     <Compile Include="Server\Services\Contracts\IWatchHistoryService.cs" />
     <Compile Include="Server\Services\Contracts\IYouTubeVideoService.cs" />
     <Compile Include="Server\Services\FeedbackService.cs" />
+    <Compile Include="Server\Services\LogEntryService.cs" />
     <Compile Include="Server\Services\MemoryCache.cs" />
     <Compile Include="Server\Services\EncryptionService.cs" />
     <Compile Include="Server\Services\IdentityService.cs" />
@@ -614,6 +642,7 @@
     <Compile Include="Server\Services\YouTubeVideoService.cs" />
     <Compile Include="Server\UnityConfiguration.cs" />
     <Compile Include="Server\Utils\Contracts\ILogger.cs" />
+    <Compile Include="Server\Utils\EFLogger.cs" />
     <Compile Include="Server\Utils\Logger.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -733,6 +762,15 @@
     <TypeScriptCompile Include="wwwroot\home-page\home-page.module.ts" />
     <TypeScriptCompile Include="wwwroot\home-page\home-page.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\home-page\home-page.service.ts" />
+    <TypeScriptCompile Include="wwwroot\log-entry\log-entry-editor.component.ts" />
+    <TypeScriptCompile Include="wwwroot\log-entry\log-entry-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\log-entry\log-entry.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\log-entry\log-entry.component.ts" />
+    <TypeScriptCompile Include="wwwroot\log-entry\log-entry.model.ts" />
+    <TypeScriptCompile Include="wwwroot\log-entry\log-entry.module.ts" />
+    <TypeScriptCompile Include="wwwroot\log-entry\log-entry.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\log-entry\log-entry.service.ts" />
+    <TypeScriptCompile Include="wwwroot\log-entry\log-entrys-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\login\login-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\login\login.actions.ts" />
     <TypeScriptCompile Include="wwwroot\login\login.component.ts" />

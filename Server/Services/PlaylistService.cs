@@ -6,6 +6,8 @@ using Chloe.Server.Services.Contracts;
 using System.Data.Entity;
 using System.Linq;
 using Chloe.Server.Models;
+using System.Threading;
+using System.Security.Claims;
 
 namespace Chloe.Server.Services
 {
@@ -20,6 +22,8 @@ namespace Chloe.Server.Services
 
         public PlaylistAddOrUpdateResponseDto AddOrUpdate(PlaylistAddOrUpdateRequestDto request)
         {
+            var claimsPrincipal = Thread.CurrentPrincipal as ClaimsPrincipal;
+
             var entity = repository.GetAll()
                 .Where(x => x.Id == request.Id && x.IsDeleted == false)
                 .FirstOrDefault();

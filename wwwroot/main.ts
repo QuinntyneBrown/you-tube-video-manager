@@ -27,6 +27,7 @@ require("./contact-info/contact-info.module");
 require("./profile/profile.module");
 require("./profile-setting/profile-setting.module");
 require("./photo/photo.module");
+require("./log-entry/log-entry.module");
 
 var app: any = angular.module("app", [
     "app.core",
@@ -51,6 +52,7 @@ var app: any = angular.module("app", [
     "app.watchHistory",
     "app.photo",
     "app.feedback",
+    "app.logEntry",
 
     "ui.tinymce"
 ]);

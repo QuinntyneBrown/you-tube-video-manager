@@ -20,6 +20,8 @@ namespace Chloe.Server
 
             GlobalConfiguration.Configuration.Filters.Add(new ChloeHandleErrorAttribute(UnityConfiguration.GetContainer().Resolve<ILogger>()));
 
+            GlobalConfiguration.Configuration.Filters.Add(new ChloeExecutionTimeFilterAttribute(UnityConfiguration.GetContainer().Resolve<ILogger>()));
+
             config.SuppressHostPrincipal();
 
             Chloe.Server.Services.Contracts.IIdentityService identityService = UnityConfiguration.GetContainer().Resolve<Chloe.Server.Services.Contracts.IIdentityService>();
