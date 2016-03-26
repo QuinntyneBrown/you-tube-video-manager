@@ -8,6 +8,7 @@ namespace Chloe.Server.Services.Contracts
         YouTubeVideoAddOrUpdateResponseDto AddOrUpdate(YouTubeVideoAddOrUpdateRequestDto request);
         ICollection<YouTubeVideoDto> Get();
         YouTubeVideoDto GetById(int id);
+        YouTubeVideoDto GetByVideoId(string id);
         dynamic Remove(int id);
     }
 }

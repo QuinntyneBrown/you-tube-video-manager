@@ -30,6 +30,11 @@ namespace Chloe.Server.Controllers
         [HttpGet]
         public IHttpActionResult GetById(int id) { return Ok(this.service.GetById(id)); }
 
+        [Route("getByVideoId")]
+        [AllowAnonymous]
+        [HttpGet]
+        public IHttpActionResult GetByVideoId(string id) { return Ok(this.service.GetByVideoId(id)); }
+
         [Route("remove")]
         [HttpDelete]
         public IHttpActionResult Remove(int id) { return Ok(this.service.Remove(id)); }

@@ -6,8 +6,6 @@ using Chloe.Server.Services.Contracts;
 using System.Data.Entity;
 using System.Linq;
 using Chloe.Server.Models;
-using System.Threading;
-using System.Security.Claims;
 
 namespace Chloe.Server.Services
 {
@@ -59,6 +57,11 @@ namespace Chloe.Server.Services
         public YouTubeVideoDto GetById(int id)
         {
             return new YouTubeVideoDto(repository.GetAll().Include(x => x.Tags).Include("Tags.Tag").Where(x => x.Id == id && x.IsDeleted == false).FirstOrDefault());
+        }
+
+        public YouTubeVideoDto GetByVideoId(string id)
+        {
+            return new YouTubeVideoDto(repository.GetAll().Include(x => x.Tags).Include("Tags.Tag").Where(x => x.YouTubeVideoId == id && x.IsDeleted == false).FirstOrDefault());
         }
 
         protected readonly IChloeUow uow;

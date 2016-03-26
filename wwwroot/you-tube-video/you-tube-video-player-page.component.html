@@ -1,3 +1,8 @@
 ﻿<div class="you-tube-player-page">
+    <h1>{{ vm.entity.name }}</h1>
     <you-tube-video-player video-id="vm.youTubeVideoId" width="vm.playerWidth" height="vm.playerHeight"></you-tube-video-player>
+
+    <div>
+        <div style="padding-right:15px; padding-left:15px; color:#444;" ng-bind-html="vm.entity.description"></div>
+    </div>
 </div>

@@ -737,6 +737,7 @@
     <TypeScriptCompile Include="wwwroot\core\service.ts" />
     <TypeScriptCompile Include="wwwroot\core\set-opacity-async.ts" />
     <TypeScriptCompile Include="wwwroot\core\store.ts" />
+    <TypeScriptCompile Include="wwwroot\core\title.ts" />
     <TypeScriptCompile Include="wwwroot\feedback\feedback-editor.component.ts" />
     <TypeScriptCompile Include="wwwroot\feedback\feedback-form.component.ts" />
     <TypeScriptCompile Include="wwwroot\feedback\feedback-list.component.ts" />

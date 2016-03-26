@@ -8,7 +8,16 @@ export class YouTubeVideoActionCreator extends BaseActionCreator {
 
 	addOrUpdateSuccess = options => this.dispatcher.dispatch(new AddOrUpdateYouTubeVideoSuccessAction(options.entity));
 
-	currentYouTubeVideoRemoved = () => this.dispatcher.dispatch(new CurrentYouTubeVideoRemovedAction());
+    currentYouTubeVideoRemoved = () => this.dispatcher.dispatch(new CurrentYouTubeVideoRemovedAction());
+
+    getByVideoId = options => {
+        var newId = this.guid();
+        this.service.getByVideoId({ id: options.id }).then(results => {
+            var action = new AddOrUpdateYouTubeVideoAction(newId, results);
+            this.dispatcher.dispatch(action);
+        });
+        return newId;
+    }
 }
 
 

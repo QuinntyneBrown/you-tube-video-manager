@@ -12,7 +12,8 @@ var app = (<any>angular.module("app.app", [
 ]));
 
 app.service("appActionCreator",["$location","dispatcher","appService","guid",AppActionCreator]);
-app.service("appService",["$q","apiEndpoint","fetch",AppService]);
+app.service("appService", ["$q", "apiEndpoint", "fetch", AppService]);
+
 app.component(AppComponent);
 
 app.config(["reducersProvider", reducersProvider => {	

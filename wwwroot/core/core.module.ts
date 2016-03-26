@@ -23,6 +23,7 @@ require("./set-opacity-async");
 require("./auth-interceptor");
 require("./context-document");
 require("./renderer");
+require("./title");
 
 var app = (<any>angular.module("app.core", [
     "ngSanitize",
@@ -45,4 +46,5 @@ var app = (<any>angular.module("app.core", [
     "safeDigest",
     "setOpacityAsync",
     "store",
+    "title"
 ]));

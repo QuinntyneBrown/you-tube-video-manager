@@ -1,4 +1,14 @@
 
+.button {
+    margin-top:15px;
+    margin-bottom:30px;
+    line-height:30px;
+    width:75px;
+    background-color:#FFF;
+    border: solid 1px;
+    cursor:pointer;
+}
+
 
 
 
@@ -38,12 +48,6 @@ h1 {
 
 
 
-
-
-
-
-
-
 .input-field {
     padding-right:15px;
     padding-left:15px;
@@ -52,6 +56,11 @@ h1 {
     min-width:200px;
     margin-bottom:15px;
 }
+
+
+
+
+
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
@@ -100,6 +109,24 @@ h1 {
 .footer {
     background-color:#333;
     height:150px;
+}
+.flip-card { 
+    margin:15px;
+}
+
+.home-container-flip-card-link-container, .flip-card-back-added-container {
+    padding:15px;
+}
+
+
+.home-container-flip-card-link, .flip-card-back-added {
+    color:#FFF;
+    text-decoration:none;
+    font-size:1.25em;
+}
+
+.flip-card p {
+    line-height:1.5em;
 }
 .header {
     height:73px;  
@@ -152,24 +179,6 @@ h1 {
     border:none;
 }
  
-.flip-card { 
-    margin:15px;
-}
-
-.home-container-flip-card-link-container, .flip-card-back-added-container {
-    padding:15px;
-}
-
-
-.home-container-flip-card-link, .flip-card-back-added {
-    color:#FFF;
-    text-decoration:none;
-    font-size:1.25em;
-}
-
-.flip-card p {
-    line-height:1.5em;
-}
 .link-image a {
     line-height:none;
 }
@@ -181,20 +190,10 @@ h1 {
 
 
 
-
 .login-container {
     margin:0;
     padding:0;
     background-color:#FFF;
-}
-
-
-
-.drop-zone {
-    background-color:azure;
-    height:500px;
-    width:500px;
-
 }
 
 
@@ -312,12 +311,12 @@ h1 {
 
 
 
-.button {
-    margin-top:15px;
-    margin-bottom:30px;
-    line-height:30px;
-    width:75px;
-    background-color:#FFF;
-    border: solid 1px;
-    cursor:pointer;
+
+
+.drop-zone {
+    background-color:azure;
+    height:500px;
+    width:500px;
+
 }
+
