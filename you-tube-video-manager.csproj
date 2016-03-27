@@ -507,6 +507,7 @@
     <Compile Include="Server\Controllers\PlaylistController.cs" />
     <Compile Include="Server\Controllers\ProfileController.cs" />
     <Compile Include="Server\Controllers\ProfileSettingController.cs" />
+    <Compile Include="Server\Controllers\RelatedYouTubeVideoController.cs" />
     <Compile Include="Server\Controllers\SpeakerController.cs" />
     <Compile Include="Server\Controllers\TagController.cs" />
     <Compile Include="Server\Controllers\TalkController.cs" />
@@ -559,6 +560,9 @@
     <Compile Include="Server\Dtos\ProfileSettingAddOrUpdateRequestDto.cs" />
     <Compile Include="Server\Dtos\ProfileSettingAddOrUpdateResponseDto.cs" />
     <Compile Include="Server\Dtos\ProfileSettingDto.cs" />
+    <Compile Include="Server\Dtos\RelatedYouTubeVideoAddOrUpdateRequestDto.cs" />
+    <Compile Include="Server\Dtos\RelatedYouTubeVideoAddOrUpdateResponseDto.cs" />
+    <Compile Include="Server\Dtos\RelatedYouTubeVideoDto.cs" />
     <Compile Include="Server\Dtos\SpeakerAddOrUpdateRequestDto.cs" />
     <Compile Include="Server\Dtos\SpeakerAddOrUpdateResponseDto.cs" />
     <Compile Include="Server\Dtos\SpeakerDto.cs" />
@@ -581,6 +585,8 @@
     <Compile Include="Server\Dtos\RegistrationResponseDto.cs" />
     <Compile Include="Server\Dtos\TokenDto.cs" />
     <Compile Include="Server\Dtos\YouTubeVideoDto.cs" />
+    <Compile Include="Server\Exceptions\NotFoundException.cs" />
+    <Compile Include="Server\Exceptions\YouTubeVideoNotFoundException.cs" />
     <Compile Include="Server\Models\Account.cs" />
     <Compile Include="Server\Models\BaseEntity.cs" />
     <Compile Include="Server\Models\Collection.cs" />
@@ -595,6 +601,7 @@
     <Compile Include="Server\Models\PlaylistYouTubeVideo.cs" />
     <Compile Include="Server\Models\Profile.cs" />
     <Compile Include="Server\Models\ProfileSetting.cs" />
+    <Compile Include="Server\Models\RelatedYouTubeVideo.cs" />
     <Compile Include="Server\Models\Role.cs" />
     <Compile Include="Server\Models\Speaker.cs" />
     <Compile Include="Server\Models\Tag.cs" />
@@ -622,6 +629,7 @@
     <Compile Include="Server\Services\Contracts\IPlaylistService.cs" />
     <Compile Include="Server\Services\Contracts\IProfileService.cs" />
     <Compile Include="Server\Services\Contracts\IProfileSettingService.cs" />
+    <Compile Include="Server\Services\Contracts\IRelatedYouTubeVideoService.cs" />
     <Compile Include="Server\Services\Contracts\ISpeakerService.cs" />
     <Compile Include="Server\Services\Contracts\ITagService.cs" />
     <Compile Include="Server\Services\Contracts\ITalkService.cs" />
@@ -640,6 +648,7 @@
     <Compile Include="Server\Services\PlaylistService.cs" />
     <Compile Include="Server\Services\ProfileService.cs" />
     <Compile Include="Server\Services\ProfileSettingService.cs" />
+    <Compile Include="Server\Services\RelatedYouTubeVideoService.cs" />
     <Compile Include="Server\Services\SpeakerService.cs" />
     <Compile Include="Server\Services\StreamHelper.cs" />
     <Compile Include="Server\Services\TagService.cs" />
@@ -656,7 +665,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Server\Exceptions\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="node_modules\rx\ts\rx.all.d.ts" />

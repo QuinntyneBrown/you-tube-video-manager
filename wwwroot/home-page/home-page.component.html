@@ -1,19 +1,23 @@
 <div class="home-page">
-    <flip-card data-ng-repeat="video in vm.videos" height="400px" width="280px" class="flip-card">
-        <flip-card-front>
-            <a href="#/youtubevideo/play/{{ video.youTubeVideoId }}">
-                <img ng-src="http://img.youtube.com/vi/{{ video.youTubeVideoId }}/0.jpg" width="280" />
-            </a>
-            <div style="padding:15px;">
-                <h1>{{ video.name }}</h1>
-            </div>
-        </flip-card-front>
-        <flip-card-back>
-            <div class="home-container-flip-card-link-container">
-                <a class="home-container-flip-card-link" href="#/youtubevideo/play/{{ video.youTubeVideoId }}">Play</a>
-            </div>
-            <div style="padding-right:15px; padding-left:15px; color:#FFF;" ng-bind-html="video.description"></div>
-        </flip-card-back>
-    </flip-card>
-    <div style="clear:both;"></div>
+
+    <div class="home-container-flip-card-container">
+        <flip-card data-ng-repeat="video in vm.videos" height="400px" width="280px" class="flip-card">
+            <flip-card-front>
+                <a href="#/youtubevideo/play/{{ video.youTubeVideoId }}">
+                    <img ng-src="http://img.youtube.com/vi/{{ video.youTubeVideoId }}/0.jpg" width="280" />
+                </a>
+                <div style="padding:15px;">
+                    <h1>{{ video.name }}</h1>
+                </div>
+            </flip-card-front>
+            <flip-card-back>
+                <div class="home-container-flip-card-link-container">
+                    <a class="home-container-flip-card-link" href="#/youtubevideo/play/{{ video.youTubeVideoId }}">Play</a>
+                </div>
+                <div style="padding-right:15px; padding-left:15px; color:#FFF;" ng-bind-html="video.description"></div>
+            </flip-card-back>
+        </flip-card>
+        <div style="clear:both;"></div>
+    </div>
+
 </div>

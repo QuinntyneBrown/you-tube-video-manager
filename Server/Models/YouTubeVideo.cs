@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 
 namespace Chloe.Server.Models
 {
@@ -10,11 +7,13 @@ namespace Chloe.Server.Models
         public YouTubeVideo()
         {
             this.Tags = new HashSet<YouTubeVideoTag>();
+            this.RelatedYouTubeVideos = new HashSet<RelatedYouTubeVideo>();
         }
 
         public string YouTubeVideoId { get; set; }
         public string Description { get; set; }
         public ICollection<YouTubeVideoTag> Tags { get; set; }
+        public ICollection<RelatedYouTubeVideo> RelatedYouTubeVideos { get; set; }
 
     }
 }

@@ -31,6 +31,7 @@ namespace Chloe.Server.Data
         public DbSet<ContactInfo> ContactInfos { get; set; }
         public DbSet<WatchHistory> WatchHistories { get; set; }
         public DbSet<LogEntry> LogEntries { get; set; }
+        public DbSet<RelatedYouTubeVideo> RelatedYouTubeVideos { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

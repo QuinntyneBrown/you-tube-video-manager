@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Web.Http.Filters;
 using Microsoft.Practices.Unity;
 using Chloe.Server.Utils.Contracts;
+using Chloe.Server.Exceptions;
 
 namespace Chloe.Server.Attributes
 {
@@ -20,6 +21,12 @@ namespace Chloe.Server.Attributes
             {
                 logger.Log(context.Exception);
                 context.Response = new HttpResponseMessage(HttpStatusCode.NotImplemented);
+            }
+
+            if(context.Exception is NotFoundException)
+            {
+                logger.Log(context.Exception);
+                context.Response = new HttpResponseMessage(HttpStatusCode.NotFound);
             }
         }
 

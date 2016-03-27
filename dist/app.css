@@ -1,14 +1,4 @@
 
-.button {
-    margin-top:15px;
-    margin-bottom:30px;
-    line-height:30px;
-    width:75px;
-    background-color:#FFF;
-    border: solid 1px;
-    cursor:pointer;
-}
-
 
 
 
@@ -40,6 +30,16 @@ h1 {
     font-size:1.5em;
     line-height:1.65em;
 }
+.button {
+    margin-top:15px;
+    margin-bottom:30px;
+    line-height:30px;
+    width:75px;
+    background-color:#FFF;
+    border: solid 1px;
+    cursor:pointer;
+}
+
 
 
 
@@ -110,24 +110,6 @@ h1 {
     background-color:#333;
     height:150px;
 }
-.flip-card { 
-    margin:15px;
-}
-
-.home-container-flip-card-link-container, .flip-card-back-added-container {
-    padding:15px;
-}
-
-
-.home-container-flip-card-link, .flip-card-back-added {
-    color:#FFF;
-    text-decoration:none;
-    font-size:1.25em;
-}
-
-.flip-card p {
-    line-height:1.5em;
-}
 .header {
     height:73px;  
     padding-right:30px;
@@ -179,6 +161,30 @@ h1 {
     border:none;
 }
  
+.flip-card { 
+    margin:15px;
+}
+
+.home-container-flip-card-link-container, .flip-card-back-added-container {
+    padding:15px;
+}
+
+
+.home-container-flip-card-link, .flip-card-back-added {
+    color:#FFF;
+    text-decoration:none;
+    font-size:1.25em;
+}
+
+.flip-card p {
+    line-height:1.5em;
+}
+
+.home-container-flip-card-container {
+    max-width:1240px;
+    margin:0 auto;
+    display:inline-block;
+}
 .link-image a {
     line-height:none;
 }
@@ -194,6 +200,16 @@ h1 {
     margin:0;
     padding:0;
     background-color:#FFF;
+}
+
+
+
+
+.drop-zone {
+    background-color:azure;
+    height:500px;
+    width:500px;
+
 }
 
 
@@ -309,14 +325,4 @@ h1 {
 
 
 
-
-
-
-
-.drop-zone {
-    background-color:azure;
-    height:500px;
-    width:500px;
-
-}
 

@@ -21,6 +21,7 @@ namespace Chloe.Server.Data.Contracts
         IRepository<WatchHistory> WatchHistories { get; }
         IRepository<Photo> Photos { get; }
         IRepository<LogEntry> LogEntries { get; }
+        IRepository<RelatedYouTubeVideo> RelatedYouTubeVideos { get; }
 
         void SaveChanges();
     }

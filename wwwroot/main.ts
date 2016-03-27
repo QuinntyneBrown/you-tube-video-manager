@@ -104,7 +104,7 @@ app.config(["$routeProvider", ($routeProvider: angular.route.IRouteProvider) => 
 }]);
 
 app.config(["apiEndpointProvider", (apiEndpointProvider) => {
-    apiEndpointProvider.configure("http://www.angular.video/api");    
+    apiEndpointProvider.configure("/api");    
 }]);
 
 app.config(["loginRedirectProvider", (loginRedirectProvider) => {
