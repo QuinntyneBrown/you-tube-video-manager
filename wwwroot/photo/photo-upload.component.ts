@@ -6,7 +6,7 @@ require("./photo-upload.component.css");
     selector: "photo-upload",
     templateUrl: "wwwroot/photo/photo-upload.component.html",
     styleUrls: ["wwwroot/photo/photo-upload.component.css"],
-    providers: ["$attrs", "$element", "$http", "$scope"],
+    viewProviders: ["$attrs", "$element", "$http", "$scope"],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PhotoUploadComponent {

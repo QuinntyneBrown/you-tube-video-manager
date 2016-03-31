@@ -10,7 +10,7 @@ import { ProfileSetting } from "./profile-setting.model";
     templateUrl: "wwwroot/profile-setting/profile-settings-container.component.html",
     styleUrls: ["wwwroot/profile-setting/profile-settings-container.component.css"],
     selector: "profile-settings-container",
-    providers: ["$location","$routeParams","profileSettingActionCreator"],
+    viewProviders: ["$location","$routeParams","profileSettingActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 @CanActivate(["$q", "$route", "invokeAsync", "profileSettingActionCreator", ($q: angular.IQService, $route: angular.route.IRouteService, invokeAsync, profileSettingActionCreator: actions.ProfileSettingActionCreator) => {

@@ -5,7 +5,7 @@ import { PlaylistActionCreator } from "./playlist.actions";
     templateUrl: "wwwroot/playlist/playlist.component.html",
 	styleUrls: ["wwwroot/playlist/playlist.component.css"],
     selector: "playlist",
-    providers: ["playlistActionCreator"]
+    viewProviders: ["playlistActionCreator"]
 })
 export class PlaylistComponent {
     constructor(private playlistActionCreator: PlaylistActionCreator) { }

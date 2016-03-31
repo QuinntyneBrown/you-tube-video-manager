@@ -7,7 +7,7 @@ import { TalkActionCreator } from "./talk.actions";
     templateUrl: "wwwroot/talk/talk.component.html",
 	styleUrls: ["wwwroot/talk/talk.component.css"],
     selector: "talk",
-    providers: ["talkActionCreator"]
+    viewProviders: ["talkActionCreator"]
 })
 export class TalkComponent {
     constructor(private talkActionCreator: TalkActionCreator) { }

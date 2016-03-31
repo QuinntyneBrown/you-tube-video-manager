@@ -5,7 +5,7 @@ import { TabsActionCreator } from "./tabs.actions";
     templateUrl: "wwwroot/tabs/tab-title.component.html",
     selector: "tab-title",
     transclude: true,
-    providers: ["$attrs","tabsActionCreator"]
+    viewProviders: ["$attrs","tabsActionCreator"]
 })
 export class TabTitleComponent {
     constructor(private $attrs: angular.IAttributes, private tabsActionCreator: TabsActionCreator) { }

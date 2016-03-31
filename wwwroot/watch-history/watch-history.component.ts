@@ -7,7 +7,7 @@ import { WatchHistoryActionCreator } from "./watch-history.actions";
     templateUrl: "wwwroot/watch-history/watch-history.component.html",
 	styleUrls: ["wwwroot/watch-history/watch-history.component.css"],
     selector: "watch-history",
-    providers: ["watchHistoryActionCreator"],
+    viewProviders: ["watchHistoryActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class WatchHistoryComponent {

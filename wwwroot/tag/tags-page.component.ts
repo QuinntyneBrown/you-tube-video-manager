@@ -8,7 +8,7 @@ import { Tag } from "./tag.model";
     templateUrl: "wwwroot/tag/tags-page.component.html",
     styleUrls: ["wwwroot/tag/tags-page.component.css"],
     selector: "tags-page",
-    providers: ["$location","$routeParams","tagActionCreator"]
+    viewProviders: ["$location","$routeParams","tagActionCreator"]
 })
 @CanActivate(["$q", "$route", "invokeAsync", "tagActionCreator", ($q: angular.IQService, $route: angular.route.IRouteService, invokeAsync, tagActionCreator: actions.TagActionCreator) => {
     var tagId = $route.current.params.tagId;

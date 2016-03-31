@@ -8,7 +8,7 @@ import { Collection } from "./collection.model";
     templateUrl: "wwwroot/collection/collections-page.component.html",
     styleUrls: ["wwwroot/collection/collections-page.component.css"],
     selector: "collections-page",
-    providers: ["$location","$routeParams","collectionActionCreator"]
+    viewProviders: ["$location","$routeParams","collectionActionCreator"]
 })
 @CanActivate(["$q", "$route", "invokeAsync", "collectionActionCreator", ($q: angular.IQService, $route: angular.route.IRouteService, invokeAsync, collectionActionCreator: actions.CollectionActionCreator) => {
     var collectionId = $route.current.params.collectionId;

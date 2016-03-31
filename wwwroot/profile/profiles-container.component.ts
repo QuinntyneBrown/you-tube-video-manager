@@ -10,7 +10,7 @@ import { Profile } from "./profile.model";
     templateUrl: "wwwroot/profile/profiles-container.component.html",
     styleUrls: ["wwwroot/profile/profiles-container.component.css"],
     selector: "profiles-container",
-    providers: ["$location","$routeParams","profileActionCreator"],
+    viewProviders: ["$location","$routeParams","profileActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 @CanActivate(["$q", "$route", "invokeAsync", "profileActionCreator", ($q: angular.IQService, $route: angular.route.IRouteService, invokeAsync, profileActionCreator: actions.ProfileActionCreator) => {

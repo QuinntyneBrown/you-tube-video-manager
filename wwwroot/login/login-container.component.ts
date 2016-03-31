@@ -7,7 +7,7 @@ require("./login-container.component.css");
     templateUrl: "wwwroot/login/login-container.component.html",
     styleUrls: ["wwwroot/login/login-container.component.html"],
     selector: "login-container",
-    providers: ["loginRedirect"],
+    viewProviders: ["loginRedirect"],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LoginContainerComponent {

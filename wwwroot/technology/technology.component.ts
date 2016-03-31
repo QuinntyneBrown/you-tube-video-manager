@@ -7,7 +7,7 @@ import { TechnologyActionCreator } from "./technology.actions";
     templateUrl: "wwwroot/technology/technology.component.html",
 	styleUrls: ["wwwroot/technology/technology.component.css"],
     selector: "technology",
-    providers: ["technologyActionCreator"]
+    viewProviders: ["technologyActionCreator"]
 })
 export class TechnologyComponent {
     constructor(private technologyActionCreator: TechnologyActionCreator) { }

@@ -7,7 +7,7 @@ import { SpeakerActionCreator } from "./speaker.actions";
     templateUrl: "wwwroot/speaker/speaker.component.html",
 	styleUrls: ["wwwroot/speaker/speaker.component.css"],
     selector: "speaker",
-    providers: ["speakerActionCreator"]
+    viewProviders: ["speakerActionCreator"]
 })
 export class SpeakerComponent {
     constructor(private speakerActionCreator: SpeakerActionCreator) { }

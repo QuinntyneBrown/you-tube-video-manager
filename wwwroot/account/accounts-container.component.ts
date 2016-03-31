@@ -10,7 +10,7 @@ import { Account } from "./account.model";
     templateUrl: "wwwroot/account/accounts-container.component.html",
     styleUrls: ["wwwroot/account/accounts-container.component.css"],
     selector: "accounts-container",
-    providers: ["$location","$routeParams","accountActionCreator"],
+    viewProviders: ["$location","$routeParams","accountActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 @CanActivate(["$q", "$route", "invokeAsync", "accountActionCreator", ($q: angular.IQService, $route: angular.route.IRouteService, invokeAsync, accountActionCreator: actions.AccountActionCreator) => {

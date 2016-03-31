@@ -7,7 +7,7 @@ import { FlipCardComponent } from "./flip-card.component";
     selector: "flip-card-front",
     transclude: true,
     require: '^flipCard',
-    providers: ["$element"]
+    viewProviders: ["$element"]
 })
 export class FlipCardFrontComponent {
     constructor(public $element: angular.IAugmentedJQuery) { }

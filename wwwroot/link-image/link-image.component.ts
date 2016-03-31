@@ -6,7 +6,7 @@ require("./link-image.component.css")
     selector: "link-image",
     templateUrl: "wwwroot/link-image/link-image.component.html",
     styleUrls: ["wwwroot/link-image/link-image.component.css"],
-    providers:["$attrs"],
+    viewProviders: ["$attrs"],
     inputs:["?href","?src"]
 })
 export class LinkImageComponent {

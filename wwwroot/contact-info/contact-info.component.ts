@@ -7,7 +7,7 @@ import { ContactInfoActionCreator } from "./contact-info.actions";
     templateUrl: "wwwroot/contact-info/contact-info.component.html",
 	styleUrls: ["wwwroot/contact-info/contact-info.component.css"],
     selector: "contact-info",
-    providers: ["contactInfoActionCreator"],
+    viewProviders: ["contactInfoActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ContactInfoComponent {

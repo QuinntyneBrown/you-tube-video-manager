@@ -7,7 +7,7 @@ import { FlyOutActionCreator } from "./fly-out.actions";
     templateUrl: "wwwroot/fly-out/fly-out.component.html",
 	styleUrls: ["wwwroot/fly-out/fly-out.component.css"],
     selector: "fly-out",
-    providers: ["flyOutActionCreator"],
+    viewProviders: ["flyOutActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FlyOutComponent {

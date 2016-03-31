@@ -10,7 +10,7 @@ import { Photo } from "./photo.model";
     templateUrl: "wwwroot/photo/photos-container.component.html",
     styleUrls: ["wwwroot/photo/photos-container.component.css"],
     selector: "photos-container",
-    providers: ["$location","$routeParams","photoActionCreator"],
+    viewProviders: ["$location","$routeParams","photoActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 @CanActivate(["$q", "$route", "invokeAsync", "photoActionCreator", ($q: angular.IQService, $route: angular.route.IRouteService, invokeAsync, photoActionCreator: actions.PhotoActionCreator) => {

@@ -10,7 +10,7 @@ import { Speaker } from "./speaker.model";
     templateUrl: "wwwroot/speaker/speakers-page.component.html",
     styleUrls: ["wwwroot/speaker/speakers-container.component.css"],
     selector: "speakers-page",
-    providers: ["$location","$routeParams","speakerActionCreator"]
+    viewProviders: ["$location","$routeParams","speakerActionCreator"]
 })
 @CanActivate(["$q", "$route", "invokeAsync", "speakerActionCreator", ($q: angular.IQService, $route: angular.route.IRouteService, invokeAsync, speakerActionCreator: actions.SpeakerActionCreator) => {
     var speakerId = $route.current.params.speakerId;

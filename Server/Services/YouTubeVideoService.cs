@@ -58,16 +58,14 @@ namespace Chloe.Server.Services
         public YouTubeVideoDto GetById(int id)
         {
             var entity = repository.GetAll().Include(x => x.Tags).Include("Tags.Tag").Where(x => x.Id == id && x.IsDeleted == false).FirstOrDefault();
-            if (entity == null)
-                throw new YouTubeVideoNotFoundException();
+            if (entity == null) throw new YouTubeVideoNotFoundException();
             return new YouTubeVideoDto(entity);
         }
 
         public YouTubeVideoDto GetByVideoId(string id)
         {
             var entity = repository.GetAll().Include(x => x.Tags).Include("Tags.Tag").Where(x => x.YouTubeVideoId == id && x.IsDeleted == false).FirstOrDefault();
-            if (entity == null)
-                throw new YouTubeVideoNotFoundException();
+            if (entity == null) throw new YouTubeVideoNotFoundException();
             return new YouTubeVideoDto(entity);
         }
 

@@ -10,7 +10,7 @@ import { LogEntry } from "./log-entry.model";
     templateUrl: "wwwroot/log-entry/log-entrys-container.component.html",
     styleUrls: ["wwwroot/log-entry/log-entrys-container.component.css"],
     selector: "log-entrys-container",
-    providers: ["$location","$routeParams","logEntryActionCreator"],
+    viewProviders: ["$location","$routeParams","logEntryActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 @CanActivate(["$q", "$route", "invokeAsync", "logEntryActionCreator", ($q: angular.IQService, $route: angular.route.IRouteService, invokeAsync, logEntryActionCreator: actions.LogEntryActionCreator) => {

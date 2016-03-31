@@ -8,7 +8,7 @@ import { YouTubeVideo } from "./you-tube-video.model";
     templateUrl: "wwwroot/you-tube-video/you-tube-videos-page.component.html",
     styleUrls: ["wwwroot/you-tube-video/you-tube-videos-page.component.css"],
     selector: "you-tube-videos-page",
-    providers: ["$location","$routeParams","youTubeVideoActionCreator"]
+    viewProviders: ["$location","$routeParams","youTubeVideoActionCreator"]
 })
 @CanActivate(["$q", "$route", "invokeAsync", "youTubeVideoActionCreator", ($q: angular.IQService, $route: angular.route.IRouteService, invokeAsync, youTubeVideoActionCreator: actions.YouTubeVideoActionCreator) => {
     var youTubeVideoId = $route.current.params.youTubeVideoId;

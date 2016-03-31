@@ -9,7 +9,7 @@ import * as actions from "../modal/modal.actions";
     templateUrl: "wwwroot/search/search-modal-container.component.html",
     styleUrls: ["wwwroot/search/search-modal-container.component.css"],
     selector: "search-modal-container",
-    providers: ["dispatcher"]
+    viewProviders: ["dispatcher"]
 })
 export class SearchModalContainerComponent {
     constructor(private dispatcher: IDispatcher) { }

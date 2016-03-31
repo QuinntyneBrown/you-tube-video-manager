@@ -8,7 +8,7 @@ import { Playlist } from "./playlist.model";
     templateUrl: "wwwroot/playlist/playlists-page.component.html",
     styleUrls: ["wwwroot/playlist/playlists-page.component.css"],
     selector: "playlists-page",
-    providers: ["$location","$routeParams","playlistActionCreator"]
+    viewProviders: ["$location","$routeParams","playlistActionCreator"]
 })
 @CanActivate(["$q", "$route", "invokeAsync", "playlistActionCreator", ($q: angular.IQService, $route: angular.route.IRouteService, invokeAsync, playlistActionCreator: actions.PlaylistActionCreator) => {
     var playlistId = $route.current.params.playlistId;

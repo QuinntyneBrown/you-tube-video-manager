@@ -23,7 +23,7 @@ export interface IComponentConfigurationOptions {
     templateUrl?: string,
     template?: string,
     selector?: string,
-    providers?: Array<string>;
+    viewProviders?: Array<string>;
     inputs?: Array<string>;
     transclude?: any,
     scope?: any,

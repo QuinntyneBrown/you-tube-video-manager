@@ -7,7 +7,7 @@ import { SlideActionCreator } from "./slide.actions";
     templateUrl: "wwwroot/slide/slide.component.html",
 	styleUrls: ["wwwroot/slide/slide.component.css"],
     selector: "slide",
-    providers: ["slideActionCreator"],
+    viewProviders: ["slideActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SlideComponent {

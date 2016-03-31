@@ -4,7 +4,7 @@ import { LoginActionCreator } from "./login.actions";
 @Component({
     templateUrl: "wwwroot/login/login.component.html",
     selector: "login",
-    providers: ["invokeAsync", "loginActionCreator"],
+    viewProviders: ["invokeAsync", "loginActionCreator"],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LoginComponent {

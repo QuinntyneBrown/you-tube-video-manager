@@ -7,7 +7,7 @@ import { AccountActionCreator } from "./account.actions";
     templateUrl: "wwwroot/account/account.component.html",
 	styleUrls: ["wwwroot/account/account.component.css"],
     selector: "account",
-    providers: ["accountActionCreator"],
+    viewProviders: ["accountActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AccountComponent {

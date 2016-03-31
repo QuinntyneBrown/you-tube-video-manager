@@ -6,7 +6,7 @@ require("./logo.component.css")
     selector: "logo",
     templateUrl: "wwwroot/logo/logo.component.html",
     styleUrls: ["wwwroot/logo/logo.component.css"],
-    providers:["$attrs"],
+    viewProviders: ["$attrs"],
     inputs:["?href","?src"]
 })
 export class LogoComponent {

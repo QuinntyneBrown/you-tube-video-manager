@@ -10,7 +10,7 @@ import { Talk } from "./talk.model";
     templateUrl: "wwwroot/talk/talks-page.component.html",
     styleUrls: ["wwwroot/talk/talks-page.component.css"],
     selector: "talks-page",
-    providers: ["$location","$routeParams","talkActionCreator"]
+    viewProviders: ["$location","$routeParams","talkActionCreator"]
 })
 @CanActivate(["$q", "$route", "invokeAsync", "talkActionCreator", ($q: angular.IQService, $route: angular.route.IRouteService, invokeAsync, talkActionCreator: actions.TalkActionCreator) => {
     var talkId = $route.current.params.talkId;

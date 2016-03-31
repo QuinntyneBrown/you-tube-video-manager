@@ -11,7 +11,7 @@ import { FlipCardActionCreator } from "./flip-card.actions";
         'back': '?flipCardBack'
     },
     selector: "flip-card",
-    providers: ["$attrs", "$element"],
+    viewProviders: ["$attrs", "$element"],
     inputs: ['height?','width?','toggleAdded?','added?']
 })
 export class FlipCardComponent {

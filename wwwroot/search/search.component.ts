@@ -7,7 +7,7 @@ import { SearchActionCreator } from "./search.actions";
     templateUrl: "wwwroot/search/search.component.html",
 	styleUrls: ["wwwroot/search/search.component.css"],
     selector: "search",
-    providers: ["searchActionCreator"],
+    viewProviders: ["searchActionCreator"],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SearchComponent {

@@ -7,7 +7,7 @@ import * as store from "../core/store";
 	styleUrls: ["wwwroot/you-tube-video/you-tube-video-editor.component.css"],
     selector: "you-tube-video-editor",
     inputs: ['entity', 'addOrUpdate', 'remove', 'create'],
-    providers: ["dispatcher"],
+    viewProviders: ["dispatcher"],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class YouTubeVideoEditorComponent {

@@ -7,7 +7,7 @@ var YT: any;
     templateUrl: "wwwroot/you-tube-video/you-tube-video-player.html",
     styleUrls: ["wwwroot/you-tube-video/you-tube-video-player.component.css"],
     selector: "you-tube-video-player",
-    providers: ["$element", "$scope", "$window", "guid"],
+    viewProviders: ["$element", "$scope", "$window", "guid"],
     inputs: ["height?", "width?", "videoId"]
 })
 export class YouTubeVideoPlayerComponent {
@@ -45,7 +45,7 @@ export class YouTubeVideoPlayerComponent {
     public onYouTubeIFrameApiReady = () => {        
         this.player = new (<any>this.$window).YT.Player((<any>this.$element[0]), {
             playerVars: {
-                autoplay: 0,
+                autoplay: 1,
                 theme: "light",
                 color: "white",
                 iv_load_policy: 3,

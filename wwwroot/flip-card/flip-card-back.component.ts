@@ -7,7 +7,7 @@ import { FlipCardComponent } from "./flip-card.component";
     selector: "flip-card-back",
     transclude: true,
     require: '^flipCard',
-    providers: ["$element"]
+    viewProviders: ["$element"]
 })
 export class FlipCardBackComponent {
     constructor(private $element: angular.IAugmentedJQuery) { }

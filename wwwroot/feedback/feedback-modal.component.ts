@@ -9,7 +9,7 @@ require("./feedback-modal.component.css");
     templateUrl: "wwwroot/feedback/feedback-modal.component.html",
     styleUrls: ["wwwroot/feedback/feedback-modal.component.css"],
     selector: "feedback-modal",
-    providers: ["dispatcher"]
+    viewProviders: ["dispatcher"]
 })
 export class FeedbackModalComponent {
     constructor(private dispatcher: store.IDispatcher) {

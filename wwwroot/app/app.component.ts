@@ -7,7 +7,7 @@ require("./app.component.css");
     templateUrl: "wwwroot/app/app.component.html",
     styleUrls: ["wwwroot/app/app.component.css"],
     selector: "app",
-    providers: ["appActionCreator"],
+    viewProviders: ["appActionCreator"],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {

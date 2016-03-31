@@ -7,7 +7,7 @@ require("./feedback.component.css");
     templateUrl: "wwwroot/feedback/feedback.component.html",
 	styleUrls: ["wwwroot/feedback/feedback.component.css"],
     selector: "feedback",
-    providers: ["feedbackActionCreator"]
+    viewProviders: ["feedbackActionCreator"]
 })
 export class FeedbackComponent {
     constructor(private feedbackActionCreator: FeedbackActionCreator) { }

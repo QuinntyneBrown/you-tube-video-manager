@@ -9,7 +9,7 @@ import * as actions from "./tabs.actions";
         'title': '?tabTitle',
         'content': '?tabContent'
     },
-    providers: [
+    viewProviders: [
         '$attrs',
         '$element',
         'tabsActionCreator'

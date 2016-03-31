@@ -9,7 +9,7 @@ require('./header.component.css');
     templateUrl: "wwwroot/header/header.component.html",
     styleUrls: ["wwwroot/header/header.component.css"],
     selector: "header",
-    providers: ["$location","$rootScope","dispatcher","headerActionCreator"]
+    viewProviders: ["$location","$rootScope","dispatcher","headerActionCreator"]
 })
 export class HeaderComponent {
     constructor(private $location: angular.ILocationService, private $rootScope: angular.IRootScopeService, private dispatcher: IDispatcher, private headerActionCreator: HeaderActionCreator) {

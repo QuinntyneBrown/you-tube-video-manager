@@ -10,7 +10,7 @@ import { Technology } from "./technology.model";
     templateUrl: "wwwroot/technology/technologys-page.component.html",
     styleUrls: ["wwwroot/technology/technologys-page.component.css"],
     selector: "technologys-page",
-    providers: ["$location","$routeParams","technologyActionCreator"]
+    viewProviders: ["$location","$routeParams","technologyActionCreator"]
 })
 @CanActivate(["$q", "$route", "invokeAsync", "technologyActionCreator", ($q: angular.IQService, $route: angular.route.IRouteService, invokeAsync, technologyActionCreator: actions.TechnologyActionCreator) => {
     var technologyId = $route.current.params.technologyId;

@@ -7,7 +7,7 @@ import { PlaylistActionCreator } from "../playlist/playlist.actions";
     route:"/",
     templateUrl: "wwwroot/home-page/home-page.component.html",
     selector: "home-page",
-    providers: ["homePageActionCreator","playlistActionCreator"]
+    viewProviders: ["homePageActionCreator","playlistActionCreator"]
 })
 @CanActivate(["invokeAsync", "youTubeVideoActionCreator", (invokeAsync, youTubeVideoActionCreator: actions.YouTubeVideoActionCreator) => {
     return invokeAsync(youTubeVideoActionCreator.all);

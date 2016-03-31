@@ -7,7 +7,7 @@ require("./footer.component.css");
     templateUrl: "wwwroot/footer/footer.component.html",
     styleUrls: ["wwwroot/footer/footer.component.css"],
     selector: "footer",
-    providers: ["footerActionCreator"],
+    viewProviders: ["footerActionCreator"],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FooterComponent {

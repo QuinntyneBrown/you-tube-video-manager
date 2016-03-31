@@ -8,7 +8,7 @@ import { Feedback } from "./feedback.model";
     templateUrl: "wwwroot/feedback/feedbacks-page.component.html",
     styleUrls: ["wwwroot/feedback/feedbacks-page.component.css"],
     selector: "feedbacks-page",
-    providers: ["$location","$routeParams","feedbackActionCreator"]
+    viewProviders: ["$location","$routeParams","feedbackActionCreator"]
 })
 @CanActivate(["$q", "$route", "invokeAsync", "feedbackActionCreator", ($q: angular.IQService, $route: angular.route.IRouteService, invokeAsync, feedbackActionCreator: actions.FeedbackActionCreator) => {
     var feedbackId = $route.current.params.feedbackId;

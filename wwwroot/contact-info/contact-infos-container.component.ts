@@ -10,7 +10,7 @@ import { ContactInfo } from "./contact-info.model";
     templateUrl: "wwwroot/contact-info/contact-infos-container.component.html",
     styleUrls: ["wwwroot/contact-info/contact-infos-container.component.css"],
     selector: "contact-infos-container",
-    providers: ["$location","$routeParams","contactInfoActionCreator"],
+    viewProviders: ["$location","$routeParams","contactInfoActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 @CanActivate(["$q", "$route", "invokeAsync", "contactInfoActionCreator", ($q: angular.IQService, $route: angular.route.IRouteService, invokeAsync, contactInfoActionCreator: actions.ContactInfoActionCreator) => {

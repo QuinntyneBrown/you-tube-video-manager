@@ -7,7 +7,7 @@ import { PopoverActionCreator } from "./popover.actions";
     templateUrl: "wwwroot/popover/popover.component.html",
 	styleUrls: ["wwwroot/popover/popover.component.css"],
     selector: "popover",
-    providers: ["popoverActionCreator"]
+    viewProviders: ["popoverActionCreator"]
 })
 export class PopoverComponent {
     constructor(private popoverActionCreator: PopoverActionCreator) { }

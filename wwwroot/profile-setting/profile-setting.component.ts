@@ -7,7 +7,7 @@ import { ProfileSettingActionCreator } from "./profile-setting.actions";
     templateUrl: "wwwroot/profile-setting/profile-setting.component.html",
 	styleUrls: ["wwwroot/profile-setting/profile-setting.component.css"],
     selector: "profile-setting",
-    providers: ["profileSettingActionCreator"],
+    viewProviders: ["profileSettingActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProfileSettingComponent {

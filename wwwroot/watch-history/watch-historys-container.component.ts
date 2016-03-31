@@ -10,7 +10,7 @@ import { WatchHistory } from "./watch-history.model";
     templateUrl: "wwwroot/watch-history/watch-historys-container.component.html",
     styleUrls: ["wwwroot/watch-history/watch-historys-container.component.css"],
     selector: "watch-historys-container",
-    providers: ["$location","$routeParams","watchHistoryActionCreator"],
+    viewProviders: ["$location","$routeParams","watchHistoryActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 @CanActivate(["$q", "$route", "invokeAsync", "watchHistoryActionCreator", ($q: angular.IQService, $route: angular.route.IRouteService, invokeAsync, watchHistoryActionCreator: actions.WatchHistoryActionCreator) => {

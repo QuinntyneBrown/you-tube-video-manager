@@ -51,7 +51,7 @@ angular.module = function () {
             controller: componentNameCamelCase + "Component"
         }
 
-        options.component.$inject = options.providers
+        options.component.$inject = options.viewProviders
 
         if (options.inputs && options.inputs.length > 0) {
             for (var i = 0; i < options.inputs.length; i++) {

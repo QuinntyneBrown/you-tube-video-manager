@@ -8,7 +8,7 @@ import { pluck } from "../core/pluck";
     templateUrl: "wwwroot/you-tube-video/you-tube-video-player-page.component.html",
     styleUrls: ["wwwroot/you-tube-video/you-tube-video-player-page.component.css"],
     selector: "you-tube-video-player-page",
-    providers: ["$routeParams","youTubeVideoActionCreator"]
+    viewProviders: ["$routeParams","youTubeVideoActionCreator"]
 })
 @CanActivate(["$q", "$route", "invokeAsync", "youTubeVideoActionCreator", ($q: angular.IQService, $route: angular.route.IRouteService, invokeAsync, youTubeVideoActionCreator: actions.YouTubeVideoActionCreator) => {
     var youTubeVideoId = $route.current.params.youTubeVideoId;

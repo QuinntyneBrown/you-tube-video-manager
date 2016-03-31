@@ -7,7 +7,7 @@ import { PhotoActionCreator } from "./photo.actions";
     templateUrl: "wwwroot/photo/photo.component.html",
 	styleUrls: ["wwwroot/photo/photo.component.css"],
     selector: "photo",
-    providers: ["photoActionCreator"],
+    viewProviders: ["photoActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PhotoComponent {

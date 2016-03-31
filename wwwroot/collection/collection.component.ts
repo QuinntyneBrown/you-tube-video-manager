@@ -7,7 +7,7 @@ require("./collection.component.css");
     templateUrl: "wwwroot/collection/collection.component.html",
 	styleUrls: ["wwwroot/collection/collection.component.css"],
     selector: "collection",
-    providers: ["collectionActionCreator"]
+    viewProviders: ["collectionActionCreator"]
 })
 export class CollectionComponent {
     constructor(private collectionActionCreator: CollectionActionCreator) { }
