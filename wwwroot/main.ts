@@ -31,6 +31,7 @@ require("./profile-setting/profile-setting.module");
 require("./photo/photo.module");
 require("./log-entry/log-entry.module");
 require("./slide/slide.module");
+require("./image-button/image-button.module");
 
 var app: any = angular.module("app", [
     "app.core",
@@ -59,6 +60,7 @@ var app: any = angular.module("app", [
     "app.logEntry",
     "app.search",
     "app.slide",
+    "app.imageButton",
 
     "ui.tinymce"
 ]);

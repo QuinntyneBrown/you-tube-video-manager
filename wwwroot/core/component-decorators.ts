@@ -16,8 +16,8 @@ export function CanActivate(fnDefinition: Array<any>) {
 }
 
 export interface IComponentConfigurationOptions {
-    componentName?:string,
-    component?:any,
+    componentName?: string,
+    component?: any,
     routes?: Array<string>,
     route?: string,
     templateUrl?: string,
@@ -27,7 +27,9 @@ export interface IComponentConfigurationOptions {
     inputs?: Array<string>;
     transclude?: any,
     scope?: any,
-    require?:string|Array<string>,
+    require?: string | Array<string>,
     styleUrls?: Array<string>,
-    changeDetection?: ChangeDetectionStrategy
+    styles?: Array<string>,
+    changeDetection?: ChangeDetectionStrategy,
+    moduleId?: string
 }

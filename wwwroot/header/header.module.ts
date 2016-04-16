@@ -1,5 +1,5 @@
 require("../core/core.module");
-require("../link-image/link-image.module");
+require("../image-button/image-button.module");
 require("../logo/logo.module");
 
 import { HeaderComponent } from "./header.component";
@@ -9,7 +9,7 @@ import * as reducers from "./header.reducers";
 
 var app = (<any>angular.module("app.header", [
     "app.core",
-    "app.linkImage",
+    "app.imageButton",
     "app.logo"    
 ]));
 

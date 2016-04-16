@@ -25,7 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
     <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
     <TypeScriptEmitDecoratorMetadata>True</TypeScriptEmitDecoratorMetadata>
     <TypeScriptExperimentalDecorators>True</TypeScriptExperimentalDecorators>
@@ -289,6 +289,10 @@
     <Content Include="wwwroot\header\header.component.html" />
     <Content Include="wwwroot\home-page\home-page.component.css" />
     <Content Include="wwwroot\home-page\home-page.component.html" />
+    <Content Include="wwwroot\image-button\image-button-list.component.css" />
+    <Content Include="wwwroot\image-button\image-button-list.component.html" />
+    <Content Include="wwwroot\image-button\image-button.component.css" />
+    <Content Include="wwwroot\image-button\image-button.component.html" />
     <Content Include="wwwroot\log-entry\log-entry-editor.component.css" />
     <Content Include="wwwroot\log-entry\log-entry-editor.component.html" />
     <Content Include="wwwroot\log-entry\log-entry-list.component.css" />
@@ -301,8 +305,6 @@
     <Content Include="wwwroot\login\login-container.component.html" />
     <Content Include="wwwroot\login\login.component.css" />
     <Content Include="wwwroot\login\login.component.html" />
-    <Content Include="wwwroot\link-image\link-image.component.css" />
-    <Content Include="wwwroot\link-image\link-image.component.html" />
     <Content Include="wwwroot\logo\logo.component.css" />
     <Content Include="wwwroot\logo\logo.component.html" />
     <Content Include="wwwroot\photo\photo-editor.component.css" />
@@ -784,6 +786,10 @@
     <TypeScriptCompile Include="wwwroot\home-page\home-page.module.ts" />
     <TypeScriptCompile Include="wwwroot\home-page\home-page.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\home-page\home-page.service.ts" />
+    <TypeScriptCompile Include="wwwroot\image-button\image-button-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\image-button\image-button.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\image-button\image-button.component.ts" />
+    <TypeScriptCompile Include="wwwroot\image-button\image-button.module.ts" />
     <TypeScriptCompile Include="wwwroot\log-entry\log-entry-editor.component.ts" />
     <TypeScriptCompile Include="wwwroot\log-entry\log-entry-list.component.ts" />
     <TypeScriptCompile Include="wwwroot\log-entry\log-entry.actions.ts" />
@@ -799,8 +805,6 @@
     <TypeScriptCompile Include="wwwroot\login\login.module.ts" />
     <TypeScriptCompile Include="wwwroot\login\login.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\login\login.service.ts" />
-    <TypeScriptCompile Include="wwwroot\link-image\link-image.component.ts" />
-    <TypeScriptCompile Include="wwwroot\link-image\link-image.module.ts" />
     <TypeScriptCompile Include="wwwroot\logo\logo.component.ts" />
     <TypeScriptCompile Include="wwwroot\logo\logo.module.ts" />
     <TypeScriptCompile Include="wwwroot\main.ts" />

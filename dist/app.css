@@ -48,6 +48,11 @@ h1 {
 
 
 
+
+
+
+
+
 .input-field {
     padding-right:15px;
     padding-left:15px;
@@ -56,10 +61,6 @@ h1 {
     min-width:200px;
     margin-bottom:15px;
 }
-
-
-
-
 
 /* entire container, keeps perspective */
 .flip-container {
@@ -105,7 +106,6 @@ h1 {
     position:relative; 
     float:left; 
 }
-
 .footer {
     background-color:#333;
     height:150px;
@@ -185,13 +185,8 @@ h1 {
     margin:0 auto;
     display:inline-block;
 }
-.link-image a {
-    line-height:none;
-}
 
-.link-image-link {
-    line-height:0;
-}
+
 
 
 
